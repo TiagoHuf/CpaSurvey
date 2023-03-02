@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Biopark.CpaSurvey.Application/1.0.0": {
+        "dependencies": {
+          "Biopark.CpaSurvey.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Biopark.CpaSurvey.Application.dll": {}
+        }
+      },
+      "Biopark.CpaSurvey.Domain/1.0.0": {
+        "runtime": {
+          "Biopark.CpaSurvey.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Biopark.CpaSurvey.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Biopark.CpaSurvey.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

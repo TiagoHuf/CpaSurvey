@@ -1,0 +1,15 @@
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\bin\Debug\net6.0\Biopark.CpaSurvey.Application.deps.json
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\bin\Debug\net6.0\Biopark.CpaSurvey.Application.dll
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\bin\Debug\net6.0\Biopark.CpaSurvey.Application.pdb
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\bin\Debug\net6.0\Biopark.CpaSurvey.Domain.dll
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\bin\Debug\net6.0\Biopark.CpaSurvey.Domain.pdb
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\Biopark.CpaSurvey.Application.csproj.AssemblyReference.cache
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\Biopark.CpaSurvey.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\Biopark.CpaSurvey.Application.AssemblyInfoInputs.cache
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\Biopark.CpaSurvey.Application.AssemblyInfo.cs
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\Biopark.CpaSurvey.Application.csproj.CoreCompileInputs.cache
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\Biopark.CpaSurvey.Application.csproj.CopyComplete
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\Biopark.CpaSurvey.Application.dll
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\refint\Biopark.CpaSurvey.Application.dll
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\Biopark.CpaSurvey.Application.pdb
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Application\obj\Debug\net6.0\ref\Biopark.CpaSurvey.Application.dll
