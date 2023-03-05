@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Biopark.CpaSurvey.UnitTests": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51873;http://localhost:51874"
+    }
+  }
+}

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biopark.CpaSurvey.Infra.Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biopark.CpaSurvey.UnitTests", "test\UnitTests\Biopark.CpaSurvey.UnitTests.csproj", "{CCEE252D-EB05-49C8-8A51-FF429EBB37D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biopark.CpaSurvey.WebAPI", "src\WebAPI\Biopark.CpaSurvey.WebAPI.csproj", "{886970C4-B07E-4CD9-A5CA-6EA1CA6C4294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biopark.CpaSurvey.WebAPI", "src\WebAPI\Biopark.CpaSurvey.WebAPI.csproj", "{886970C4-B07E-4CD9-A5CA-6EA1CA6C4294}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C8EF14FA-9184-40FE-B5C1-DD6581A6C792}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Presentation", "4 - Presentation", "{3FABAB6B-E8BB-4D6D-A75E-9677EDD6430C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{86F38E49-7EDA-417D-888D-162F75F282E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biopark.CpaSurvey.Infra.CrossCutting", "src\Infra\CrossCutting\CrossCutting\Biopark.CpaSurvey.Infra.CrossCutting.csproj", "{1C7606EB-F479-4D83-A7D0-041FF8215945}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{886970C4-B07E-4CD9-A5CA-6EA1CA6C4294}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{886970C4-B07E-4CD9-A5CA-6EA1CA6C4294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{886970C4-B07E-4CD9-A5CA-6EA1CA6C4294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C7606EB-F479-4D83-A7D0-041FF8215945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7606EB-F479-4D83-A7D0-041FF8215945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7606EB-F479-4D83-A7D0-041FF8215945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7606EB-F479-4D83-A7D0-041FF8215945}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{72C07CFB-BE77-4F1A-89EE-250D740B3EB3} = {C8EF14FA-9184-40FE-B5C1-DD6581A6C792}
 		{EAA65105-499C-44D7-85B5-D150E8A525DE} = {C8EF14FA-9184-40FE-B5C1-DD6581A6C792}
 		{3FABAB6B-E8BB-4D6D-A75E-9677EDD6430C} = {C8EF14FA-9184-40FE-B5C1-DD6581A6C792}
+		{1C7606EB-F479-4D83-A7D0-041FF8215945} = {EAA65105-499C-44D7-85B5-D150E8A525DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A05C33D-AF13-4D97-B6A5-4A77A76F683F}

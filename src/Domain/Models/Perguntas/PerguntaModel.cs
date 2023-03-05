@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Biopark.CpaSurvey.Domain.Entities.Eixos;
+using Biopark.CpaSurvey.Domain.Entities.Perguntas;
 
 namespace Biopark.CpaSurvey.Domain.Models.Perguntas;
-internal class PerguntaModel
+public class PerguntaModel
 {
+    public string Descricao { get; set; }
+
+    public TipoResposta TipoResposta { get; set; }
+
+    public long EixoId { get; set; }
 }

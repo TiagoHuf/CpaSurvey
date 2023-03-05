@@ -1,4 +1,5 @@
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.deps.json
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.runtimeconfig.json
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.dll
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.pdb
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\bin\Debug\net6.0\Biopark.CpaSurvey.Domain.dll
@@ -12,4 +13,5 @@ C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\obj\Debug\net6.0\Biopark
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.dll
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\obj\Debug\net6.0\refint\Biopark.CpaSurvey.Infra.Data.dll
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.pdb
+C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.genruntimeconfig.cache
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\Data\obj\Debug\net6.0\ref\Biopark.CpaSurvey.Infra.Data.dll

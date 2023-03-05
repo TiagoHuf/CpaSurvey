@@ -1,5 +1,18 @@
-﻿namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
+﻿using Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
+using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
+using Microsoft.AspNetCore.Mvc;
 
-public class PerguntasController
+namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
+
+public class PerguntasController : ApiController
 {
+    [HttpPost]
+    public async Task<IActionResult> PostAsync([FromBody] CriarPerguntaCommand command)
+    {
+        var result = await Mediator.Send(command);
+        return Created(
+            "perguntas/",
+            new Response(result, "Pergunta cadastrada com sucesso.")
+        );
+    }
 }
