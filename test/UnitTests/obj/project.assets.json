@@ -3964,11 +3964,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\test\\UnitTests\\Biopark.CpaSurvey.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\tiago\\OneDrive\\Área de Trabalho\\CpaSurvey\\test\\UnitTests\\Biopark.CpaSurvey.UnitTests.csproj",
       "projectName": "Biopark.CpaSurvey.UnitTests",
-      "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\test\\UnitTests\\Biopark.CpaSurvey.UnitTests.csproj",
+      "projectPath": "C:\\Users\\tiago\\OneDrive\\Área de Trabalho\\CpaSurvey\\test\\UnitTests\\Biopark.CpaSurvey.UnitTests.csproj",
       "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\test\\UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\tiago\\OneDrive\\Área de Trabalho\\CpaSurvey\\test\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3985,8 +3985,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
-              "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj"
+            "C:\\Users\\tiago\\OneDrive\\Área de Trabalho\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
+              "projectPath": "C:\\Users\\tiago\\OneDrive\\Área de Trabalho\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj"
             }
           }
         }

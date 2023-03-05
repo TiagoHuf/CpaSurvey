@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4MyWf+Er/2FzMat0QWbRxWt/0yqzYL1d7dvzwQHIiRQxvJtZawBizypPw0P91dFGql9gppW8xauAekJLuq3mAw==",
+  "dgSpecHash": "FJN6JakiHJ1FzzdKSxLyzxkNBDsJ9ekL+942mpHOTkx6M8gABCs5FsZo1XVzPgIJHl69AdQqYrfN7yhysDUA3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj",
+  "projectFilePath": "C:\\Users\\tiago\\OneDrive\\Área de Trabalho\\CpaSurvey\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tiago\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aUBXJQoBT4/kcHoVsVRsTEQK8wkyVEjS3GLCLzJIsp3Hg+9ASjV+kaJ7t/0OYVKtBUnhYYOlNPmWTIJEUcgP2A==",
+  "dgSpecHash": "0WqfAyQSWegvdh8seDj2dnp73Y9tPjy7AfzzJeomAI3Wi4SHGoQY/hV+ku2nthcBZsj1p3DRPqNHFhzLQmwiEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj",
+  "projectFilePath": "C:\\Users\\tiago\\OneDrive\\Área de Trabalho\\CpaSurvey\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tiago\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\tiago\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

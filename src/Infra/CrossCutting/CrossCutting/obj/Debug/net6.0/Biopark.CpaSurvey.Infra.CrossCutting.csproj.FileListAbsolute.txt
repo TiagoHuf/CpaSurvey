@@ -15,3 +15,20 @@ C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\CrossCutting\CrossCutting\obj
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\refint\Biopark.CpaSurvey.Infra.CrossCutting.dll
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.pdb
 C:\Users\tiago\Desktop\CpaSurvey\backend\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\ref\Biopark.CpaSurvey.Infra.CrossCutting.dll
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.dll
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\refint\Biopark.CpaSurvey.Infra.CrossCutting.dll
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.pdb
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.deps.json
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.dll
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.pdb
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\bin\Debug\net6.0\Biopark.CpaSurvey.Domain.dll
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.dll
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\bin\Debug\net6.0\Biopark.CpaSurvey.Infra.Data.pdb
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\bin\Debug\net6.0\Biopark.CpaSurvey.Domain.pdb
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.AssemblyInfo.cs
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\Biopark.CpaSurvey.Infra.CrossCutting.csproj.CopyComplete
+C:\Users\tiago\OneDrive\Área de Trabalho\CpaSurvey\src\Infra\CrossCutting\CrossCutting\obj\Debug\net6.0\ref\Biopark.CpaSurvey.Infra.CrossCutting.dll
