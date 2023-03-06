@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Presentation", "4 - Pre
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{86F38E49-7EDA-417D-888D-162F75F282E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biopark.CpaSurvey.Infra.CrossCutting", "src\Infra\CrossCutting\CrossCutting\Biopark.CpaSurvey.Infra.CrossCutting.csproj", "{1C7606EB-F479-4D83-A7D0-041FF8215945}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biopark.CpaSurvey.Infra.CrossCutting", "src\Infra\CrossCutting\CrossCutting\Biopark.CpaSurvey.Infra.CrossCutting.csproj", "{1C7606EB-F479-4D83-A7D0-041FF8215945}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
