@@ -1,4 +1,6 @@
 ﻿using Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
+using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPergunta;
+using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPerguntas;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,5 +16,21 @@ public class PerguntasController : ApiController
             "perguntas/",
             new Response(result, "Pergunta cadastrada com sucesso.")
         );
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAsync([FromQuery] GetPerguntasQuery query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(result);
+    }
+
+    [HttpGet("{PerguntaId:long}")]
+    public async Task<IActionResult> GetAsync([FromRoute] GetPerguntaQuery query)
+    {
+        var result = await Mediator.Send(query); 
+        
+        return Ok(result);
     }
 }

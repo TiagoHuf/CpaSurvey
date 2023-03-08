@@ -321,3 +321,9 @@ DeploymentArtifacts/
 # Report Generator
 .store
 reportgenerator*
+/src/Application/obj/Debug/net6.0/Biopark.CpaSurvey.Application.csproj.AssemblyReference.cache
+/src/Infra/CrossCutting/CrossCutting/obj/Debug/net6.0/Biopark.CpaSurvey.Infra.CrossCutting.csproj.AssemblyReference.cache
+/src/Infra/Data/obj/Debug/net6.0/Biopark.CpaSurvey.Infra.Data.csproj.AssemblyReference.cache
+/test/UnitTests/obj/Debug/net6.0/Biopark.CpaSurvey.UnitTests.csproj.AssemblyReference.cache
+/src/WebAPI/obj/Debug/net6.0/Biopark.CpaSurvey.WebAPI.csproj.AssemblyReference.cache
+/.vs/CpaSurvey/FileContentIndex/469e0979-1fcb-465a-8c31-fc31dc8a1aec.vsidx
