@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\WebAPI\\Biopark.CpaSurvey.WebAPI.csproj": {}
+    "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\WebAPI\\Biopark.CpaSurvey.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Application\\Biopark.CpaSurvey.Application.csproj": {
+    "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Application\\Biopark.CpaSurvey.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Application\\Biopark.CpaSurvey.Application.csproj",
+        "projectUniqueName": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Application\\Biopark.CpaSurvey.Application.csproj",
         "projectName": "Biopark.CpaSurvey.Application",
-        "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Application\\Biopark.CpaSurvey.Application.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Application\\obj\\",
+        "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Application\\Biopark.CpaSurvey.Application.csproj",
+        "packagesPath": "C:\\Users\\CarlosEduardoTeixeir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CarlosEduardoTeixeir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
-                "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj"
+              "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
+                "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj"
               }
             }
           }
@@ -77,21 +81,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
+    "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj",
         "projectName": "Biopark.CpaSurvey.Domain",
-        "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj",
+        "packagesPath": "C:\\Users\\CarlosEduardoTeixeir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CarlosEduardoTeixeir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -132,21 +140,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj": {
+    "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj",
         "projectName": "Biopark.CpaSurvey.Infra.CrossCutting",
-        "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\CrossCutting\\CrossCutting\\obj\\",
+        "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\CarlosEduardoTeixeir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\CrossCutting\\CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CarlosEduardoTeixeir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -160,8 +172,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj"
+              "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj"
               }
             }
           }
@@ -191,21 +203,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj": {
+    "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj",
         "projectName": "Biopark.CpaSurvey.Infra.Data",
-        "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\obj\\",
+        "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\CarlosEduardoTeixeir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CarlosEduardoTeixeir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -219,8 +235,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
-                "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj"
+              "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
+                "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj"
               }
             }
           }
@@ -268,21 +284,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\WebAPI\\Biopark.CpaSurvey.WebAPI.csproj": {
+    "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\WebAPI\\Biopark.CpaSurvey.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\WebAPI\\Biopark.CpaSurvey.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\WebAPI\\Biopark.CpaSurvey.WebAPI.csproj",
         "projectName": "Biopark.CpaSurvey.WebAPI",
-        "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\WebAPI\\Biopark.CpaSurvey.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\WebAPI\\Biopark.CpaSurvey.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\CarlosEduardoTeixeir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CarlosEduardoTeixeir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -296,17 +316,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Application\\Biopark.CpaSurvey.Application.csproj": {
-                "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Application\\Biopark.CpaSurvey.Application.csproj"
+              "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Application\\Biopark.CpaSurvey.Application.csproj": {
+                "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Application\\Biopark.CpaSurvey.Application.csproj"
               },
-              "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
-                "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj"
+              "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj": {
+                "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Domain\\Biopark.CpaSurvey.Domain.csproj"
               },
-              "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj": {
-                "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj"
+              "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\CrossCutting\\CrossCutting\\Biopark.CpaSurvey.Infra.CrossCutting.csproj"
               },
-              "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\tiago\\Desktop\\CpaSurvey\\backend\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj"
+              "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\CarlosEduardoTeixeir\\source\\repos\\TiagoHuf\\CpaSurvey\\src\\Infra\\Data\\Biopark.CpaSurvey.Infra.Data.csproj"
               }
             }
           }
@@ -381,7 +401,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
