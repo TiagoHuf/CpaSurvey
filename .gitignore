@@ -328,11 +328,24 @@ reportgenerator*
 /src/WebAPI/obj/Debug/net6.0/Biopark.CpaSurvey.WebAPI.csproj.AssemblyReference.cache
 /.vs/CpaSurvey/FileContentIndex/469e0979-1fcb-465a-8c31-fc31dc8a1aec.vsidx
 
-# NuGet Packages
+# Ignore NuGet Packages
 *.nupkg
+
 # The packages folder can be ignored because of Package Restore
-**/packages/*
+**/[Pp]ackages/*
+
 # except build/, which is used as an MSBuild target.
-!**/packages/build/
+!**/[Pp]ackages/build/
+
 # Uncomment if necessary however generally it will be regenerated when needed
-#!**/packages/repositories.config
+#!**/[Pp]ackages/repositories.config
+
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+# Ignore other intermediate files that NuGet might create. project.lock.json is used in conjunction
+# with project.json (NuGet v3); project.assets.json is used in conjunction with the PackageReference
+# format (NuGet v4 and .NET Core).
+project.lock.json
+project.assets.json
