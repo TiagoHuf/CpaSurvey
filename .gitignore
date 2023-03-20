@@ -327,3 +327,12 @@ reportgenerator*
 /test/UnitTests/obj/Debug/net6.0/Biopark.CpaSurvey.UnitTests.csproj.AssemblyReference.cache
 /src/WebAPI/obj/Debug/net6.0/Biopark.CpaSurvey.WebAPI.csproj.AssemblyReference.cache
 /.vs/CpaSurvey/FileContentIndex/469e0979-1fcb-465a-8c31-fc31dc8a1aec.vsidx
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config

@@ -33,4 +33,12 @@ public class PerguntasController : ApiController
         
         return Ok(result);
     }
+
+    [HttpDelete("{PerguntaId:long}")]
+    public async Task<IActionResult> DeleteAsync([FromRoute] RemoverPerguntaCommand query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(new Response(result, "Pergunta removida com sucesso."));
+    }
 }

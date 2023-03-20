@@ -11,6 +11,7 @@ public class Pergunta : BaseEntity<long>, IAggregateRoot
         TipoResposta = model.TipoResposta;
         EixoId = model.EixoId;
     }
+
     private Pergunta()
     {   
     }
