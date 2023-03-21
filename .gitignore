@@ -595,3 +595,7 @@ _Pvt_Extensions
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+*.GeneratedMSBuildEditorConfig.editorconfig
+.asset-cache*
+/.asset-cache
