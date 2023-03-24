@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Biopark.CpaSurvey.Domain.Interfaces;
 
-namespace Biopark.CpaSurvey.Domain.Entities.Turma
-{
-    internal class Turma
-    {
-    }
+namespace Biopark.CpaSurvey.Domain.Entities.Turma;
+
+public class Turma : BaseEntity<long>, IAggregateRoot {
+    
 }
