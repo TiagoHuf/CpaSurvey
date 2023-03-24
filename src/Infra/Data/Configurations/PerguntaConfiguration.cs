@@ -25,7 +25,7 @@ public class PerguntaConfiguration : IEntityTypeConfiguration<Pergunta>
         builder.HasIndex(p => p.EixoId);
 
         builder.HasOne(p => p.Eixo)
-            .WithMany(e => e.Perguntas)
+            .WithMany(p => p.Perguntas)
             .HasForeignKey(p => p.EixoId)
             .HasConstraintName("FK_Eixo_Pergunta_EixoId");
     }

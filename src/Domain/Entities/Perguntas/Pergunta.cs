@@ -13,7 +13,8 @@ public class Pergunta : BaseEntity<long>, IAggregateRoot
     }
 
     private Pergunta()
-    {   
+    {
+        // Necessário para o EntityFramework.
     }
 
     public string Descricao { get; private set; }

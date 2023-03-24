@@ -12,6 +12,7 @@ public partial class Eixo : BaseEntity<long>
 
     private Eixo()
     {
+        // Necessário para o EntityFramework.
     }
 
     public string Nome { get; private set; }
