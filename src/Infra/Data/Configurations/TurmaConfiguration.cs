@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-
 namespace Biopark.CpaSurvey.Infra.Data.Configurations;
 
 public class TurmaConfiguration : IEntityTypeConfiguration<Turma>
