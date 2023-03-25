@@ -6,9 +6,7 @@ namespace Biopark.CpaSurvey.Domain.Entities.Turma;
 public class Turma : BaseEntity<long>, IAggregateRoot {
     public Turma(TurmaModel model) 
     {
-        Nome  = model.Nome;
-        Dt_inicio = model.Dt_inicio;
-        Dt_finale = model.Dt_final;
+        Nome = model.Nome;
         CursoId = model.CursoId;
     }
 
@@ -16,10 +14,6 @@ public class Turma : BaseEntity<long>, IAggregateRoot {
     }
 
     public string Nome { get; private set; }
-
-    public DateTime Dt_inicio { get; private set; }
-
-    public DateTime Dt_finale { get; private set; }
 
     public long CursoId { get; private set; }
 

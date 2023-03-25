@@ -18,14 +18,6 @@ public class TurmaConfiguration : IEntityTypeConfiguration<Turma>
             .IsRequired()
             .HasMaxLength(200);
 
-        builder.Property(p => p.Dt_inicio)
-            .HasColumnName("dt_inicio")
-            .IsRequired();
-
-        builder.Property(p => p.Dt_finale)
-            .HasColumnName("dt_final")
-            .IsRequired();
-
         builder.HasIndex(p => p.CursoId);
 
         builder.Property(p => p.Curso)
