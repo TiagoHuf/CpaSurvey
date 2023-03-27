@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Turmas\Queries\" />
+    <Folder Include="Turmas\Queries\GetTurmas\" />
   </ItemGroup>
 
 </Project>
