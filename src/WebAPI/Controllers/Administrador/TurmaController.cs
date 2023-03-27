@@ -1,6 +1,8 @@
 ﻿
 using Biopark.CpaSurvey.Application.Turmas.Commands.CriarTurma;
+using Biopark.CpaSurvey.Application.Turmas.Commands.RemoverTurma;
 using Biopark.CpaSurvey.Application.Turmas.Queries.GetTurma;
+using Biopark.CpaSurvey.Application.Turmas.Queries.GetTurmas;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,7 +30,7 @@ public class TurmaController : ApiController
 
     [HttpGet("{TurmaId:long}")]
 
-    public async Task<IActionResult> GetAsync([FromRoute] GetTurmaQuery query)
+    public async Task<IActionResult> GetAsync([FromRoute] GetTurmasQuery query)
     {
         var result = await Mediator.Send(query);
 
@@ -37,10 +39,10 @@ public class TurmaController : ApiController
 
     [HttpDelete("{TurmaId:long}")]
 
-    public async Task<IActionResult> DeleteAsync([FromRoute] GetTurmaQuery query)
+    public async Task<IActionResult> DeleteAsync([FromRoute] RemoverTurmaCommand query)
     {
         var result = await Mediator.Send(query);
 
-        return Ok(result, "Turma removida com sucesso");
+        return Ok(new Response(result, "Turma removida com sucesso"));
     }
 }
