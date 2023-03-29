@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
 
-public class TurmaController : ApiController
+public class TurmasController : ApiController
 {
     [HttpPost]
 

@@ -3,8 +3,8 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Curso;
 using MediatR;
 
-
 namespace Biopark.CpaSurvey.Application.Cursos.Commands.CriarCurso;
+
 public class CriarCursoCommand : IRequest<Curso>
 {
     public string Nome { get; set; }
@@ -25,7 +25,7 @@ public class CriarCursoCommandHandler : IRequestHandler<CriarCursoCommand, Curso
 
         var CursoInserir = new Curso(model);
 
-        var repositoryCursos = _unitOfWork.GetRepository<CursosModel>();
+        var repositoryCursos = _unitOfWork.GetRepository<Curso>();
 
         repositoryCursos.Add(CursoInserir);
 
