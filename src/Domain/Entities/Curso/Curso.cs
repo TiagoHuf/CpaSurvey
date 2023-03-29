@@ -3,14 +3,14 @@ using Biopark.CpaSurvey.Domain.Models.Curso;
 
 namespace Biopark.CpaSurvey.Domain.Entities.Cursos
 {
-    public class Cursos : BaseEntity<long>, IAggregateRoot
+    public class Curso : BaseEntity<long>, IAggregateRoot
     {
-        public Cursos(CursosModel model)
+        public Curso(CursosModel model)
         {
             Nome = model.Nome;
         }
 
-        private Cursos()
+        private Curso()
         {
         }
 

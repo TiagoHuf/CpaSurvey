@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Biopark.CpaSurvey.Infra.Data.Configurations
 {
-    public class CursosConfiguration : IEntityTypeConfiguration<Cursos>
+    public class CursosConfiguration : IEntityTypeConfiguration<Curso>
     {
-        public void Configure(EntityTypeBuilder<Cursos> builder)
+        public void Configure(EntityTypeBuilder<Curso> builder)
         {
             builder.ToTable("Cursos");
 
