@@ -2,8 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Biopark.CpaSurvey.Infra.Data.Configurations
-{
+namespace Biopark.CpaSurvey.Infra.Data.Configurations;  
     public class CursosConfiguration : IEntityTypeConfiguration<Curso>
     {
         public void Configure(EntityTypeBuilder<Curso> builder)
@@ -18,5 +17,3 @@ namespace Biopark.CpaSurvey.Infra.Data.Configurations
                 .HasMaxLength(50);
         }
     }
-}
-   

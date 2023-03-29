@@ -4,7 +4,8 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Cursos.Commands.Queries.GetCurso;
-    public class GetCursoQuery : IRequest<Curso>
+
+public class GetCursoQuery : IRequest<Curso>
 {
     public long CursoId { get; set; }
 }
@@ -28,5 +29,4 @@ public class GetCursoQueryHandler : IRequestHandler<GetCursoQuery, Curso>
 
         return Curso;
     }
-}
 }

@@ -8,7 +8,6 @@ namespace Biopark.CpaSurvey.Application.Cursos.Commands.CriarCurso;
 public class CriarCursoCommand : IRequest<Curso>
 {
     public string Nome { get; set; }
-
 }
 
 public class CriarCursoCommandHandler : IRequestHandler<CriarCursoCommand, Curso>
