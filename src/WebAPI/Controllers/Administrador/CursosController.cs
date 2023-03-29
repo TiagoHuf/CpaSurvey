@@ -18,16 +18,16 @@ public class CursosController : ApiController
         );
     }
 
-    [HttpGet]
-    public async Task<IActionResult> GetAsync([FromQuery] GetCursoQuery query)
+    [HttpGet("{CursoId:long}")]
+    public async Task<IActionResult> GetAsync([FromRoute] GetCursoQuery query)
     {
         var result = await Mediator.Send(query);
 
         return Ok(result);
     }
 
-    [HttpGet("{CursosId:long}")]
-    public async Task<IActionResult> GetAsync([FromRoute] GetCursosQuery query)
+    [HttpGet]
+    public async Task<IActionResult> GetAsync([FromQuery] GetCursosQuery query)
     {
         var result = await Mediator.Send(query);
 
