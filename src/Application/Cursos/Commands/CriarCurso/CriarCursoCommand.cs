@@ -1,6 +1,6 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
-using Biopark.CpaSurvey.Domain.Models.Curso;
+using Biopark.CpaSurvey.Domain.Models.Cursos;
 using MediatR;
 
 namespace Biopark.CpaSurvey.Application.Cursos.Commands.CriarCurso;
@@ -34,9 +34,9 @@ public class CriarCursoCommandHandler : IRequestHandler<CriarCursoCommand, Curso
         return CursoInserir;
     }
 
-    public CursosModel CriaModelo(CriarCursoCommand request)
+    public CursoModel CriaModelo(CriarCursoCommand request)
     {
-        var model = new CursosModel
+        var model = new CursoModel
         {
             Nome = request.Nome,
         };

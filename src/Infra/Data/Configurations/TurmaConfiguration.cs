@@ -8,20 +8,20 @@ public class TurmaConfiguration : IEntityTypeConfiguration<Turma>
 {
     public void Configure(EntityTypeBuilder<Turma> builder)
     {
-        builder.ToTable("turma");
+        builder.ToTable("Turma");
 
-        builder.HasKey(e => e.Id);
+        builder.HasKey(t => t.Id);
 
-        builder.Property(p => p.Nome)
+        builder.Property(t => t.Nome)
             .HasColumnName("nome")
             .IsRequired()
             .HasMaxLength(200);
 
-        builder.HasIndex(p => p.CursoId);
+        builder.HasIndex(t => t.CursoId);
 
-        //builder.Property(p => p.Curso)
-        //    .WithMany(e => e.Turma)
-        //    .HasForeignKey(p => p.CursoId)
-        //    .HasConstraintName("FK_Turma_Curso_CursoId");
+        builder.HasOne(t => t.Curso)
+            .WithMany(t => t.Turmas)
+            .HasForeignKey(t => t.CursoId)
+            .HasConstraintName("FK_Turma_Curso_CursoId");
     }
 }

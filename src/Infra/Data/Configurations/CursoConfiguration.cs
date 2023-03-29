@@ -8,11 +8,11 @@ public class CursoConfiguration : IEntityTypeConfiguration<Curso>
 {
     public void Configure(EntityTypeBuilder<Curso> builder)
     {
-        builder.ToTable("Cursos");
+        builder.ToTable("Curso");
 
-        builder.HasKey(e => e.Id);
+        builder.HasKey(c => c.Id);
 
-        builder.Property(e => e.Nome)
+        builder.Property(c => c.Nome)
             .HasColumnName("Nome")
             .IsRequired()
             .HasMaxLength(50);

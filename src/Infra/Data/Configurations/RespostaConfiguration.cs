@@ -13,7 +13,7 @@ public class RespostaConfiguration : IEntityTypeConfiguration<Resposta>
         builder.HasKey(r => r.Id);
 
         builder.Property(r => r.Descricao)
-            .HasColumnName("Nome")
+            .HasColumnName("Descricao")
             .HasMaxLength(50);
 
         builder.Property(r => r.Valor);
@@ -27,9 +27,9 @@ public class RespostaConfiguration : IEntityTypeConfiguration<Resposta>
             .HasForeignKey(r => r.AlunoId)
             .HasConstraintName("FK_Aluno_Resposta_AlunoId");
 
-        //builder.HasOne(r => r.Pergunta)
-        //    .WithMany(r => r.Respostas)
-        //    .HasForeignKey(r => r.PerguntaId)
-        //    .HasConstraintName("FK_Pergunta_Resposta_PerguntaId");
+        builder.HasOne(r => r.Pergunta)
+            .WithMany(r => r.Respostas)
+            .HasForeignKey(r => r.PerguntaId)
+            .HasConstraintName("FK_Pergunta_Resposta_PerguntaId");
     }
 }

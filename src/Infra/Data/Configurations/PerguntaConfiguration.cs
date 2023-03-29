@@ -11,7 +11,7 @@ public class PerguntaConfiguration : IEntityTypeConfiguration<Pergunta>
     {
         builder.ToTable("Pergunta");
 
-        builder.HasKey(e => e.Id);
+        builder.HasKey(p => p.Id);
 
         builder.Property(p => p.Descricao)
             .HasColumnName("Descricao")
