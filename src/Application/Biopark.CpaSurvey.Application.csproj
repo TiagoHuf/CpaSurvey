@@ -17,4 +17,8 @@
     <ProjectReference Include="..\Domain\Biopark.CpaSurvey.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Turmas\Queries\GetTurmas\" />
+  </ItemGroup>
+
 </Project>
