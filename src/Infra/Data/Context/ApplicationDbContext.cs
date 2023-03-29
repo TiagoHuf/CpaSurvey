@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace Biopark.CpaSurvey.Infra.Data.Context;
+
 public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> opcoes) : base(opcoes)
@@ -32,8 +33,9 @@ public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext CreateDbContext(string[] args)
         {
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 31));
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseSqlServer("Server=localhost;Database=TenantTeste;Trusted_Connection=True;TrustServerCertificate=True");
+            optionsBuilder.UseMySql("Server=us-cdbr-east-06.cleardb.net;Database=heroku_16cc917e02fee03 ;User Id=bc300c9d2cbb35;Password=2596311e;", serverVersion);
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }

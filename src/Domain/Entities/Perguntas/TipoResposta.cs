@@ -1,4 +1,5 @@
 ﻿namespace Biopark.CpaSurvey.Domain.Entities.Perguntas;
+
 public enum TipoResposta
 {
     /// <summary>

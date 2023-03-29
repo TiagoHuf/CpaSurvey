@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Turma;
+﻿using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -19,7 +19,7 @@ public class RemoverTurmaCommandHandler : IRequestHandler<RemoverTurmaCommand>
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<Unit> Handler(RemoverTurmaCommand request, CancellationToken cancellationToken)
+    public async Task<Unit> Handle(RemoverTurmaCommand request, CancellationToken cancellationToken)
     {
         var repository = _unitOfWork.GetRepository<Turma>();
 

@@ -1,13 +1,12 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Turma;
+﻿using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Biopark.CpaSurvey.Infra.Data.Configurations;
 
 public class TurmaConfiguration : IEntityTypeConfiguration<Turma>
 {
-    public object Configure(EntityTypeBuilder<Turma> builder)
+    public void Configure(EntityTypeBuilder<Turma> builder)
     {
         builder.ToTable("turma");
 
@@ -20,9 +19,9 @@ public class TurmaConfiguration : IEntityTypeConfiguration<Turma>
 
         builder.HasIndex(p => p.CursoId);
 
-        builder.Property(p => p.Curso)
-            .WithMany(e => e.Turma)
-            .HasForeignKey(p => p.CursoId)
-            .HasConstraintName("FK_Turma_Curso_CursoId");
+        //builder.Property(p => p.Curso)
+        //    .WithMany(e => e.Turma)
+        //    .HasForeignKey(p => p.CursoId)
+        //    .HasConstraintName("FK_Turma_Curso_CursoId");
     }
 }

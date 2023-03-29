@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Biopark.CpaSurvey.Infra.Data.Configurations;
+
 public class EixoConfiguration : IEntityTypeConfiguration<Eixo>
 {
     public void Configure(EntityTypeBuilder<Eixo> builder)

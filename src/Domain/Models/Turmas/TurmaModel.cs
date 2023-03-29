@@ -1,4 +1,4 @@
-﻿namespace Biopark.CpaSurvey.Domain.Models.Turma;
+﻿namespace Biopark.CpaSurvey.Domain.Models.Turmas;
 
 public class TurmaModel { 
     public string Nome { get; set; }
@@ -6,4 +6,3 @@ public class TurmaModel {
     public long CursoId { get; set; }
 
 }
-

@@ -16,10 +16,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Adiciona o contexto para gerar migration
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 31));
 builder.Services.AddDbContext<ApplicationDbContext>(opt =>
 {
-    opt.UseSqlServer(
-                    builder.Configuration.GetConnectionString("ApplicationDbContext"),
+    opt.UseMySql(
+                    builder.Configuration.GetConnectionString("ApplicationDbContext"), serverVersion,
                     b => b.MigrationsAssembly("Biopark.CpaSurvey.Infra.Data"));
 });
 
@@ -35,16 +36,31 @@ builder.Services.AddMediatR(appAssemblie);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+using (var scope = app.Services.CreateScope())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    var services = scope.ServiceProvider;
+
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    if (context.Database.GetPendingMigrations().Any())
+    {
+        context.Database.Migrate();
+    }
 }
+
+// Configure the HTTP request pipeline.
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
+app.UseRouting();
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseCors(
+    opt => opt
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader());
 
 app.MapControllers();
 

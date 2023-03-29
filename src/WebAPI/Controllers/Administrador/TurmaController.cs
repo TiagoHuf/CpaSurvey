@@ -1,5 +1,4 @@
-﻿
-using Biopark.CpaSurvey.Application.Turmas.Commands.CriarTurma;
+﻿using Biopark.CpaSurvey.Application.Turmas.Commands.CriarTurma;
 using Biopark.CpaSurvey.Application.Turmas.Commands.RemoverTurma;
 using Biopark.CpaSurvey.Application.Turmas.Queries.GetTurma;
 using Biopark.CpaSurvey.Application.Turmas.Queries.GetTurmas;
@@ -19,18 +18,17 @@ public class TurmaController : ApiController
 
     }
 
-    [HttpGet]
+    [HttpGet("{TurmaId:long}")]
 
-    public async Task<IActionResult> GetAsync([FromQuery] GetTurmaQuery query)
+    public async Task<IActionResult> GetAsync([FromRoute] GetTurmaQuery query)
     {
         var result = await Mediator.Send(query);
 
         return Ok(result);
     }
 
-    [HttpGet("{TurmaId:long}")]
-
-    public async Task<IActionResult> GetAsync([FromRoute] GetTurmasQuery query)
+    [HttpGet]
+    public async Task<IActionResult> GetAsync([FromQuery] GetTurmasQuery query)
     {
         var result = await Mediator.Send(query);
 

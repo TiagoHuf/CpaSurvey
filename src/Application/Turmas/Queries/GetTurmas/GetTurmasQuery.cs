@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Turma;
+﻿using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +7,6 @@ namespace Biopark.CpaSurvey.Application.Turmas.Queries.GetTurmas;
 
 public class GetTurmasQuery : IRequest<List<Turma>>
 {
-
 }
 
 public class GetTurmasQueryHandler : IRequestHandler<GetTurmasQuery, List<Turma>>

@@ -1,7 +1,7 @@
 ﻿using Biopark.CpaSurvey.Domain.Interfaces;
-using Biopark.CpaSurvey.Domain.Models.Turma;
+using Biopark.CpaSurvey.Domain.Models.Turmas;
 
-namespace Biopark.CpaSurvey.Domain.Entities.Turma;
+namespace Biopark.CpaSurvey.Domain.Entities.Turmas;
 
 public class Turma : BaseEntity<long>, IAggregateRoot {
     public Turma(TurmaModel model) 
@@ -17,5 +17,5 @@ public class Turma : BaseEntity<long>, IAggregateRoot {
 
     public long CursoId { get; private set; }
 
-    public Curso curso { get; private set; }
+    //public Curso Curso { get; private set; }
 }

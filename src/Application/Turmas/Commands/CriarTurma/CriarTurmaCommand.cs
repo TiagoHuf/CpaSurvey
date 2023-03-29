@@ -1,6 +1,6 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Turma;
+﻿using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
-using Biopark.CpaSurvey.Domain.Models.Turma;
+using Biopark.CpaSurvey.Domain.Models.Turmas;
 using MediatR;
 
 namespace Biopark.CpaSurvey.Application.Turmas.Commands.CriarTurma;

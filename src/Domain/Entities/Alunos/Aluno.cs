@@ -1,17 +1,10 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Perguntas;
-using Biopark.CpaSurvey.Domain.Entities.Respostas;
+﻿using Biopark.CpaSurvey.Domain.Entities.Respostas;
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Alunos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Biopark.CpaSurvey.Domain.Entities.Usuarios;
 public partial class Aluno : BaseEntity<long>, IAggregateRoot
 {
-
     public Aluno(AlunoModel model)
     {
         Nome = model.Nome;

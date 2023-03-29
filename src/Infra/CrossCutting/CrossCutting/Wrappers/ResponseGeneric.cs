@@ -1,6 +1,7 @@
 ﻿using Biopark.CpaSurvey.Domain.Common;
 
 namespace Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
+
 public abstract class ResponseGeneric<T>
 {
     public T Data { get; set; }

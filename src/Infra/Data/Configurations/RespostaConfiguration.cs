@@ -1,9 +1,9 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Eixos;
-using Biopark.CpaSurvey.Domain.Entities.Respostas;
+﻿using Biopark.CpaSurvey.Domain.Entities.Respostas;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Biopark.CpaSurvey.Infra.Data.Configurations;
+
 public class RespostaConfiguration : IEntityTypeConfiguration<Resposta>
 {
     public void Configure(EntityTypeBuilder<Resposta> builder)
@@ -27,9 +27,9 @@ public class RespostaConfiguration : IEntityTypeConfiguration<Resposta>
             .HasForeignKey(r => r.AlunoId)
             .HasConstraintName("FK_Aluno_Resposta_AlunoId");
 
-        builder.HasOne(r => r.Pergunta)
-            .WithMany(r => r.Respostas)
-            .HasForeignKey(r => r.PerguntaId)
-            .HasConstraintName("FK_Pergunta_Resposta_PerguntaId");
+        //builder.HasOne(r => r.Pergunta)
+        //    .WithMany(r => r.Respostas)
+        //    .HasForeignKey(r => r.PerguntaId)
+        //    .HasConstraintName("FK_Pergunta_Resposta_PerguntaId");
     }
 }

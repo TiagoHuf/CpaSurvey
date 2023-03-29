@@ -1,9 +1,4 @@
-﻿
-
-using Biopark.CpaSurvey.Application.Common.Validators;
-using Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
-using Biopark.CpaSurvey.Domain.Entities.Eixos;
-using Biopark.CpaSurvey.Domain.Entities.Turma;
+﻿using Biopark.CpaSurvey.Application.Common.Validators;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;
 
@@ -18,7 +13,7 @@ public class CriarTurmaValidator : ValidatorBase<CriarTurmaCommand>
             .MinimumLength(5)
             .MaximumLength(200);
 
-        RuleFor(p => p.CursoId)
-            .MustExists<CriarTurmaCommand, Curso>(unitOfWork);
+        //RuleFor(p => p.CursoId)
+        //    .MustExists<CriarTurmaCommand, Curso>(unitOfWork);
     }
 }
