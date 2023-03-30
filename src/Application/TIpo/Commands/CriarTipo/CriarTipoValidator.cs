@@ -11,8 +11,5 @@ public class CriarTipoValidator : ValidatorBase<CriarTipoCommand>
             .NotEmpty()
             .MinimumLength(5)
             .MaximumLength(200);
-
-        //RuleFor(p => p.CursoId)
-        //    .MustExists<CriarTurmaCommand, Curso>(unitOfWork);
     }
 }
