@@ -37,7 +37,7 @@ public class CriarTipoCommandHandler : IRequestHandler<CriarTipoCommand, Tipo>
     {
         var model = new TipoModel
         {
-            Nome = request.Nome,
+            Nome = request.Nome
         };
 
         return model;
