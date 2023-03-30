@@ -2,5 +2,5 @@
 
 public class TipoModel
 {
-    public string nome { get; set; }
+    public string Nome { get; set; }
 }

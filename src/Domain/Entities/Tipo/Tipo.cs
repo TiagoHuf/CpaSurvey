@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Biopark.CpaSurvey.Domain.Models.Tipo;
 
-namespace Biopark.CpaSurvey.Domain.Entities.Tipo
+namespace Biopark.CpaSurvey.Domain.Entities.Tipo;
+
+public partial class Tipo : BaseEntity<long>
 {
-    internal class Tipo
+    public Tipo(TipoModel model) 
+    {
+        Nome = model.Nome;
+    }
+    private Tipo()
     {
     }
+
+    public string Nome { get; private set; }
 }
