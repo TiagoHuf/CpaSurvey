@@ -1,10 +1,9 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Tipo;
-using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.TIpo.Queries;
+namespace Biopark.CpaSurvey.Application.TIpo.Commands.RemoverTipo;
 
 public class RemoverTipoCommand : IRequest
 {
