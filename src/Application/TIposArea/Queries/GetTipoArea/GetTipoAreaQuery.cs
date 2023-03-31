@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Tipos.Queries.GetTipo;
 
-public class GetTipoQuery : IRequest<Tipo>
+public class GetTipoAreaQuery : IRequest<TipoArea>
 {
     public long TipoId { get; set; }
 }
 
-public class GetTipoQueryHandler : IRequestHandler<GetTipoQuery, Tipo>
+public class GetTipoQueryHandler : IRequestHandler<GetTipoAreaQuery, TipoArea>
 {
     private readonly IUnitOfWork _unitOfWork;
 
@@ -19,9 +19,9 @@ public class GetTipoQueryHandler : IRequestHandler<GetTipoQuery, Tipo>
         _unitOfWork = unitOfWork;
     }
 
-    public Task<Tipo> Handle(GetTipoQuery request, CancellationToken cancellationToken)
+    public Task<TipoArea> Handle(GetTipoAreaQuery request, CancellationToken cancellationToken)
     {
-        var repository = _unitOfWork.GetRepository<Tipo>();
+        var repository = _unitOfWork.GetRepository<TipoArea>();
 
         var tipo = repository
             .FindBy(c => c.Id == request.TipoId)

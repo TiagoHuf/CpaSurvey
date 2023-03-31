@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Biopark.CpaSurvey.Domain.Entities.Tipo;
 
 namespace Biopark.CpaSurvey.Infra.Data.Configurations;
-public class TipoConfiguration : IEntityTypeConfiguration<Tipo>
+public class TipoAreaConfiguration : IEntityTypeConfiguration<TipoArea>
 {
-    public void Configure(EntityTypeBuilder<Tipo> builder)
+    public void Configure(EntityTypeBuilder<TipoArea> builder)
     {
         builder.ToTable("Tipo");
 

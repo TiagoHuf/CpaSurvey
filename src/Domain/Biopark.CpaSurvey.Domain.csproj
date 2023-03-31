@@ -10,8 +10,4 @@
     <None Include="..\..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\Area\" />
-  </ItemGroup>
-
 </Project>
