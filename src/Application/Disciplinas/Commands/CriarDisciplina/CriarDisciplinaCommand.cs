@@ -24,15 +24,15 @@ public class CriarDisciplinaCommandHandler : IRequestHandler<CriarDisciplinaComm
     {
         var model = CriaModelo(request);
 
-        var DisciplinaInserir = new Disciplina(model);
+        var disciplinaInserir = new Disciplina(model);
 
-        var repositoryDisciplina = _unitOfWork.GetRepository<Disciplina>();
+        var repositorydisciplina = _unitOfWork.GetRepository<Disciplina>();
 
-        repositoryDisciplina.Add(DisciplinaInserir);
+        repositorydisciplina.Add(disciplinaInserir);
 
         await _unitOfWork.CommitAsync();
 
-        return DisciplinaInserir;
+        return disciplinaInserir;
     }
 
     public DisciplinasModel CriaModelo(CriarDisciplinaCommand request)
