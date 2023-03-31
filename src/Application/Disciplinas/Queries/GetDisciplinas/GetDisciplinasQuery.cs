@@ -24,10 +24,10 @@ public class GetDisciplinasQueryHandler :
     {
         var repository = _unitOfWork.GetRepository<Disciplina>();
 
-        var Disciplinas = await repository
+        var disciplinas = await repository
             .GetAll()
             .ToListAsync(cancellationToken);
 
-        return Disciplinas;
+        return disciplinas;
     }
 }
