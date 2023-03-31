@@ -3,6 +3,7 @@ using Biopark.CpaSurvey.Application.Disciplinas.Commands.CriarDisciplina;
 using Biopark.CpaSurvey.Application.Disciplinas.Queries.GetDisciplina;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
+using Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
 
 namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
 public class DisciplinasController : ApiController
@@ -31,5 +32,13 @@ public class DisciplinasController : ApiController
         var result = await Mediator.Send(query);
 
         return Ok(result);
+    }
+
+    [HttpDelete("{DisciplinaId:long}")]
+    public async Task<IActionResult> DeleteAsync([FromRoute] RemoverPerguntaCommand query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(new Response(result, "Disciplina removida com sucesso."));
     }
 }
