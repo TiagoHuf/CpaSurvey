@@ -2,10 +2,11 @@
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;
 
-namespace Biopark.CpaSurvey.Application.TIpo.Commands.CriarTipo;
-public class CriarTipoValidator : ValidatorBase<CriarTipoCommand>
+namespace Biopark.CpaSurvey.Application.TiposArea.Commands.CriarTipoArea;
+
+public class CriarTipoAreaValidator : ValidatorBase<CriarTipoAreaCommand>
 {
-    public CriarTipoValidator(IUnitOfWork unitOfWork) : base(unitOfWork)
+    public CriarTipoAreaValidator(IUnitOfWork unitOfWork) : base(unitOfWork)
     {
         RuleFor(p => p.Nome)
             .NotEmpty()

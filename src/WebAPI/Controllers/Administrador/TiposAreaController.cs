@@ -8,12 +8,12 @@ namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
 public class TipoController : ApiController
 {
     [HttpPost]
-    public async Task<IActionResult> PostAsync([FromBody] CriarTipoCommand command)
+    public async Task<IActionResult> PostAsync([FromBody] CriarTipoAreaCommand command)
     {
         var result = await Mediator.Send(command);
         return Created(
             "tipos/",
-            new Response(result, "Eixo cadastrado com sucesso.")
+            new Response(result, "Tipo cadastrado com sucesso.")
         );
     }
 
@@ -26,7 +26,7 @@ public class TipoController : ApiController
     }
 
     [HttpGet("{TipoId:long}")]
-    public async Task<IActionResult> GetAsync([FromRoute] GetTipoQuery query)
+    public async Task<IActionResult> GetAsync([FromRoute] GetTipoAreaQuery query)
     {
         var result = await Mediator.Send(query);
 

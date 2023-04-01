@@ -2,13 +2,13 @@
 
 namespace Biopark.CpaSurvey.Domain.Entities.Tipo;
 
-public partial class Tipo : BaseEntity<long>
+public partial class TipoArea : BaseEntity<long>
 {
-    public Tipo(TipoModel model) 
+    public TipoArea(TipoAreaModel model) 
     {
         Nome = model.Nome;
     }
-    private Tipo()
+    private TipoArea()
     {
     }
 

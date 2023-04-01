@@ -3,14 +3,14 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Tipo;
 using MediatR;
 
-namespace Biopark.CpaSurvey.Application.TIpo.Commands.CriarTipo;
-public class CriarTipoCommand : IRequest<Tipo>
-{
+namespace Biopark.CpaSurvey.Application.TiposArea.Commands.CriarTipoArea;
 
+public class CriarTipoAreaCommand : IRequest<TipoArea>
+{
     public string Nome { get; set; }
 }
 
-public class CriarTipoCommandHandler : IRequestHandler<CriarTipoCommand, Tipo>
+public class CriarTipoCommandHandler : IRequestHandler<CriarTipoAreaCommand, TipoArea>
 {
     private readonly IUnitOfWork _unitOfWork;
     public CriarTipoCommandHandler(IUnitOfWork unitOfWork)
@@ -18,13 +18,13 @@ public class CriarTipoCommandHandler : IRequestHandler<CriarTipoCommand, Tipo>
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<Tipo> Handle(CriarTipoCommand request, CancellationToken cancellationToken)
+    public async Task<TipoArea> Handle(CriarTipoAreaCommand request, CancellationToken cancellationToken)
     {
         var model = CriarModelo(request);
 
-        var tipoInserir = new Tipo(model);
+        var tipoInserir = new TipoArea(model);
 
-        var repositoryTipo = _unitOfWork.GetRepository<Tipo>();
+        var repositoryTipo = _unitOfWork.GetRepository<TipoArea>();
 
         repositoryTipo.Add(tipoInserir);
 
@@ -33,9 +33,9 @@ public class CriarTipoCommandHandler : IRequestHandler<CriarTipoCommand, Tipo>
         return tipoInserir;
     }
 
-    public TipoModel CriarModelo(CriarTipoCommand request)
+    public TipoAreaModel CriarModelo(CriarTipoAreaCommand request)
     {
-        var model = new TipoModel
+        var model = new TipoAreaModel
         {
             Nome = request.Nome
         };
