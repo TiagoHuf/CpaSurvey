@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\.editorconfig" Link=".editorconfig" />
+    <Compile Remove="Entities\Area\**" />
+    <EmbeddedResource Remove="Entities\Area\**" />
+    <None Remove="Entities\Area\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Area\" />
+    <None Include="..\..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
 </Project>
