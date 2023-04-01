@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Application.TIpo.Commands.CriarTipo;
+﻿using Biopark.CpaSurvey.Application.TiposArea.Commands.CriarTipoArea;
 using Biopark.CpaSurvey.Application.Tipos.Queries.GetTipo;
 using Biopark.CpaSurvey.Application.Tipos.Queries.GetTipos;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
