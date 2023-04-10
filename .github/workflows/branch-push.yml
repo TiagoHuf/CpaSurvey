@@ -14,8 +14,11 @@ jobs:
         with:
           dotnet-version: "7.0.201"
 
+      - name: Install dependencies
+        run: dotnet restore
+
       - name: Build
-        run: dotnet build CpaSurvey.sln --configuration Release
+        run: dotnet build --configuration Release
 
       - name: Tests
         run: dotnet test
