@@ -1,4 +1,5 @@
 ﻿using Biopark.CpaSurvey.Application.Cursos.Commands.CriarCurso;
+using Biopark.CpaSurvey.Application.Cursos.Commands.RemoverCurso;
 using Biopark.CpaSurvey.Application.Cursos.Queries.GetCurso;
 using Biopark.CpaSurvey.Application.Cursos.Queries.GetCursos;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
@@ -32,5 +33,13 @@ public class CursosController : ApiController
         var result = await Mediator.Send(query);
 
         return Ok(result);
+    }
+
+    [HttpDelete("{CursoId:long}")]
+    public async Task<IActionResult> DeleteAsync([FromRoute] RemoverCursoCommand query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(new Response(result, "Curso removida com sucesso."));
     }
 }
