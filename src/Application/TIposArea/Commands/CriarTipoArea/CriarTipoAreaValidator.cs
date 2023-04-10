@@ -1,9 +1,8 @@
 ﻿using Biopark.CpaSurvey.Application.Common.Validators;
-using Biopark.CpaSurvey.Application.TIpo.Commands.CriarTipo;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;
 
-namespace Biopark.CpaSurvey.Application.Tipo.Commands.CriarTipo;
+namespace Biopark.CpaSurvey.Application.TiposArea.Commands.CriarTipoArea;
 
 public class CriarTipoAreaValidator : ValidatorBase<CriarTipoAreaCommand>
 {

@@ -3,7 +3,7 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.TIpo.Commands.RemoverTipo;
+namespace Biopark.CpaSurvey.Application.TiposArea.Commands.RemoverTipoArea;
 
 public class RemoverTipoAreaCommand : IRequest
 {
