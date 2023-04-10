@@ -6,9 +6,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: scripts
 
     steps:
 
@@ -18,7 +15,7 @@ jobs:
           dotnet-version: "7.0.201"
 
       - name: Build
-        run: dotnet build --configuration Release
+        run: dotnet build CpaSurvey.sln --configuration Release
 
       - name: Tests
         run: dotnet test
