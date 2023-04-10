@@ -1,6 +1,6 @@
 ﻿using Biopark.CpaSurvey.Application.Cursos.Commands.CriarCurso;
-using Biopark.CpaSurvey.Application.Cursos.Commands.Queries.GetCurso;
-using Biopark.CpaSurvey.Application.Cursos.Commands.Queries.GetCursos;
+using Biopark.CpaSurvey.Application.Cursos.Queries.GetCurso;
+using Biopark.CpaSurvey.Application.Cursos.Queries.GetCursos;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 
