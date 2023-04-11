@@ -1,5 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Models.Cursos;
-using Biopark.CpaSurvey.Domain.Entities.Turmas;
+﻿using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Entities.Cursos;
 
 namespace Biopark.CpaSurvey.Domain.Models.Avaliacoes;
