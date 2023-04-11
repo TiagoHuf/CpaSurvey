@@ -1,7 +1,9 @@
 name: Build e teste
 
 on:
-  [push]
+  push:
+    branches-ignore:
+      - master
 
 jobs:
   build-and-test:
