@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Avaliacoes\Queries\" />
     <Folder Include="Turmas\Queries\GetTurmas\" />
   </ItemGroup>
 
