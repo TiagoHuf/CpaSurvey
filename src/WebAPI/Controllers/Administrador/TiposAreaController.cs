@@ -1,4 +1,6 @@
-﻿using Biopark.CpaSurvey.Application.TIpo.Commands.CriarTipo;
+﻿using Biopark.CpaSurvey.Application.Tipo.Commands.RemoverTipoArea;
+using Biopark.CpaSurvey.Application.TIpo.Commands.CriarTipo;
+using Biopark.CpaSurvey.Application.TIpo.Commands.RemoverTipo;
 using Biopark.CpaSurvey.Application.Tipos.Queries.GetTipo;
 using Biopark.CpaSurvey.Application.Tipos.Queries.GetTipos;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
@@ -31,5 +33,13 @@ public class TipoController : ApiController
         var result = await Mediator.Send(query);
 
         return Ok(result);
+    }
+
+    [HttpDelete("{TipoId:long}")]
+    public async Task<IActionResult> DeleteAsync([FromRoute] RemoverTipoAreaCommand query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(new Response(result, "Area removida com sucesso."));
     }
 }
