@@ -22,6 +22,11 @@ public partial class Avaliacao : BaseEntity<long>, IAggregateRoot
             _turmas.Add(item);
         }
     }
+
+    private Avaliacao()
+    {
+    }
+
     public string Nome { get; set; }
 
     public DateTime DataInicio { get; set; }

@@ -1,4 +1,5 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
+﻿using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
+using Biopark.CpaSurvey.Domain.Entities.Cursos;
 using Biopark.CpaSurvey.Domain.Entities.Eixos;
 using Biopark.CpaSurvey.Domain.Entities.Perguntas;
 using Biopark.CpaSurvey.Domain.Entities.Respostas;
@@ -36,6 +37,7 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Resposta>(new RespostaConfiguration().Configure);
         modelBuilder.Entity<Turma>(new TurmaConfiguration().Configure);
         modelBuilder.Entity<Aluno>(new AlunoConfiguration().Configure);
+        modelBuilder.Entity<Avaliacao>(new AvaliacaoConfiguration().Configure);
     }
 
     public class YourDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
