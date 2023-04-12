@@ -36,9 +36,9 @@ public class CriarDisciplinaCommandHandler : IRequestHandler<CriarDisciplinaComm
         return disciplinaInserir;
     }
 
-    public DisciplinasModel CriaModelo(CriarDisciplinaCommand request)
+    public DisciplinaModel CriaModelo(CriarDisciplinaCommand request)
     {
-        var model = new DisciplinasModel
+        var model = new DisciplinaModel
         {
             Nome = request.Nome,
         };
