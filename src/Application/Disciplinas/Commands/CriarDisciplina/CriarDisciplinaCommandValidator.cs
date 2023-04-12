@@ -11,10 +11,5 @@ public class CriarDisciplinaCommandValidator : ValidatorBase<CriarDisciplinaComm
             .NotEmpty()
             .MinimumLength(2)
             .MinimumLength(50);
-
-        RuleFor(p => p.Descricao)
-            .NotEmpty()
-            .MinimumLength(2)
-            .MinimumLength(200);
     }
 }

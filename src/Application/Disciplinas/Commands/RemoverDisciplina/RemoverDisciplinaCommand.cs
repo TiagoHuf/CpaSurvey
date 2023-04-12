@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Disciplinas.Commands.RemoverDisciplina;
+
 public class RemoverDisciplinaCommand : IRequest
 {
     public long DisciplinaId { get; set; }
