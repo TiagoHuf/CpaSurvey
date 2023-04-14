@@ -15,7 +15,7 @@ public class AvaliacaoModel
 
     public List<Turma> Turmas { get; set; }
 
-    public long CursosId { get; set; }
+    public long CursoId { get; set; }
 
     public long TurmaId { get; set; }
 }

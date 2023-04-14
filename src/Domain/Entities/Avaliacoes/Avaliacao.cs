@@ -11,9 +11,7 @@ public partial class Avaliacao : BaseEntity<long>, IAggregateRoot
         Nome = model.Nome;
         DataInicio = model.DataInicio;
         DataFim = model.DataFim;
-        Cursos = model.Cursos;
-        Turmas = model.Turmas;
-        CursoId = model.CursosId;
+        CursoId = model.CursoId;
         TurmaId = model.TurmaId;
 
         foreach (var item in model.Cursos)
@@ -29,13 +27,18 @@ public partial class Avaliacao : BaseEntity<long>, IAggregateRoot
 
     private Avaliacao()
     {
+        // Necessário para o EntityFramework.
     }
 
-    public string Nome { get; set; }
+    public string Nome { get; private set; }
 
-    public DateTime DataInicio { get; set; }
+    public DateTime DataInicio { get; private set; }
 
-    public DateTime DataFim { get; set; }
+    public DateTime DataFim { get; private set; }
+
+    public long CursoId { get; private set; }
+
+    public long TurmaId { get; private set; }
 
     public IReadOnlyCollection<Curso> Cursos => _cursos.AsReadOnly();
     private readonly List<Curso> _cursos = new();

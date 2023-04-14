@@ -14,7 +14,7 @@ public class CursosController : ApiController
     {
         var result = await Mediator.Send(command);
         return Created(
-            "Cursos/",
+            "cursos/",
             new Response(result, "Curso cadastrado com sucesso.")
         );
     }

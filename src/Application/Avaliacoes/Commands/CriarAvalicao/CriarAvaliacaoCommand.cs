@@ -1,4 +1,6 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
+using Biopark.CpaSurvey.Domain.Entities.Cursos;
+using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Avaliacoes;
 using MediatR;
@@ -8,6 +10,18 @@ namespace Biopark.CpaSurvey.Application.Avaliacoes.Commands.CriarAvalicao;
 public class CriarAvaliacaoCommand : IRequest<Avaliacao>
 {
     public string Nome { get; set; }
+
+    public DateTime DataInicio { get; set; }
+
+    public DateTime DataFim { get; set; }
+
+    public List<Curso> Cursos { get; set; }
+
+    public List<Turma> Turmas { get; set; }
+
+    public long CursoId { get; set; }
+
+    public long TurmaId { get; set; }
 }
 
 public class CriarAvaliacaoCommandHandler : IRequestHandler<CriarAvaliacaoCommand, Avaliacao>
