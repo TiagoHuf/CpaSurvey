@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Tipo;
+﻿using Biopark.CpaSurvey.Domain.Entities.TipoArea;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Tipo;
 using MediatR;

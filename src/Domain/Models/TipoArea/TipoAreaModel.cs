@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Tipo;
+﻿using Biopark.CpaSurvey.Domain.Entities.TipoArea;
 
 namespace Biopark.CpaSurvey.Domain.Models.Tipo;
 
