@@ -11,6 +11,10 @@ public partial class Avaliacao : BaseEntity<long>, IAggregateRoot
         Nome = model.Nome;
         DataInicio = model.DataInicio;
         DataFim = model.DataFim;
+        Cursos = model.Cursos;
+        Turmas = model.Turmas;
+        CursoId = model.CursosId;
+        TurmaId = model.TurmaId;
 
         foreach (var item in model.Cursos)
         {
