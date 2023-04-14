@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Disciplinas.Queries.GetDisciplina;
+
 public class GetDisciplinaQuery : IRequest<Disciplina>
 {
     public long DisciplinaId { get; set; }

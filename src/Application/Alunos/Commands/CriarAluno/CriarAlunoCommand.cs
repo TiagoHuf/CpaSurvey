@@ -4,6 +4,7 @@ using Biopark.CpaSurvey.Domain.Models.Alunos;
 using MediatR;
 
 namespace Biopark.CpaSurvey.Application.Alunos.Commands.CriarAluno;
+
 public class CriarAlunoCommand : IRequest<Aluno>
 {
     public string Nome { get; set; }

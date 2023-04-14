@@ -4,6 +4,7 @@ using Biopark.CpaSurvey.Domain.Models.Disciplinas;
 using MediatR;
 
 namespace Biopark.CpaSurvey.Application.Disciplinas.Commands.CriarDisciplina;
+
 public class CriarDisciplinaCommand : IRequest<Disciplina>
 {
     public string Nome { get; set; }
@@ -35,9 +36,9 @@ public class CriarDisciplinaCommandHandler : IRequestHandler<CriarDisciplinaComm
         return disciplinaInserir;
     }
 
-    public DisciplinasModel CriaModelo(CriarDisciplinaCommand request)
+    public DisciplinaModel CriaModelo(CriarDisciplinaCommand request)
     {
-        var model = new DisciplinasModel
+        var model = new DisciplinaModel
         {
             Nome = request.Nome,
         };

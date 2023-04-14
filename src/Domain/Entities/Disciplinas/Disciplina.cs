@@ -4,7 +4,7 @@ namespace Biopark.CpaSurvey.Domain.Entities.Disciplinas;
 
 public class Disciplina : BaseEntity<long>
 {
-    public Disciplina(DisciplinasModel model) 
+    public Disciplina(DisciplinaModel model) 
     { 
         Nome = model.Nome;
     }

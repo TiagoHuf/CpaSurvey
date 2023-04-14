@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
 
 namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
+
 public class DisciplinasController : ApiController
 {
     [HttpPost]
@@ -13,7 +14,7 @@ public class DisciplinasController : ApiController
     {
         var result = await Mediator.Send(command);
         return Created(
-            "Disciplinas/",
+            "disciplinas/",
             new Response(result, "Disciplina cadastrado com sucesso.")
         );
     }
