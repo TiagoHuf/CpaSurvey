@@ -2,7 +2,7 @@
 using Biopark.CpaSurvey.Domain.Models.Eixos;
 
 namespace Biopark.CpaSurvey.Domain.Entities.Eixos;
-public partial class Eixo : BaseEntity<long>
+public class Eixo : BaseEntity<long>
 {
     public Eixo(EixoModel model)
     {
