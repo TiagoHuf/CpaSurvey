@@ -3,7 +3,7 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Tipo;
 using MediatR;
 
-namespace Biopark.CpaSurvey.Application.TIpo.Commands.CriarTipo;
+namespace Biopark.CpaSurvey.Application.TiposArea.Commands.CriarTipoArea;
 
 public class CriarTipoAreaCommand : IRequest<TipoArea>
 {
