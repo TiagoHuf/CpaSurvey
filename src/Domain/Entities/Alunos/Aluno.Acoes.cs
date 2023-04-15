@@ -2,22 +2,22 @@
 
 public partial class Aluno
 {
-    public void CorrigirNomeAluno(string nome)
+    private void CorrigirNomeAluno(string nome)
     {
         Nome = nome;
     }
 
-    public void CorrigirRaAluno(string ra)
+    private void CorrigirRaAluno(string ra)
     {
         Ra = ra;
     }
 
-    public void Ativar()
+    private void Ativar()
     {
         IsAtivo = true;
     }
 
-    public void Inativar()
+    private void Inativar()
     {
         IsAtivo = false;
     }

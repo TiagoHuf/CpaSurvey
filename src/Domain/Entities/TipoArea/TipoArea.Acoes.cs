@@ -2,7 +2,7 @@
 
 public partial class TipoArea
 {
-    public void CorrigirNome(string nome)
+    private void CorrigirNome(string nome)
     {
         Nome = nome;
     }
