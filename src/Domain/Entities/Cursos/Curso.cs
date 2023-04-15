@@ -18,6 +18,6 @@ public partial class Curso : BaseEntity<long>, IAggregateRoot
 
     public string Nome { get; private set; }
 
-    public IReadOnlyCollection<Turma> Turmas => _turmas.AsReadOnly();
+    public IReadOnlyCollection<Turma> Turmas=> _turmas.AsReadOnly();
     private readonly List<Turma> _turmas = new();
 }

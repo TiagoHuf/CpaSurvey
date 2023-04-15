@@ -8,7 +8,7 @@ public class CriarDisciplinaCommandValidator : ValidatorBase<CriarDisciplinaComm
 {
     public CriarDisciplinaCommandValidator(IUnitOfWork unitOfWork) : base(unitOfWork)
     {
-        RuleFor(p => p.Descricao)
+        RuleFor(p => p.Nome)
             .NotEmpty()
             .MinimumLength(2)
             .MinimumLength(50);

@@ -15,7 +15,7 @@ public class DisciplinasController : ApiController
         var result = await Mediator.Send(command);
         return Created(
             "disciplinas/",
-            new Response(result, "Disciplina cadastrado com sucesso.")
+            new Response(result, "Disciplina cadastrada com sucesso.")
         );
     }
 

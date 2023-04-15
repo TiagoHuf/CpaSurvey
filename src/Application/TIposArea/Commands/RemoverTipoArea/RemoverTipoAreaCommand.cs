@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Tipo;
+﻿using Biopark.CpaSurvey.Domain.Entities.TiposArea;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +7,7 @@ namespace Biopark.CpaSurvey.Application.TiposArea.Commands.RemoverTipoArea;
 
 public class RemoverTipoAreaCommand : IRequest
 {
-    public long TipoId { get; set; }
+    public long TipoAreaId { get; set; }
 }
 
 public class RemoverTipoCommandHandler : IRequestHandler<RemoverTipoAreaCommand>
@@ -24,7 +24,7 @@ public class RemoverTipoCommandHandler : IRequestHandler<RemoverTipoAreaCommand>
         var repository = _unitOfWork.GetRepository<TipoArea>();
 
         var tipo = await repository
-            .FindBy(c => c.Id == request.TipoId)
+            .FindBy(c => c.Id == request.TipoAreaId)
             .FirstAsync(cancellationToken);
 
         repository.Delete(tipo);
