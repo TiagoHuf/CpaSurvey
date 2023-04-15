@@ -3,7 +3,7 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Respostas;
 using MediatR;
 
-namespace Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
+namespace Biopark.CpaSurvey.Application.Eixos.Commands.CriarPergunta;
 
 public class SalvarRespostaCommand : IRequest<Resposta>
 {

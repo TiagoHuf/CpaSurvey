@@ -3,7 +3,7 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
+namespace Biopark.CpaSurvey.Application.Eixos.Commands.CriarPergunta;
 public class RemoverPerguntaCommand : IRequest
 {
     public long PerguntaId { get; set; }

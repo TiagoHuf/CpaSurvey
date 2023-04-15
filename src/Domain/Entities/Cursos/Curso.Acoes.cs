@@ -2,7 +2,7 @@
 
 public partial class Curso
 {
-    private void CorrigirNomeCurso(string nome)
+    public void CorrigirNome(string nome)
     {
         Nome = nome;
     }

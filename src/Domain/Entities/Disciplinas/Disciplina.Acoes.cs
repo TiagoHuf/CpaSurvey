@@ -2,7 +2,7 @@
 
 public partial class Disciplina
 {
-    private void CorrigirNomeDisciplina(string nome)
+    public void CorrigirNome(string nome)
     {
         Nome = nome;
     }

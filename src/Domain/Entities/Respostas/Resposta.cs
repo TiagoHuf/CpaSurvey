@@ -4,6 +4,7 @@ using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Respostas;
 
 namespace Biopark.CpaSurvey.Domain.Entities.Respostas;
+
 public partial class Resposta : BaseEntity<long>, IAggregateRoot
 {
     public Resposta(RespostaModel model)
@@ -12,14 +13,13 @@ public partial class Resposta : BaseEntity<long>, IAggregateRoot
         Valor = model.Valor;
         PerguntaId = model.PerguntaId;
         AlunoId = model.AlunoId;
-        Aluno = model.Aluno;
-        Pergunta = model.Pergunta;
     }
 
     private Resposta()
     {
         // Necessário para o EntityFramework.
     }
+
     public string? Descricao { get; private set; }
 
     public int? Valor { get; private set; }

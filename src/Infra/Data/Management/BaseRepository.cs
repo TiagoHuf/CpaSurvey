@@ -47,6 +47,11 @@ public class BaseRepository<T> : IBaseRepository<T> where T : class
         _dbSet.Update(entity);
     }
 
+    public async Task<T> GetAsync<TKey>(TKey id)
+    {
+        return await _dbSet.FindAsync(id).ConfigureAwait(false);
+    }
+
     public Task<bool> ExistsAsync(Expression<Func<T, bool>> predicate)
     {
         return _dbSet.AnyAsync(predicate);

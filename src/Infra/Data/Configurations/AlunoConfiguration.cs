@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Usuarios;
+﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

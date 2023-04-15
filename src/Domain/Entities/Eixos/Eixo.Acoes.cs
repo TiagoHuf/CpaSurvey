@@ -2,12 +2,12 @@
 
 public partial class Eixo
 {
-    private void CorrigirNome(string nome)
+    public void CorrigirNome(string nome)
     {
         Nome = nome;
     }
 
-    private void CorrigirDescricao(string descricao)
+    public void CorrigirDescricao(string descricao)
     {
         Descricao = descricao;
     }

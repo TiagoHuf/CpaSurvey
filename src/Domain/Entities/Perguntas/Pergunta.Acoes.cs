@@ -1,21 +1,19 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Eixos;
-
-namespace Biopark.CpaSurvey.Domain.Entities.Perguntas;
+﻿namespace Biopark.CpaSurvey.Domain.Entities.Perguntas;
 
 public partial class Pergunta
 {
-    private void CorrigirDescricao(string descricao)
+    public void CorrigirDescricao(string descricao)
     {
         Descricao = descricao;
     }
 
-    private void CorrigirTipoResposta(TipoResposta tipo)
+    public void CorrigirTipoResposta(TipoResposta tipo)
     {
         TipoResposta = tipo;
     }
 
-    private void CorrigirEixo(Eixo eixo)
+    public void CorrigirEixo(long eixoId)
     {
-        Eixo = eixo;
+        EixoId = eixoId;
     }
 }
