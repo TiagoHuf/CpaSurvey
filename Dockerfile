@@ -9,9 +9,11 @@ RUN dotnet restore
 # Build and publish a release
 RUN dotnet publish -c Release -o out
 
+# Inform Docker that the container is listening on the specified port at runtime.
+EXPOSE 8080
+
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /App
 COPY --from=build-env /App/out .
-# ENTRYPOINT ["dotnet", "Biopark.CpaSurvey.WebAPI.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet Biopark.CpaSurvey.WebAPI.dll
+ENTRYPOINT ["dotnet", "Biopark.CpaSurvey.WebAPI.dll"]
