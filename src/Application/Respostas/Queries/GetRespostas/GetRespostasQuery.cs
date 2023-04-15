@@ -3,13 +3,14 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.Perguntas.Queries.Getrespostas;
-public class GetRespostaQuery : IRequest<List<Resposta>>
+namespace Biopark.CpaSurvey.Application.Respostas.Queries.GetRespostas;
+
+public class GetRespostasQuery : IRequest<List<Resposta>>
 {
 }
 
 public class GetRespostasQueryHandler :
-    IRequestHandler<GetRespostaQuery, List<Resposta>>
+    IRequestHandler<GetRespostasQuery, List<Resposta>>
 {
     private readonly IUnitOfWork _unitOfWork;
 
@@ -19,7 +20,7 @@ public class GetRespostasQueryHandler :
     }
 
     public async Task<List<Resposta>> Handle(
-        GetRespostaQuery request,
+        GetRespostasQuery request,
         CancellationToken cancellationToken)
     {
         var repository = _unitOfWork.GetRepository<Resposta>();

@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using Biopark.CpaSurvey.Domain.Entities.TipoArea;
+using Biopark.CpaSurvey.Domain.Entities.TiposArea;
 
 namespace Biopark.CpaSurvey.Infra.Data.Configurations;
+
 public class TipoAreaConfiguration : IEntityTypeConfiguration<TipoArea>
 {
     public void Configure(EntityTypeBuilder<TipoArea> builder)

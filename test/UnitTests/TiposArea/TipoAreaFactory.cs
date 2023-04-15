@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Models.Tipo;
+﻿using Biopark.CpaSurvey.Domain.Models.TiposArea;
 
 namespace Biopark.CpaSurvey.UnitTests.TiposArea;
 

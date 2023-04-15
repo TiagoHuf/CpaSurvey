@@ -1,6 +1,6 @@
 ﻿using Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
-using Biopark.CpaSurvey.Application.Perguntas.Queries.GetResposta;
-using Biopark.CpaSurvey.Application.Perguntas.Queries.Getrespostas;
+using Biopark.CpaSurvey.Application.Respostas.Queries.GetRespostas;
+using Biopark.CpaSurvey.Application.Respostas.Queries.GetResposta;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,7 +19,7 @@ public class RespostasController : ApiController
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAsync([FromQuery] GetRespostaQuery query)
+    public async Task<IActionResult> GetAsync([FromQuery] GetRespostasQuery query)
     {
         var result = await Mediator.Send(query);
 

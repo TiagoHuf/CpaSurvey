@@ -1,11 +1,10 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Perguntas;
-using Biopark.CpaSurvey.Domain.Entities.Respostas;
-using Biopark.CpaSurvey.Domain.Entities.Usuarios;
+﻿using Biopark.CpaSurvey.Domain.Entities.Respostas;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Respostas;
 using MediatR;
 
 namespace Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
+
 public class SalvarRespostaCommand : IRequest<Resposta>
 {
     public string Descricao { get; set; }
@@ -14,11 +13,7 @@ public class SalvarRespostaCommand : IRequest<Resposta>
 
     public long PerguntaId { get; set; }
 
-    public long AlunoId { get; set; }
-
-    public Aluno Aluno { get; set; }    
-
-    public Pergunta Pergunta { get; set; }  
+    public long AlunoId { get; set; } 
 }
 
 public class SalvarResposaCommandHandler : IRequestHandler<SalvarRespostaCommand, Resposta>
@@ -53,8 +48,6 @@ public class SalvarResposaCommandHandler : IRequestHandler<SalvarRespostaCommand
             Valor = request.Valor,
             PerguntaId = request.PerguntaId,
             AlunoId = request.AlunoId,
-            Aluno = request.Aluno,
-            Pergunta = request.Pergunta,
         };
 
         return model;

@@ -1,15 +1,15 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.TipoArea;
+﻿using Biopark.CpaSurvey.Domain.Entities.TiposArea;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.Tipos.Queries.GetTipos;
+namespace Biopark.CpaSurvey.Application.TiposArea.Queries.GetTipos;
 
-public class GetTiposQuery : IRequest<List<TipoArea>>
+public class GetTiposAreaQuery : IRequest<List<TipoArea>>
 {
 }
 
-public class GetTiposQueryHandler : IRequestHandler<GetTiposQuery, List<TipoArea>>
+public class GetTiposQueryHandler : IRequestHandler<GetTiposAreaQuery, List<TipoArea>>
 {
     private readonly IUnitOfWork _unitOfWork;
 
@@ -18,7 +18,7 @@ public class GetTiposQueryHandler : IRequestHandler<GetTiposQuery, List<TipoArea
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<List<TipoArea>> Handle(GetTiposQuery request, CancellationToken cancellationToken)
+    public async Task<List<TipoArea>> Handle(GetTiposAreaQuery request, CancellationToken cancellationToken)
     {
         var repository = _unitOfWork.GetRepository<TipoArea>();
 

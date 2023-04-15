@@ -1,6 +1,6 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.TipoArea;
+﻿using Biopark.CpaSurvey.Domain.Entities.TiposArea;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
-using Biopark.CpaSurvey.Domain.Models.Tipo;
+using Biopark.CpaSurvey.Domain.Models.TiposArea;
 using MediatR;
 
 namespace Biopark.CpaSurvey.Application.TiposArea.Commands.CriarTipoArea;

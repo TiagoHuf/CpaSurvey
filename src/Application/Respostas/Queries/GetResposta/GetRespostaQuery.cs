@@ -3,7 +3,8 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.Perguntas.Queries.GetResposta;
+namespace Biopark.CpaSurvey.Application.Respostas.Queries.GetResposta;
+
 public class GetRespostaQuery : IRequest<Resposta>
 {
     public long RespostaId { get; set; }
