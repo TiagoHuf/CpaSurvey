@@ -14,7 +14,7 @@ public class AvaliacoessController : ApiController
     {
         var result = await Mediator.Send(command);
         return Created(
-            "Avaliação/",
+            "avaliação/",
             new Response(result, "Avaliação cadastrada com sucesso.")
         );
     }

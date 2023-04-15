@@ -1,4 +1,5 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
+﻿using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
+using Biopark.CpaSurvey.Domain.Entities.Cursos;
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Turmas;
 
@@ -19,4 +20,7 @@ public class Turma : BaseEntity<long>, IAggregateRoot {
     public long CursoId { get; private set; }
 
     public Curso Curso { get; private set; }
+
+    public IReadOnlyCollection<Avaliacao> Avaliacoes => _avaliacoes.AsReadOnly();
+    private readonly List<Avaliacao> _avaliacoes = new();
 }

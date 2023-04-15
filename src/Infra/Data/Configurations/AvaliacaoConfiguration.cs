@@ -29,5 +29,19 @@ public class AvaliacaoConfiguration : IEntityTypeConfiguration<Avaliacao>
 
         builder.Property(a => a.Turmas)
             .IsRequired();
+
+        builder.HasIndex(p => p.CursoId);
+
+        builder.HasOne(p => p.Curso)
+            .WithMany(p => p.Avaliacoes)
+            .HasForeignKey(p => p.CursoId)
+            .HasConstraintName("FK_Curso_Avaliacao_CursoId");
+
+        builder.HasIndex(p => p.TurmaId);
+
+        builder.HasOne(p => p.Turma)
+            .WithMany(p => p.Avaliacoes)
+            .HasForeignKey(p => p.TurmaId)
+            .HasConstraintName("FK_Turma_Avaliacao_TurmaId");
     }
 }

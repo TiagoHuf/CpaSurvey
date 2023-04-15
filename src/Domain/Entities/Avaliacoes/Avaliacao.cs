@@ -40,6 +40,10 @@ public partial class Avaliacao : BaseEntity<long>, IAggregateRoot
 
     public long TurmaId { get; private set; }
 
+    public Curso Curso { get; private set; }
+
+    public Turma Turma { get; private set; }
+
     public IReadOnlyCollection<Curso> Cursos => _cursos.AsReadOnly();
     private readonly List<Curso> _cursos = new();
 
