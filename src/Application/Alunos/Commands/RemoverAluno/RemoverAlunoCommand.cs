@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Alunos.Commands.RemoverAluno;
+
 public class RemoverAlunoCommand : IRequest
 {
     public long AlunoId { get; set; }

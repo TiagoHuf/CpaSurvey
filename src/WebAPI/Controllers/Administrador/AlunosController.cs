@@ -6,6 +6,7 @@ using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
+
 public class AlunosController : ApiController
 {
     [HttpPost]
@@ -13,7 +14,7 @@ public class AlunosController : ApiController
     {
         var result = await Mediator.Send(command);
         return Created(
-            "Alunos/",
+            "alunos/",
             new Response(result, "Aluno cadastrado com sucesso.")
         );
     }
@@ -39,6 +40,6 @@ public class AlunosController : ApiController
     {
         var result = await Mediator.Send(query);
 
-        return Ok(new Response(result, "Aluno removida com sucesso."));
+        return Ok(new Response(result, "Aluno removido com sucesso."));
     }
 }

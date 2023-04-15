@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Alunos.Queries.GetAlunos;
+
 public class GetAlunosQuery : IRequest<List<Aluno>>
 {
 }
