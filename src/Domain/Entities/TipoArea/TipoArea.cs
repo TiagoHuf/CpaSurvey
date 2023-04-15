@@ -1,6 +1,6 @@
-﻿using Biopark.CpaSurvey.Domain.Models.Tipo;
+﻿using Biopark.CpaSurvey.Domain.Models.TipoArea;
 
-namespace Biopark.CpaSurvey.Domain.Entities.Tipo;
+namespace Biopark.CpaSurvey.Domain.Entities.TipoArea;
 
 public partial class TipoArea : BaseEntity<long>
 {
@@ -10,6 +10,7 @@ public partial class TipoArea : BaseEntity<long>
     }
     private TipoArea()
     {
+        // Necessário para o EntityFramework.
     }
 
     public string Nome { get; private set; }

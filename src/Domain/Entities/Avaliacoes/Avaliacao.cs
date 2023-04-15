@@ -22,11 +22,11 @@ public partial class Avaliacao : BaseEntity<long>, IAggregateRoot
             _turmas.Add(item);
         }
     }
-    public string Nome { get; set; }
+    public string Nome { get; private set; }
 
-    public DateTime DataInicio { get; set; }
+    public DateTime DataInicio { get; private set; }
 
-    public DateTime DataFim { get; set; }
+    public DateTime DataFim { get; private set; }
 
     public IReadOnlyCollection<Curso> Cursos => _cursos.AsReadOnly();
     private readonly List<Curso> _cursos = new();
