@@ -1,11 +1,11 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Eixos;
 using Biopark.CpaSurvey.Domain.Entities.Respostas;
-using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Perguntas;
 
 namespace Biopark.CpaSurvey.Domain.Entities.Perguntas;
-public class Pergunta : BaseEntity<long>, IAggregateRoot
+
+public partial class Pergunta : BaseEntity<long>, IAggregateRoot
 {
     public Pergunta(PerguntaModel model)
     {

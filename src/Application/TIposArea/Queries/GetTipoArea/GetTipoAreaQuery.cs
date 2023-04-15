@@ -1,13 +1,13 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Tipo;
+﻿using Biopark.CpaSurvey.Domain.Entities.TiposArea;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.Tipos.Queries.GetTipo;
+namespace Biopark.CpaSurvey.Application.TiposArea.Queries.GetTipo;
 
 public class GetTipoAreaQuery : IRequest<TipoArea>
 {
-    public long TipoId { get; set; }
+    public long TipoAreaId { get; set; }
 }
 
 public class GetTipoQueryHandler : IRequestHandler<GetTipoAreaQuery, TipoArea>
@@ -24,7 +24,7 @@ public class GetTipoQueryHandler : IRequestHandler<GetTipoAreaQuery, TipoArea>
         var repository = _unitOfWork.GetRepository<TipoArea>();
 
         var tipo = repository
-            .FindBy(c => c.Id == request.TipoId)
+            .FindBy(c => c.Id == request.TipoAreaId)
             .FirstAsync(cancellationToken);
 
         return tipo;

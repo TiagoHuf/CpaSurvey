@@ -4,7 +4,7 @@ using Biopark.CpaSurvey.Domain.Models.Cursos;
 
 namespace Biopark.CpaSurvey.Domain.Entities.Cursos;
 
-public class Curso : BaseEntity<long>, IAggregateRoot
+public partial class Curso : BaseEntity<long>, IAggregateRoot
 {
     public Curso(CursoModel model)
     {
@@ -13,10 +13,11 @@ public class Curso : BaseEntity<long>, IAggregateRoot
 
     private Curso()
     {
+        // Necessário para o EntityFramework.
     }
 
     public string Nome { get; private set; }
 
-    public IReadOnlyCollection<Turma> Turmas => _turmas.AsReadOnly();
+    public IReadOnlyCollection<Turma> Turmas=> _turmas.AsReadOnly();
     private readonly List<Turma> _turmas = new();
 }

@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Perguntas.Queries.GetPergunta;
+
 public class GetPerguntaQuery : IRequest<Pergunta>
 {
     public long PerguntaId { get; set; }

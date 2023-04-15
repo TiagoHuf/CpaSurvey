@@ -1,19 +1,16 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
 WORKDIR /App
+EXPOSE 80 443
 
 # Copy everything
 COPY . ./
 # Restore as distinct layers
 RUN dotnet restore
-
 # Build and publish a release
 RUN dotnet publish -c Release -o out
 
-# Inform Docker that the container is listening on the specified port at runtime.
-EXPOSE 8080
-
 # Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /App
 COPY --from=build-env /App/out .
 ENTRYPOINT ["dotnet", "Biopark.CpaSurvey.WebAPI.dll"]

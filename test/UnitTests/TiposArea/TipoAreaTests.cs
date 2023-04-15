@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Tipo;
+﻿using Biopark.CpaSurvey.Domain.Entities.TiposArea;
 using FluentAssertions;
 using NUnit.Framework;
 

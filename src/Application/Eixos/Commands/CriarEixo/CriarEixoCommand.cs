@@ -4,6 +4,7 @@ using Biopark.CpaSurvey.Domain.Models.Eixos;
 using MediatR;
 
 namespace Biopark.CpaSurvey.Application.Eixos.Commands.CriarEixo;
+
 public class CriarEixoCommand : IRequest<Eixo>
 {
     public string Nome { get; set; }
