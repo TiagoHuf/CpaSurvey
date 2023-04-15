@@ -2,7 +2,8 @@
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Alunos;
 
-namespace Biopark.CpaSurvey.Domain.Entities.Usuarios;
+namespace Biopark.CpaSurvey.Domain.Entities.Alunos;
+
 public partial class Aluno : BaseEntity<long>, IAggregateRoot
 {
     public Aluno(AlunoModel model)
