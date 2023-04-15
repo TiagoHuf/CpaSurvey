@@ -4,7 +4,8 @@ using Biopark.CpaSurvey.Domain.Models.Turmas;
 
 namespace Biopark.CpaSurvey.Domain.Entities.Turmas;
 
-public class Turma : BaseEntity<long>, IAggregateRoot {
+public partial class Turma : BaseEntity<long>, IAggregateRoot
+{
     public Turma(TurmaModel model) 
     {
         Nome = model.Nome;

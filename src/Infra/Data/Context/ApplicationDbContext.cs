@@ -5,7 +5,7 @@ using Biopark.CpaSurvey.Domain.Entities.Perguntas;
 using Biopark.CpaSurvey.Domain.Entities.Respostas;
 using Biopark.CpaSurvey.Domain.Entities.TiposArea;
 using Biopark.CpaSurvey.Domain.Entities.Turmas;
-using Biopark.CpaSurvey.Domain.Entities.Usuarios;
+using Biopark.CpaSurvey.Domain.Entities.Alunos;
 using Biopark.CpaSurvey.Infra.Data.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -16,7 +16,6 @@ public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> opcoes) : base(opcoes)
     {   
-
     }
 
     public ApplicationDbContext()

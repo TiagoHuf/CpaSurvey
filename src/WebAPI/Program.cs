@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using MediatR;
 using System.Text.Json.Serialization;
 using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPergunta;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc(
+        "v1",
+        new OpenApiInfo
+        {
+            Title = "CPA-Survey API",
+            Version = "v1",
+            Description = "API REST para uso no sistema de perguntas da Comissão Própria de Avaliação do Biopark Educação.",
+        }
+    );
+
+    c.EnableAnnotations();
+
+    c.DescribeAllParametersInCamelCase();
+});
+    
 
 //Adiciona o contexto para gerar migration
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 31));

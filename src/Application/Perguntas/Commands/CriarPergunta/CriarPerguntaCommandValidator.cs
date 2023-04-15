@@ -3,7 +3,7 @@ using Biopark.CpaSurvey.Domain.Entities.Eixos;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;
 
-namespace Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
+namespace Biopark.CpaSurvey.Application.Eixos.Commands.CriarPergunta;
 
 public class CriarPerguntaCommandValidator : ValidatorBase<CriarPerguntaCommand>
 {
