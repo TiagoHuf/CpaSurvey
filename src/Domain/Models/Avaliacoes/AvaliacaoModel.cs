@@ -11,11 +11,11 @@ public class AvaliacaoModel
 
     public DateTime DataFim { get; set; }
 
-    public List<Curso> Cursos { get; set; }
+    //public List<Curso> Cursos { get; set; }
 
     public List<Turma> Turmas { get; set; }
 
-    public long CursoId { get; set; }
+    //public long CursoId { get; set; }
 
     public long TurmaId { get; set; }
 }

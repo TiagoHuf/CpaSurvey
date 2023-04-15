@@ -53,6 +53,12 @@ public class CriarAvaliacaoCommandHandler : IRequestHandler<CriarAvaliacaoComman
         var model = new AvaliacaoModel
         {
             Nome = request.Nome,
+            //CursoId = request.CursoId,
+            //Cursos = request.Cursos,
+            DataFim = request.DataFim,
+            DataInicio = request.DataInicio,
+            TurmaId = request.TurmaId,
+            Turmas = request.Turmas
         };
 
         return model;
