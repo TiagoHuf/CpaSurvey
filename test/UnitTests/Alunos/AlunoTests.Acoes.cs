@@ -20,9 +20,9 @@ public partial class AlunoTests
     {
         var novoNome = "Novo Nome";
 
-        _aluno.CorrigirRa(novoNome);
+        _aluno.CorrigirNome(novoNome);
 
-        _aluno.Ra.Should().Be(novoNome);
+        _aluno.Nome.Should().Be(novoNome);
     }
 
     [Test]
