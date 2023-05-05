@@ -33,4 +33,9 @@ public partial class Avaliacao : BaseEntity<long>, IAggregateRoot
 
     public IReadOnlyCollection<Turma> Turmas => _turmas.AsReadOnly();
     private readonly List<Turma> _turmas = new();
+
+    public void AdicionarTurma(List<Turma> turmas)
+    {
+        throw new NotImplementedException();
+    }
 }

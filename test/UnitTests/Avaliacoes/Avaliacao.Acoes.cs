@@ -1,9 +1,13 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
 using Biopark.CpaSurvey.Domain.Entities.Cursos;
 using Biopark.CpaSurvey.Domain.Entities.Turmas;
+using Biopark.CpaSurvey.Domain.Models.Avaliacoes;
+using Biopark.CpaSurvey.UnitTests.Cursos;
+using Biopark.CpaSurvey.UnitTests.Turmas;
 using FluentAssertions;
 using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 
 namespace Biopark.CpaSurvey.UnitTests.Avaliacoes;
 
@@ -45,24 +49,39 @@ public partial class AvaliacaoTest
     public void DeveRemoverCursoComSucesso(Curso curso)
     { 
         _avaliacao.RemoverCurso(curso);
+
+        _avaliacao.Cursos.Should().BeNullOrEmpty();
     }
 
     [Test]
-    public void DeveAdicionarCursoComSucesso(Curso curso)
+    public void DeveAdicionarCursoComSucesso()
     {
+        Curso curso = CursoFactory.GetCursoNovo("Cruso 4");
+
+        var count = _avaliacao.Cursos.Count + 1;
+
         _avaliacao.AdicionarCurso(curso);
+
+        _avaliacao.Cursos.Should().HaveCount(count++);
     }
 
     [Test]
-    public void DeveAdicionarTurmaComSucesso(Turma turma)
+    public void DeveAdicionarTurmaComSucesso()
     {
+        Turma turma = TurmaFactory.GetTurmaNova("Turma 4");
+
+        var count = _avaliacao.Turmas.Count + 1;
+
         _avaliacao.AdicionarTurma(turma);
+
+        _avaliacao.Turmas.Should().HaveCount(count);
     }
 
     [Test]
     public void DeveRemoverTurmaComSucesso(Turma turma)
     {
         _avaliacao.RemoverTurma(turma);
-    }
 
+        _avaliacao.Turmas.Should().BeNullOrEmpty();
+    }
 }

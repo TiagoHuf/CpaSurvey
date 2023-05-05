@@ -26,7 +26,6 @@ public class AvaliacaoFactory
             TurmaFactory.GetTurmaNova("Turma 3"),
         };
 
-
         return new AvaliacaoModel
         {
             Nome = "Avaliação teste",
