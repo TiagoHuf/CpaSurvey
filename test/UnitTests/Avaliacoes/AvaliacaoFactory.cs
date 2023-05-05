@@ -32,7 +32,7 @@ public class AvaliacaoFactory
             Nome = "Avaliação teste",
             DataInicio = DateTime.Now,
             DataFim = DateTime.Now,
-            //Cursos = cursos,
+            Cursos = cursos,
             Turmas = turmas,
         };
     }

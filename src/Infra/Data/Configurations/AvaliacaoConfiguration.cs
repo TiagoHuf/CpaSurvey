@@ -40,11 +40,11 @@ public class AvaliacaoConfiguration : IEntityTypeConfiguration<Avaliacao>
             .HasConstraintName("FK_Curso_Avaliacao_CursoId");
         */
 
-        builder.HasIndex(p => p.TurmaId);
+        //builder.HasIndex(p => p.TurmaId);
 
-        builder.HasOne(p => p.Turma)
-            .WithMany(p => p.Avaliacoes)
-            .HasForeignKey(p => p.TurmaId)
-            .HasConstraintName("FK_Turma_Avaliacao_TurmaId");
+        //builder.HasOne(p => p.Turma)
+        //    .WithMany(p => p.Avaliacoes)
+        //    .HasForeignKey(p => p.TurmaId)
+        //    .HasConstraintName("FK_Turma_Avaliacao_TurmaId");
     }
 }
