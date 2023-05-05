@@ -11,7 +11,8 @@ public partial class CursoTest
     [SetUp]
     public void CursoTestsSetUp()
     {
-        var model = CursoFactory.GetCursoNovoModel();
+        var nome = "Novo Curso";
+        var model = CursoFactory.GetCursoNovoModel(nome);
         _curso = new Curso(model);
     }
 

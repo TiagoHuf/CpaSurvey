@@ -1,16 +1,21 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
 using Biopark.CpaSurvey.Domain.Models.Cursos;
-using FluentAssertions.Equivalency;
+
 
 namespace Biopark.CpaSurvey.UnitTests.Cursos;
 
 public class CursoFactory
 {
-    public static CursoModel GetCursoNovoModel()
+    public static CursoModel GetCursoNovoModel(string nome)
     {
         return new CursoModel
         {
-            Nome = "Analise e Desenvolvimento de Sistemas",
+            Nome = nome
         };
+    }
+
+    public static Curso GetCursoNovo(string nome)
+    {
+        return new Curso(GetCursoNovoModel(nome));
     }
 }
