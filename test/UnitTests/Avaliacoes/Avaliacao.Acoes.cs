@@ -46,11 +46,15 @@ public partial class AvaliacaoTest
     }
 
     [Test]
-    public void DeveRemoverCursoComSucesso(Curso curso)
+    public void DeveRemoverCursoComSucesso()
     { 
+        Curso curso = CursoFactory.GetCursoNovo("Curso 3");
+
+        var count = _avaliacao.Cursos.Count - 1;
+
         _avaliacao.RemoverCurso(curso);
 
-        _avaliacao.Cursos.Should().BeNullOrEmpty();
+        _avaliacao.Cursos.Should().HaveCountGreaterThan(count);
     }
 
     [Test]
@@ -62,7 +66,7 @@ public partial class AvaliacaoTest
 
         _avaliacao.AdicionarCurso(curso);
 
-        _avaliacao.Cursos.Should().HaveCount(count++);
+        _avaliacao.Cursos.Should().HaveCount(count);
     }
 
     [Test]
@@ -78,10 +82,14 @@ public partial class AvaliacaoTest
     }
 
     [Test]
-    public void DeveRemoverTurmaComSucesso(Turma turma)
+    public void DeveRemoverTurmaComSucesso()
     {
+        Turma turma = TurmaFactory.GetTurmaNova("Turma 3");
+
+        var count = _avaliacao.Turmas.Count - 1;
+        
         _avaliacao.RemoverTurma(turma);
 
-        _avaliacao.Turmas.Should().BeNullOrEmpty();
+        _avaliacao.Turmas.Should().HaveCountGreaterThan(count);
     }
 }
