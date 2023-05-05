@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace Biopark.CpaSurvey.UnitTests.Alunos;
 
-public class AlunoTests : TestBase
+public partial class AlunoTests : TestBase
 {
     [Test]
     public void ConstrutorDeveCriarPerguntaComSucesso()
