@@ -1,13 +1,11 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
 using Biopark.CpaSurvey.Domain.Entities.Cursos;
 using Biopark.CpaSurvey.Domain.Entities.Turmas;
-using Biopark.CpaSurvey.Domain.Models.Avaliacoes;
 using Biopark.CpaSurvey.UnitTests.Cursos;
 using Biopark.CpaSurvey.UnitTests.Turmas;
 using FluentAssertions;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
 
 namespace Biopark.CpaSurvey.UnitTests.Avaliacoes;
 
@@ -36,6 +34,7 @@ public partial class AvaliacaoTest
     public void DeveCorrigirDataInicioFimComSucesso()
     {
         var novaDataInicio = DateTime.Now;
+
         var novaDataFim =  DateTime.Now;
 
         _avaliacao.CorrigirDataAvaliacao(novaDataInicio, novaDataFim);
