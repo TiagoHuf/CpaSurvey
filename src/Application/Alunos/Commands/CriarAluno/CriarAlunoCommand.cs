@@ -1,9 +1,10 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Usuarios;
+﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Alunos;
 using MediatR;
 
 namespace Biopark.CpaSurvey.Application.Alunos.Commands.CriarAluno;
+
 public class CriarAlunoCommand : IRequest<Aluno>
 {
     public string Nome { get; set; }
@@ -40,6 +41,7 @@ public class CriarAlunoCommandHandler : IRequestHandler<CriarAlunoCommand, Aluno
         var model = new AlunoModel
         {
             Nome = request.Nome,
+            Ra = request.Ra,
         };
 
         return model;

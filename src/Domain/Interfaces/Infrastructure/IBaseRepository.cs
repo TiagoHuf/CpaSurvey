@@ -13,6 +13,8 @@ public interface IBaseRepository<T>
 
     Task<T> GetByIdAsync(long id);
 
+    Task<T> GetAsync<TKey>(TKey id);
+
     IQueryable<T> FindBy(Expression<Func<T, bool>> predicate);
 
     Task<bool> ExistsAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken);

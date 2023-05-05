@@ -1,9 +1,10 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Usuarios;
+﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Alunos.Queries.GetALuno;
+
 public class GetAlunoQuery : IRequest<Aluno>
 {
     public long AlunoId { get; set; }

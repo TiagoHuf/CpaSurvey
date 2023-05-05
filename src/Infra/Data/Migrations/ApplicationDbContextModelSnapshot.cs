@@ -36,6 +36,23 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.ToTable("Curso", (string)null);
                 });
 
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Disciplinas.Disciplina", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("Nome");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Disciplina", (string)null);
+                });
+
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Eixos.Eixo", b =>
                 {
                     b.Property<long>("Id")
@@ -111,6 +128,23 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.HasIndex("PerguntaId");
 
                     b.ToTable("Resposta", (string)null);
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.TiposArea.TipoArea", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("Nome");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tipo", (string)null);
                 });
 
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Turmas.Turma", b =>

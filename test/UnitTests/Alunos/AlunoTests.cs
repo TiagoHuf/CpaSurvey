@@ -1,10 +1,10 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Usuarios;
+﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
 using FluentAssertions;
 using NUnit.Framework;
 
 namespace Biopark.CpaSurvey.UnitTests.Alunos;
 
-public class AlunoTests : TestBase
+public partial class AlunoTests : TestBase
 {
     [Test]
     public void ConstrutorDeveCriarPerguntaComSucesso()

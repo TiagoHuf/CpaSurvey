@@ -15,7 +15,7 @@ public class CriarAlunoCommandValidator : ValidatorBase<CriarAlunoCommand>
 
         RuleFor(p => p.Ra)
             .NotEmpty()
-            .MinimumLength(8)
+            .MinimumLength(1)
             .MaximumLength(8);
     }
 }

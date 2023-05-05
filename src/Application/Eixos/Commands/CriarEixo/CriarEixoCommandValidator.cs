@@ -1,9 +1,8 @@
 ﻿using Biopark.CpaSurvey.Application.Common.Validators;
-using Biopark.CpaSurvey.Application.Eixos.Commands.CriarEixo;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;
 
-namespace Biopark.CpaSurvey.Application.Perguntas.Commands.CriarEixo;
+namespace Biopark.CpaSurvey.Application.Eixos.Commands.CriarEixo;
 
 public class CriarEixoCommandValidator : ValidatorBase<CriarEixoCommand>
 {
