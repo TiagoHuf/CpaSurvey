@@ -7,7 +7,7 @@ public abstract class ValidatorBase<T> : AbstractValidator<T>
 {
     protected ValidatorBase(IUnitOfWork unitOfWork)
     {
-        unitOfWork = unitOfWork;
+        UnitOfWork = unitOfWork;
     }
 
     protected IUnitOfWork UnitOfWork { get; }
