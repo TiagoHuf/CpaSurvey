@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace Biopark.CpaSurvey.UnitTests.TiposArea;
 
-public class TipoAreaTests : TestBase
+public class TiposAreaTests : TestBase
 {
     [Test]
     public void ConstrutorDeveCriarTipoAreaComSucesso()
