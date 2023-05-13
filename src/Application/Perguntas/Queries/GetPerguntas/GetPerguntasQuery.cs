@@ -27,6 +27,7 @@ public class GetPerguntasQueryHandler :
 
         var perguntas = await repository
             .GetAll()
+            .Include(p => p.Eixo)
             .ToListAsync(cancellationToken);
 
         return perguntas;
