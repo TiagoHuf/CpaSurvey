@@ -1,0 +1,797 @@
+[33mcommit dbf698cc0c653a95e75e7ef6f7bc09214761da22[m[33m ([m[1;36mHEAD -> [m[1;32m029-testes_unitarios-Lazarin[m[33m)[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Fri May 12 21:57:53 2023 -0300
+
+    testes Unitarios de Pergunta - TipoArea - Turma
+
+[33mcommit c3d9f843e84aba76ba69c4fef1fc30c045504d69[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Thu May 11 20:38:39 2023 -0300
+
+    Corrigida atribuição do UnitOfWork
+
+[33mcommit 275fcf2a8b759f4a1ebcc1e4ce8cb45e69904793[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Thu May 4 20:51:42 2023 -0300
+
+    Correção testes unitários
+
+[33mcommit eb20e116213dc6005896f718289322f9859da549[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Thu May 4 20:41:55 2023 -0300
+
+    Criação testes unitários para ações
+
+[33mcommit ee5e928a18e390544a162c26c2a95a953084ce8e[m
+Merge: 58961cd 64862e9
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Sat Apr 15 06:18:53 2023 -0300
+
+    Merge pull request #27 from TiagoHuf/025-criar-rotas-edicao
+    
+    025 criar rotas edicao
+
+[33mcommit 64862e93bc4fc5c51b3f0f2147ba6a35707556be[m
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sat Apr 15 06:01:17 2023 -0300
+
+    Implementação de rotas PUT e melhorias no Swagger
+
+[33mcommit 97a79450b06249e32d0db1cd015d626e216bfef9[m
+Merge: 299c6ca 58961cd
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sat Apr 15 02:30:15 2023 -0300
+
+    Merge com dev
+
+[33mcommit 58961cd050b8e613c180c75bbf9400846d406406[m
+Merge: 218bade f4c2a21
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Sat Apr 15 02:26:08 2023 -0300
+
+    Merge pull request #24 from TiagoHuf/009-Branch-Lazarin
+    
+    metodo delete tipo area e conclusão entidade resposta
+
+[33mcommit f4c2a216976d441f979ffd5fed833e30204ee2d8[m
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sat Apr 15 02:24:11 2023 -0300
+
+    Correção de erros e inconsistências
+
+[33mcommit 87decc766f8d6390e55b72355c01bb46a33bc38b[m
+Merge: 7753b91 218bade
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sat Apr 15 01:50:57 2023 -0300
+
+    Merge com dev
+
+[33mcommit 218bade839bdbd486baa28f3baefe99eec093365[m
+Merge: bce34cc 4cde13f
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Sat Apr 15 01:49:09 2023 -0300
+
+    Merge pull request #23 from TiagoHuf/019-RotaDeletCursoEixo-Carlos
+    
+    019 rota delet curso eixo carlos
+
+[33mcommit 4cde13f14c0054d44cc238adc898c92e00814701[m
+Merge: 920f887 bce34cc
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sat Apr 15 01:43:50 2023 -0300
+
+    Merge com dev
+
+[33mcommit bce34ccabb64ecc781c63b6754548d23b1c09338[m
+Merge: 2da698c bf887b3
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Sat Apr 15 01:41:00 2023 -0300
+
+    Merge pull request #21 from TiagoHuf/010-TAlunos-Carlos
+    
+    010 t alunos carlos
+
+[33mcommit bf887b38af50600b608c7c83507f740ab0d4d7b8[m
+Merge: d300a1a 2da698c
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sat Apr 15 01:31:52 2023 -0300
+
+    Merge com dev
+
+[33mcommit 299c6ca827315276c72cb052b9af07f4de5680ec[m
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sat Apr 15 01:31:06 2023 -0300
+
+    Criadas ações no domínio
+
+[33mcommit 1a69d1c13fb1f46eca24a660542b7362053bad89[m
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sat Apr 15 01:30:16 2023 -0300
+
+    Criadas ações no domínio
+
+[33mcommit 8d7a9334f575f70a5fa07d59a996ea6f875264dd[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Apr 14 23:53:14 2023 -0300
+
+    Começando implementação
+
+[33mcommit 7753b9118cab670aed47cce9529ae687c33c3a9a[m[33m ([m[1;31morigin/009-Branch-Lazarin[m[33m, [m[1;32m009-Branch-Lazarin[m[33m)[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Fri Apr 14 20:20:45 2023 -0300
+
+    correcao imports
+
+[33mcommit 6a875aef3555bfc2838ac495544ed263f4a329b3[m
+Merge: 332f867 2da698c
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Apr 14 20:16:56 2023 -0300
+
+    Merge com dev
+
+[33mcommit 332f86728ec709c22f641147a7eac07dfc5e707d[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Apr 14 20:13:41 2023 -0300
+
+    Atualização de ambiente para .NET 7
+
+[33mcommit 2da698c0bd5081f9abde557e2b4577d888321aaa[m
+Merge: d0da2fe dafe2c5
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Fri Apr 14 20:11:28 2023 -0300
+
+    Merge pull request #20 from TiagoHuf/008-disciplina-carlos
+    
+    008 disciplina carlos
+
+[33mcommit d300a1a6fbec64aa6570fa4475802031f7aa820a[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Apr 14 19:42:51 2023 -0300
+
+    Changes Requeste feitas
+
+[33mcommit 9be2f49acef7447f714079670ff31d3277da41e8[m
+Merge: bbbce50 d0da2fe
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Fri Apr 14 19:36:03 2023 -0300
+
+    merge com dev
+
+[33mcommit 920f887a107a69c44355f6c1fcf57c2df08527df[m[33m ([m[1;31morigin/019-RotaDeletCursoEixo-Carlos[m[33m)[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Apr 14 19:17:56 2023 -0300
+
+    Arrumado Disciplina
+
+[33mcommit dafe2c5aab426fa9a2a0922c5b3c8760526a20a3[m[33m ([m[1;31morigin/008-disciplina-carlos[m[33m)[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Tue Apr 11 21:54:44 2023 -0300
+
+    Correções feitas na entidade disciplinas
+
+[33mcommit 81b81245437c6287236af6ee3bd3f52ef4974477[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Tue Apr 11 21:37:52 2023 -0300
+
+    Correções feitas na entidade disciplinas
+
+[33mcommit 0e1add5f1e14295f9f33ed9bb142f75fa9ad525f[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Tue Apr 11 21:35:41 2023 -0300
+
+    Correções feitas na entidade disciplinas
+
+[33mcommit a1df17d2755d87f25075607f0de09404139f9873[m
+Merge: 93f66e0 d0da2fe
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Tue Apr 11 21:28:58 2023 -0300
+
+    Merge branch 'dev' of https://github.com/TiagoHuf/CpaSurvey into 008-disciplina-carlos
+
+[33mcommit d0da2fe3f2ff19f120bd02caf6c5fb293cc0c8ca[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 22:13:02 2023 -0300
+
+    Excluída master do pipeline básico
+
+[33mcommit 3e75c4c407a4aacc148c276d3663a4a96bfe9074[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 21:31:25 2023 -0300
+
+    Atualizado para o .NET 7.0
+
+[33mcommit adddb48c46bdd8b2c210dc55fbfb87be4ed7b665[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 21:14:59 2023 -0300
+
+    Adicionados testes no pipeline de todas as branches
+
+[33mcommit bbbce50529b95aac262a8158abc47d7a95d83348[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Mon Apr 10 21:08:38 2023 -0300
+
+    metodo delete tipo area e conclusão entidade resposta
+
+[33mcommit 329de54dfc52707e44dca6a2eda2c6e6ba93165d[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 20:45:35 2023 -0300
+
+    Adicionados testes no pipeline de todas as branches
+
+[33mcommit a6b46ac4e760c3a80ea92ac81360c05853eae48b[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 20:32:11 2023 -0300
+
+    Adicionados testes no pipeline de todas as branches
+
+[33mcommit 0a3a0bfac4f0c17ae31c692ffd922009fddedf0e[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Apr 10 20:31:36 2023 -0300
+
+    Criado Rota delete Eixo
+
+[33mcommit c43933ad5757086376712480728d7962b753b3c4[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Apr 10 20:30:27 2023 -0300
+
+    Criado RemoverEixoCommand
+
+[33mcommit e66f0196d5d8253e824f988b4ed125f46a54477a[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Apr 10 20:28:20 2023 -0300
+
+    Criado rota delete de curso
+
+[33mcommit 6fb859c1eb55b7bd59127d378a2c2ca3139d57e1[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Apr 10 20:26:29 2023 -0300
+
+    Criado RemoverCursoCommand
+
+[33mcommit 6c3b70bd332195f5de727abd19084aaf15439b95[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 20:24:14 2023 -0300
+
+    Adicionados testes no pipeline de todas as branches
+
+[33mcommit 9ccc7fdeab1bfa061d29c312f77f31e9b25176cd[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 20:14:34 2023 -0300
+
+    Adicionados testes no pipeline de todas as branches
+
+[33mcommit 93f66e087ce3596b6414151582b70b79203ebc61[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Apr 10 20:12:23 2023 -0300
+
+    Correção da entidade disciplina
+
+[33mcommit 9e208b6f98b253e8494207171115988f486fc320[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 20:10:39 2023 -0300
+
+    Adicionados testes no pipeline de todas as branches
+
+[33mcommit 51c0b7fca2d0591e268aa15f244814245e87095d[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 20:04:29 2023 -0300
+
+    Adicionados testes no pipeline de todas as branches
+
+[33mcommit b5a489b563764290b93689827a928ea879287d19[m
+Merge: e165506 21044ea
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Apr 10 19:55:19 2023 -0300
+
+    Merge pull request #22 from TiagoHuf/018-criar-testes-unitarios
+    
+    018 criar testes unitarios
+
+[33mcommit 21044ea8a6f71d65856004492ab7c7747be006d6[m[33m ([m[1;31morigin/018-criar-testes-unitarios[m[33m)[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Apr 10 19:53:48 2023 -0300
+
+    Adicionados testes no pipeline
+
+[33mcommit e86c6006950150e0c00c722d024110a2a168a0d0[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Mar 31 22:24:29 2023 -0300
+
+    Implementação dos testes unitários
+
+[33mcommit 3f037b753e01935110395b156c639fd68003b58f[m[33m ([m[1;31morigin/010-TAlunos-Carlos[m[33m)[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 22:19:38 2023 -0300
+
+    Criado AlunosController
+
+[33mcommit 6dcba88197b18a1533df2af9e7486936416864f5[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 22:13:49 2023 -0300
+
+    Criado GetAlunosQuery
+
+[33mcommit c8fa75a58cc6d8ab5810609bac2a2d0d30c813b2[m
+Merge: c4ea0f7 e165506
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Mar 31 22:13:10 2023 -0300
+
+    Merge com dev
+
+[33mcommit c73d18a7880f31f4d9298b96b9214738e472f3b4[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 22:12:12 2023 -0300
+
+    Criado GetAluno
+
+[33mcommit 7ceab1a57c198991456ac9975a0034cb7c201377[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 22:08:18 2023 -0300
+
+    Criado RemoverAlunoCommand
+
+[33mcommit c4ea0f703bb6b8e26f36e8e0f785b9e2b0af81aa[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Mar 31 22:05:21 2023 -0300
+
+    Implementação parcial dos testes
+
+[33mcommit 4f59c6908540eaed26344a8af313cca62fe71029[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 22:04:31 2023 -0300
+
+    Criado CriarAlunoCommandValidator
+
+[33mcommit bcfcb6cf6a70965ed31eef1f4aaa00093e5a8d48[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 22:00:04 2023 -0300
+
+    Criado CriarAlunoCommand
+
+[33mcommit e165506e8b877cae572ceedbeeca217e0e0586dc[m
+Merge: 12c2b34 d647553
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Fri Mar 31 21:58:25 2023 -0300
+
+    Merge pull request #13 from TiagoHuf/007-tipo-carlos
+    
+    007 tipo carlos
+
+[33mcommit 52afb17f1857750a59dc87c22d72c9aa3c3bf05c[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 21:49:50 2023 -0300
+
+    Correção de erro
+
+[33mcommit b02054d14bf4a19eee27e4d7c44753c6a336f4c9[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 20:28:01 2023 -0300
+
+    Criado RemoverDisciplinaCommand
+
+[33mcommit d647553d4f7dad7d4ea73d6f8849c1e3004268e9[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 20:20:48 2023 -0300
+
+    Alterações que foram pedidas no código
+
+[33mcommit c00207714ed36365be74c3ff5a2da9170be37472[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 19:57:40 2023 -0300
+
+    Criado DisciplinasController
+
+[33mcommit eecb5c9a926bf39ce788732f0cafaf8413a94140[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 19:52:55 2023 -0300
+
+    Criado DisciplinasConfiguration
+
+[33mcommit 495f3142f3529e0edd5e3413500d9c3a328f868c[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 19:48:56 2023 -0300
+
+    Criado GetDisciplinasQuery
+
+[33mcommit e699c6f8a823940f2b1c05aeb7696c678f5b67f1[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 19:45:46 2023 -0300
+
+    Criado GetDisciplinaQuery
+
+[33mcommit f13d5018e6194fd4b7754a3ff8b3646308e27514[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 19:42:55 2023 -0300
+
+    Criado CriarDisciplinasCommandValidator
+
+[33mcommit 9ae33dff8cc2de7cddd563f150c6743e0ede0204[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 19:41:19 2023 -0300
+
+    Criado CriarDisciplinasCommand
+
+[33mcommit 12c2b34e538630e87c08215aa73df6e3bfb2f944[m
+Merge: 7035d86 5f19501
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Mar 31 19:40:54 2023 -0300
+
+    Merge branch 'dev' of https://github.com/TiagoHuf/CpaSurvey into dev
+
+[33mcommit 347f4383ea8ef1410b7cabbeeb08a24ef7eb6e5f[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 19:36:57 2023 -0300
+
+    Criado Entitie Disciplina
+
+[33mcommit 2fb5c35305eb60ade3cfa0c5e0a601856163d3bb[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 31 19:33:03 2023 -0300
+
+    Criado DisciplinasModel
+
+[33mcommit 7035d868374536324b42f3492ca2c1b46aeb783c[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Mar 31 00:35:25 2023 -0300
+
+    Teste de pipeline
+
+[33mcommit 5f195017d3bdbbdac0577a5ccca63f162deaf754[m
+Merge: 2a61152 92c4967
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Fri Mar 31 00:25:11 2023 -0300
+
+    Merge pull request #17 from TiagoHuf/master
+    
+    Primeiro teste de deploy na Azure
+
+[33mcommit 92c4967e6b6d5647e2f62def266d4d9bdd94b806[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Mar 31 00:22:24 2023 -0300
+
+    Teste de pipeline
+
+[33mcommit 9e1c770f3510c01f105b2a5a34eae777e4af601c[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Fri Mar 31 00:13:11 2023 -0300
+
+    Teste de pipeline
+
+[33mcommit 4399de9a914228cd1c9d325098f84417489cf0f4[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Thu Mar 30 22:10:56 2023 -0300
+
+    Primeiro teste de deploy na Azure
+
+[33mcommit 98ef41bed3f2b8fa9a7287a7962f086f28726cf1[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 21:59:18 2023 -0300
+
+    Criado TipoController
+
+[33mcommit 610eb38fddd2adcd61b5d1161a8eeb0004543bdd[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 21:54:54 2023 -0300
+
+    Criado TipoConfiguration
+
+[33mcommit 28ff9bdda6bccd48282a6e3d2a3feaf951c57fae[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 21:52:08 2023 -0300
+
+    Criado GetTiposQuery
+
+[33mcommit f353de8ff4ce42e8267377750481013ffb890b1b[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 21:49:10 2023 -0300
+
+    Criado GetTipoQuery
+
+[33mcommit 18d94dfa148910792f467606dd9e6181cc00c4d4[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 21:44:39 2023 -0300
+
+    Criado RemoverTipoCommand
+
+[33mcommit acd0bfd7529c93971b32e27f147ccf0aed433e75[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 21:24:11 2023 -0300
+
+    Criado CriarTipoValidator
+
+[33mcommit b06d39694a2464ef90bd8d7833203d118f75c772[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 21:21:01 2023 -0300
+
+    Criado TipoCommands
+
+[33mcommit ab42f4abb7d22d2590e6972d286a653d0080484c[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 21:15:31 2023 -0300
+
+    Criado Tipo entities
+
+[33mcommit 17842b5a861a604f22f2ad92a796c8da9a3d7e0c[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Wed Mar 29 20:25:12 2023 -0300
+
+    Criado TipoModel
+
+[33mcommit 2a6115208d43ad26e1be9365d8e03219f1867fae[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Wed Mar 29 00:19:48 2023 -0300
+
+    Correção no controller
+
+[33mcommit d4bfaebc89d4e071a5fad6d7ca2fc4a8f281a773[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Wed Mar 29 00:08:28 2023 -0300
+
+    Alterções para migration
+
+[33mcommit 0fb8be66cdcd5b6ffdfe39e4f81321e32e9f32f9[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Tue Mar 28 22:18:00 2023 -0300
+
+    Correções de code smells
+
+[33mcommit 344bb3e679abda98152fc5a5db892eadde47db58[m
+Merge: fc31fad 34b77cf
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Tue Mar 28 22:09:40 2023 -0300
+
+    Merge com master
+
+[33mcommit fc31fad4ae74ab8e79ba872dd6b27e9acc713dda[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Tue Mar 28 22:08:44 2023 -0300
+
+    Alterações para deploy
+
+[33mcommit 34b77cf780b3e1b738a5800cc6074d8d4f7ee82e[m
+Merge: b146ce0 7fa8868
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Tue Mar 28 22:04:40 2023 -0300
+
+    Merge pull request #7 from TiagoHuf/004-branch-lazarin
+    
+    004 branch lazarin
+
+[33mcommit 7fa8868555e4b1bb39fcada805b292091329cf8e[m[33m ([m[1;31morigin/004-branch-lazarin[m[33m, [m[1;32m004-branch-lazarin[m[33m)[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Tue Mar 28 22:01:13 2023 -0300
+
+    Atualização gitignore
+
+[33mcommit 6433176ad1be61be48f73be86e0891989375cd24[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Tue Mar 28 21:52:11 2023 -0300
+
+    correções de apontamentos
+
+[33mcommit 9f436b2d38919da6e8b627ca6abbdd8fa4777f1e[m
+Merge: 4067e27 b146ce0
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Tue Mar 28 21:37:20 2023 -0300
+
+    Merge branch 'master' of https://github.com/TiagoHuf/CpaSurvey into 004-branch-lazarin
+
+[33mcommit 4067e2713568a8603cdd7890fc0b74e0e81901e3[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Tue Mar 28 21:30:39 2023 -0300
+
+    criação de entidade Cursos
+
+[33mcommit a587340cd7775566466e058048afaf6a7daa63df[m
+Merge: 7790f77 b146ce0
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Tue Mar 28 20:23:31 2023 -0300
+
+    Merge branch 'master' of https://github.com/TiagoHuf/CpaSurvey
+
+[33mcommit b146ce06467d966a938cf13c29c91b3399a952d2[m
+Merge: adf2695 7d379ce
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Tue Mar 28 20:22:10 2023 -0300
+
+    Merge pull request #6 from TiagoHuf/006-turma-carlos
+    
+    006 turma carlos
+
+[33mcommit 7d379ce7927a8bb616af75af3a3f288eb7b7e04e[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Mar 27 19:08:50 2023 -0300
+
+    Atualização do turma controller
+
+[33mcommit 31951a066022a50374831d4680320bd40362a9fa[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Mar 27 19:06:30 2023 -0300
+
+    Criado TurmasQuery
+
+[33mcommit ef758020e08a8e4a332f72ce405457e8e6ca5518[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Mon Mar 27 19:00:27 2023 -0300
+
+    Criado turma controller
+
+[33mcommit 84e1db86e59379170908eef37517fba674b58a81[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 24 22:09:18 2023 -0300
+
+    criação do Query GetTurmaQuery
+
+[33mcommit c401f9a985c458d5b51d590c727fe6064bfc254d[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Fri Mar 24 22:09:14 2023 -0300
+
+    criação de entidade curso faltando controller e query
+
+[33mcommit 74c5c4e2a51f6bf1b42b530fa2641460fc7eee7a[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 24 21:57:47 2023 -0300
+
+    criação do command removerTurmaCommand
+
+[33mcommit f5da7edbae3a778d5956282521a8716672a96379[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 24 21:43:37 2023 -0300
+
+    criação do command criarturmavalidator
+
+[33mcommit 660f2ff5b66c050fbeca80e3b7c55c4d943c05e9[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 24 21:34:03 2023 -0300
+
+    criação do command criarturma
+
+[33mcommit 0facdb3458dae18be75318d6d1b5dad0d6788a94[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 24 21:14:07 2023 -0300
+
+    criação do tumar configuration
+
+[33mcommit 70a5286dac6e5201f6ac9b763adc79dc6312302f[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 24 20:33:35 2023 -0300
+
+    criação do model turma
+
+[33mcommit 6b8859bd57d4e770c24eff7aca2c24ace4aef0c4[m
+Author: Carlos Eduardo <101908027+CarlosETS@users.noreply.github.com>
+Date:   Fri Mar 24 20:18:19 2023 -0300
+
+    criação da entidade turma
+
+[33mcommit 344ba95b881e73dbcd580134d1d584e774d33da1[m
+Merge: 81692d1 adf2695
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Fri Mar 24 19:45:05 2023 -0300
+
+    Merge branch 'master' of https://github.com/TiagoHuf/CpaSurvey into 002-branch-lazarin
+
+[33mcommit 7790f77775284f0543eca7748658eae7715ed006[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Thu Mar 23 21:52:26 2023 -0300
+
+    Implementação parcial Avaliações
+
+[33mcommit adf2695f940acaa840ab73b5ecb6cba06667d943[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 20 22:14:28 2023 -0300
+
+    Removido arquivos desnecessários
+
+[33mcommit 81692d1f39d0cbff7fd801cf9da9f862e07b1b71[m[33m ([m[1;32m002-branch-lazarin[m[33m)[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Mon Mar 20 21:55:37 2023 -0300
+
+    Commit teste
+
+[33mcommit a152c02d670800030ed5d43ce9b735092e1a2c06[m[33m ([m[1;32mmaster[m[33m)[m
+Merge: 3506cad 187659f
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Mon Mar 20 21:34:55 2023 -0300
+
+    Commit correção
+
+[33mcommit 3506cad1e6e5075f48f25c7096faa7b12ae9a3aa[m
+Author: Gustavo LazarinDD <lazaringuuh@gmail.com>
+Date:   Mon Mar 20 21:32:02 2023 -0300
+
+    Commit bugado
+
+[33mcommit 187659f88c76a14b2569c85a26c3761ea89f0a1d[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 20 21:27:29 2023 -0300
+
+    Removido arquivos desnecessários
+
+[33mcommit a0b62be46783c64dfdd5ea777694d3effd676bc5[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 20 21:23:08 2023 -0300
+
+    Adição .gitignore
+
+[33mcommit 599904a4a947c6e9f5d3aa8a6c40844bb90d6aef[m
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Mon Mar 20 20:59:31 2023 -0300
+
+    Update .gitignore
+
+[33mcommit ef5fabac34458765052ff7a9f052f71ee800c32d[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 20 19:15:55 2023 -0300
+
+    Adição .gitignore
+
+[33mcommit 17bcb5fc6fd2ac22c890f89c71c1f089481538c2[m
+Merge: 3cf5031 05071f3
+Author: Tiago Huf <94152140+TiagoHuf@users.noreply.github.com>
+Date:   Wed Mar 15 22:05:05 2023 -0300
+
+    Merge pull request #1 from TiagoHuf/001-implementacao-entidade-respostas
+    
+    Criação da classe
+
+[33mcommit 05071f3ce20a44190674cf98760521c56cfb0fd7[m[33m ([m[1;31morigin/001-implementacao-entidade-respostas[m[33m)[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Wed Mar 15 22:01:26 2023 -0300
+
+    Criação da classe
+
+[33mcommit 3cf5031769118a29db8689f5d4da38b883a218c3[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Tue Mar 7 22:15:11 2023 -0300
+
+    Implementadas rotas de Eixos
+
+[33mcommit a1251865cf6fe2a6a13b732c2af6af795cf46fff[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 6 19:34:42 2023 -0300
+
+    Retirado cache para o gitignore
+
+[33mcommit 0a471d8778ff5c26d7f0d2eacb233c47ad6eaaba[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 6 19:27:54 2023 -0300
+
+    Retirado cache para o gitignore
+
+[33mcommit e26faa7fbdc9d59c27363ef655146da87d869313[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 6 19:25:37 2023 -0300
+
+    Retirado cache para o gitignore
+
+[33mcommit 2ce7ea69d5253b213c7df72e9aa5485d9bfc1cba[m
+Merge: b548d56 1dbca4c
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 6 19:16:01 2023 -0300
+
+    Conflitos git ignore
+
+[33mcommit b548d56492c8d04ed992f57707f8ac11d560dbdd[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Mon Mar 6 19:14:36 2023 -0300
+
+    Conflitos git ignore
+
+[33mcommit 1dbca4cc4c5aa8194a4a8538476f111c5fbe1db8[m
+Author: Tiago Huf <tiago.hen.99@gmail.com>
+Date:   Sun Mar 5 15:32:12 2023 -0300
+
+    Adicionado arquivo git ignore
+
+[33mcommit f959e6ccd6289662ec73fc05936f4b69e86e18a6[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Sun Mar 5 14:43:17 2023 -0300
+
+    Primeira rota Post funcional
+
+[33mcommit a2531d4072c46ccdd3207cfe4539fbc401e03c5e[m
+Author: TiagoHuf <tiago.hen.99@gmail.com>
+Date:   Thu Mar 2 14:47:02 2023 -0300
+
+    Primeiro commit
