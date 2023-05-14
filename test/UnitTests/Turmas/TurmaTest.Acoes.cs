@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace Biopark.CpaSurvey.UnitTests.Turmas
 {
-    public partial class TurmaTests
+    public partial class TurmasTests
     {
         private Turma _turma;
 
@@ -16,9 +16,9 @@ namespace Biopark.CpaSurvey.UnitTests.Turmas
         }
 
         [Test]
-        public void DeveCorrigirnomeComSucesso()
+        public void DeveCorrigirNomeComSucesso()
         {
-            var NovoNome = "Novo Nome";
+            var NovoNome = "Novo nome";
 
             _turma.CorrigirNome(NovoNome);
 
