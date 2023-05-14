@@ -16,13 +16,13 @@ namespace Biopark.CpaSurvey.UnitTests.Turmas
         }
 
         [Test]
-        public void DeveCorrigirNomeComSucesso()
+        public void DeveCorrigirnomeComSucesso()
         {
-            var novoNome = "Novo Nome";
+            var NovoNome = "Novo Nome";
 
-            _turma.CorrigirNome(novoNome);
+            _turma.CorrigirNome(NovoNome);
 
-            _turma.Nome.Should().Be(novoNome);
+            _turma.Nome.Should().Be(NovoNome);
         }
     }
 }
