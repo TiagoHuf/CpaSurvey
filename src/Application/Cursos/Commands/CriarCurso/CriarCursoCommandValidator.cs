@@ -11,6 +11,6 @@ public class CriarCursoCommandValidator : ValidatorBase<CriarCursoCommand>
         RuleFor(p => p.Nome)
             .NotEmpty()
             .MinimumLength(2)
-            .MinimumLength(50);
+            .MaximumLength(50);
     }
 }
