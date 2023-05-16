@@ -12,7 +12,7 @@ public class CriarPerguntaCommandValidator : ValidatorBase<CriarPerguntaCommand>
         RuleFor(p => p.Descricao)
             .NotEmpty()
             .MinimumLength(2)
-            .MinimumLength(200);
+            .MaximumLength(200);
 
         RuleFor(p => p.TipoResposta)
             .IsInEnum();
