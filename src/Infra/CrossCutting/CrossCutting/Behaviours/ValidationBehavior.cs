@@ -43,8 +43,7 @@ public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TReques
 
         // Se não houver falhas, conrinua
         if (fails.Count is 0) return await next();
-
-#if DEBUG         
+      
         var msg = Environment.NewLine +
             string.Join(
                 Environment.NewLine,
@@ -52,11 +51,5 @@ public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TReques
             );
 
         throw new ValidacaoException(fails, msg);
-
-#else
-
-        throw new ValidationException(fails, msg);
-
-#endif
     }
 }
