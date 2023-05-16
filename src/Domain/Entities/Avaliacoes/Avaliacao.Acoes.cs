@@ -1,7 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
-using Biopark.CpaSurvey.Domain.Entities.Turmas;
-
-namespace Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
+﻿namespace Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
 
 public partial class Avaliacao
 {
@@ -14,25 +11,5 @@ public partial class Avaliacao
     {
         DataInicio = inicio;
         DataFim = fim;
-    }
-
-    public void RemoverCurso(Curso curso)
-    {
-        _cursos.Remove(curso);
-    }
-
-    public void  AdicionarCurso(Curso curso)
-    {
-        _cursos.Add(curso);
-    }
-
-    public void AdicionarTurma(Turma turma)
-    {
-        _turmas.Add(turma);
-    }
-
-    public void RemoverTurma(Turma turma)
-    {
-        _turmas.Remove(turma);
     }
 }

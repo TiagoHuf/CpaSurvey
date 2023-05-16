@@ -3,7 +3,7 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.Alunos.Queries.GetALuno;
+namespace Biopark.CpaSurvey.Application.Alunos.Queries.GetAluno;
 
 public class GetAlunoQuery : IRequest<Aluno>
 {
@@ -25,6 +25,9 @@ public class GetAlunoQueryHandler : IRequestHandler<GetAlunoQuery, Aluno>
 
         var aluno = repository
             .FindBy(c => c.Id == request.AlunoId)
+            .Include(a => a.Curso)
+            .Include(a => a.Disciplinas).ThenInclude(d => d.Disciplina)
+            .Include(a => a.Turmas)
             .FirstAsync(cancellationToken);
 
         return aluno;

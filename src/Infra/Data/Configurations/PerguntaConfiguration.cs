@@ -26,7 +26,11 @@ public class PerguntaConfiguration : IEntityTypeConfiguration<Pergunta>
 
         builder.HasOne(p => p.Eixo)
             .WithMany(p => p.Perguntas)
+            .OnDelete(DeleteBehavior.ClientSetNull)
             .HasForeignKey(p => p.EixoId)
             .HasConstraintName("FK_Eixo_Pergunta_EixoId");
+
+        builder.HasMany(a => a.Avaliacoes)
+            .WithMany(p => p.Perguntas);
     }
 }

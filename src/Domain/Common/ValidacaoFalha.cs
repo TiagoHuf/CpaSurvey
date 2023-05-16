@@ -1,5 +1,6 @@
 ﻿namespace Biopark.CpaSurvey.Domain.Common;
 
+[Serializable]
 public class ValidacaoFalha
 {
     public ValidacaoFalha(string property, string message)
