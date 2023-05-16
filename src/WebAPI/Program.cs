@@ -3,15 +3,21 @@ using Biopark.CpaSurvey.Infra.Data.Context;
 using Biopark.CpaSurvey.Infra.Data.Management;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
+using Biopark.CpaSurvey.Infra.CrossCutting.IoC;
 using System.Text.Json.Serialization;
 using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPergunta;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Identity;
+using Biopark.CpaSurvey.Infra.CrossCutting.Filters;
+using Biopark.CpaSurvey.Infra.CrossCutting.Behaviours;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -43,13 +49,18 @@ builder.Services.AddDbContext<ApplicationDbContext>(opt =>
 
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 
-builder.Services.AddControllersWithViews()
+builder.Services.AddControllersWithViews(
+    config =>
+    config.Filters.Add(new ApiExceptionFilterAttribute())
+    )
     .AddJsonOptions(options =>
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles
 );
 
 var appAssemblie = typeof(GetPerguntaQuery).Assembly;
 builder.Services.AddMediatR(appAssemblie);
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+builder.Services.AddFluentValidationDependency(appAssemblie);
 
 var app = builder.Build();
 

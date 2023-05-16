@@ -1,10 +1,12 @@
-﻿using Biopark.CpaSurvey.Application.Alunos.Commands.Ativar;
+﻿using Biopark.CpaSurvey.Application.Alunos.Commands.AdicionarDisciplina;
+using Biopark.CpaSurvey.Application.Alunos.Commands.AdicionarTurma;
+using Biopark.CpaSurvey.Application.Alunos.Commands.Ativar;
 using Biopark.CpaSurvey.Application.Alunos.Commands.CorrigirNome;
 using Biopark.CpaSurvey.Application.Alunos.Commands.CorrigirRa;
 using Biopark.CpaSurvey.Application.Alunos.Commands.CriarAluno;
 using Biopark.CpaSurvey.Application.Alunos.Commands.Inativar;
 using Biopark.CpaSurvey.Application.Alunos.Commands.RemoverAluno;
-using Biopark.CpaSurvey.Application.Alunos.Queries.GetALuno;
+using Biopark.CpaSurvey.Application.Alunos.Queries.GetAluno;
 using Biopark.CpaSurvey.Application.Alunos.Queries.GetAlunos;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
@@ -92,5 +94,30 @@ public class AlunosController : ApiController
         var result = await Mediator.Send(command);
 
         return Ok(new Response(result, "Aluno removido com sucesso."));
+    }
+
+    [HttpPut("{alunoId:long}/adicionar-disciplina")]
+    [SwaggerOperation("Adiciona uma disciplina ao aluno através dos identificadores providos.")]
+    public async Task<IActionResult> PutAdicionarDisciplinaAlunoAsync(
+        [FromRoute] long alunoId, [FromBody] AdicionarDisciplinaAlunoCommand command)
+    {
+        if (alunoId != command.AlunoId) return BadRequest();
+
+        var result = await Mediator.Send(command);
+
+        return Ok(new Response(result, "Disciplina adicionada com sucesso."));
+    }
+
+    [HttpPut("{alunoId:long}/adicionar-turma")]
+    [SwaggerOperation("Adiciona uma turma ao aluno através dos identificadores providos.")]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    public async Task<IActionResult> PutAdicionarTurmaAlunoAsync(
+        [FromRoute] long alunoId, [FromBody] AdicionarTurmaAlunoCommand command)
+    {
+        if (alunoId != command.AlunoId) return BadRequest();
+
+        var result = await Mediator.Send(command);
+
+        return Ok(new Response(result, "Turma adicionada com sucesso."));
     }
 }

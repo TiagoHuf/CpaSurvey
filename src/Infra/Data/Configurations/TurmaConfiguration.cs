@@ -15,13 +15,17 @@ public class TurmaConfiguration : IEntityTypeConfiguration<Turma>
         builder.Property(t => t.Nome)
             .HasColumnName("nome")
             .IsRequired()
-            .HasMaxLength(200);
+            .HasMaxLength(50);
 
         builder.HasIndex(t => t.CursoId);
 
         builder.HasOne(t => t.Curso)
             .WithMany(t => t.Turmas)
+            .OnDelete(DeleteBehavior.ClientSetNull)
             .HasForeignKey(t => t.CursoId)
-            .HasConstraintName("FK_Turma_Curso_CursoId");
+            .HasConstraintName("FK_Curso_Turma_CursoId");
+
+        builder.HasMany(a => a.Alunos)
+            .WithMany(t => t.Turmas);
     }
 }

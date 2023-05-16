@@ -10,6 +10,10 @@ public class CriarDisciplinaCommand : IRequest<Disciplina>
     public string Nome { get; set; }
 
     public string Descricao { get; set; }
+
+    public long ProfessorId { get; set; }
+
+    public long CursoId { get; set; }
 }
 
 public class CriarDisciplinaCommandHandler : IRequestHandler<CriarDisciplinaCommand, Disciplina>
@@ -41,6 +45,8 @@ public class CriarDisciplinaCommandHandler : IRequestHandler<CriarDisciplinaComm
         var model = new DisciplinaModel
         {
             Nome = request.Nome,
+            ProfessorId = request.ProfessorId,
+            CursoId = request.CursoId,
         };
 
         return model;
