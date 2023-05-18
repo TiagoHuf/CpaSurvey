@@ -2,7 +2,6 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-
 namespace Biopark.CpaSurvey.UnitTests.Perguntas
 {
     public partial class PerguntaTests
