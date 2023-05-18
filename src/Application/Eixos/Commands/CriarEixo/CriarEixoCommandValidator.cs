@@ -11,11 +11,11 @@ public class CriarEixoCommandValidator : ValidatorBase<CriarEixoCommand>
         RuleFor(p => p.Nome)
             .NotEmpty()
             .MinimumLength(2)
-            .MinimumLength(50);
+            .MaximumLength(50);
 
         RuleFor(p => p.Descricao)
             .NotEmpty()
             .MinimumLength(2)
-            .MinimumLength(200);
+            .MaximumLength(200);
     }
 }

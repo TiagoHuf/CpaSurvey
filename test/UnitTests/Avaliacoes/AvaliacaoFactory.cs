@@ -1,10 +1,5 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
-using Biopark.CpaSurvey.Domain.Entities.Turmas;
-using Biopark.CpaSurvey.Domain.Models.Avaliacoes;
-using Biopark.CpaSurvey.UnitTests.Cursos;
-using Biopark.CpaSurvey.UnitTests.Turmas;
+﻿using Biopark.CpaSurvey.Domain.Models.Avaliacoes;
 using System;
-using System.Collections.Generic;
 
 namespace Biopark.CpaSurvey.UnitTests.Avaliacoes;
 
@@ -12,6 +7,7 @@ public class AvaliacaoFactory
 {
     public static AvaliacaoModel GetAvaliacaoNovaModel()
     {
+<<<<<<< HEAD
         var cursos = new List<Curso>
         {
             CursoFactory.GetCursoNovo("Curso 1"),
@@ -26,13 +22,14 @@ public class AvaliacaoFactory
             TurmaFactory.GetTurmaNova("Turma 3"),
         };
 
+=======
+>>>>>>> 3c8892b096853c518fd255e3381310fff743e11a
         return new AvaliacaoModel
         {
             Nome = "Avaliação teste",
             DataInicio = DateTime.Now,
             DataFim = DateTime.Now,
-            Cursos = cursos,
-            Turmas = turmas,
+            DisciplinaId = 1,
         };
     }
 }

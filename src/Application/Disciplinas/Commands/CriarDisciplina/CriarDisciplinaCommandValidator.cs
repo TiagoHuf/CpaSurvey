@@ -1,4 +1,6 @@
 ﻿using Biopark.CpaSurvey.Application.Common.Validators;
+using Biopark.CpaSurvey.Domain.Entities.Cursos;
+using Biopark.CpaSurvey.Domain.Entities.Professores;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;
 
@@ -11,6 +13,17 @@ public class CriarDisciplinaCommandValidator : ValidatorBase<CriarDisciplinaComm
         RuleFor(p => p.Nome)
             .NotEmpty()
             .MinimumLength(2)
-            .MinimumLength(50);
+            .MaximumLength(50);
+
+        RuleFor(p => p.Descricao)
+            .NotEmpty()
+            .MinimumLength(2)
+            .MaximumLength(200);
+
+        RuleFor(p => p.ProfessorId)
+            .MustExists<CriarDisciplinaCommand, Professor>(unitOfWork);
+
+        RuleFor(p => p.CursoId)
+            .MustExists<CriarDisciplinaCommand, Curso>(unitOfWork);
     }
 }

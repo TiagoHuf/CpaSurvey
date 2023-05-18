@@ -20,9 +20,18 @@ public class AlunoConfiguration : IEntityTypeConfiguration<Aluno>
 
         builder.Property(a => a.Ra)
             .IsRequired()
-            .HasMaxLength(200);
+            .HasMaxLength(8);
 
         builder.Property(a => a.IsAtivo)
             .IsRequired();
+
+        builder.HasMany(a => a.Turmas)
+            .WithMany(t => t.Alunos);
+
+        builder.HasOne(a => a.Curso)
+            .WithMany(c => c.Alunos)
+            .OnDelete(DeleteBehavior.ClientSetNull)
+            .HasForeignKey(p => p.CursoId)
+            .HasConstraintName("FK_Curso_Aluno_CursoId");
     }
 }
