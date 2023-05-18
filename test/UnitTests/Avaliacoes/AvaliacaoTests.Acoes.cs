@@ -36,7 +36,6 @@ public partial class AvaliacaoTest
         _avaliacao.CorrigirDataAvaliacao(novaDataFim);
 
         _avaliacao.DataFim.Should().Be(novaDataFim);
-
     }
 
 }
