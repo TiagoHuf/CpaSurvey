@@ -9,8 +9,7 @@ public class CursoTests : TestBase
     [Test]
     public void ConstrutorDeveCriarCursoaComSucesso()
     {
-        var cursoNome = "Curso teste";
-        var model = CursoFactory.GetCursoNovoModel(cursoNome);
+        var model = CursoFactory.GetCursoNovoModel();
 
         var curso = new Curso(model);
 
