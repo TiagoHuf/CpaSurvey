@@ -64,11 +64,11 @@ public partial class AlunoTests
     [Test]
     public void DeveAdicionarDisciplina() 
     {
-        Disciplina disciplina = DisciplinaFactory.GetDisciplinaNovoModel();
+        Disciplina disciplina = DisciplinaFactory.GetDisciplinaNova("Nova Disciplina");
 
-        _aluno.AdicionarDisciplina(novaDisciplina);
+        _aluno.AdicionarDisciplina(disciplina);
 
-        _aluno.Disciplinas.Should().Be(novaDisciplina);
+        _aluno.Disciplinas.First().Should().Be(disciplina);
     }
 
     [Test]

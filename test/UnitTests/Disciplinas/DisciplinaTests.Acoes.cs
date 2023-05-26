@@ -12,7 +12,7 @@ public partial class DisciplinaTests
     [SetUp]
     public void DisciplinaTestsSetUp()
     {
-        var model = DisciplinaFactory.GetDisciplinaNovoModel();
+        var model = DisciplinaFactory.GetDisciplinaNovoModel("Nova Disciplina");
         _disciplina = new Disciplina(model);
     }
 
