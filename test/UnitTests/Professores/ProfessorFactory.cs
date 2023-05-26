@@ -1,5 +1,4 @@
-﻿
-using Biopark.CpaSurvey.Domain.Models.Professores;
+﻿using Biopark.CpaSurvey.Domain.Models.Professores;
 
 namespace Biopark.CpaSurvey.UnitTests.Professores;
 
