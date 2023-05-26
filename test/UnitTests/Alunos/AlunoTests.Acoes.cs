@@ -59,13 +59,9 @@ public partial class AlunoTests
     }
 
     [Test]
-    public void DeveAdicionarDisciplina(Disciplina disciplina) 
+    public void DeveAdicionarDisciplina() 
     {
-        var novaDisciplina = new AlunoDisciplina
-        {
-            Aluno = this,
-            Disciplina = disciplina
-        };
+        Disciplina disciplina = AlunoDisciplina
 
         _aluno.AdicionarDisciplina(novaDisciplina);
 
