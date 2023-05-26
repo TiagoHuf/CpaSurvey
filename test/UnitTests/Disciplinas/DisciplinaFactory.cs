@@ -9,7 +9,9 @@ public class DisciplinaFactory
     {
         return new DisciplinaModel
         {
-            Nome = nome
+            Nome = nome,
+            ProfessorId = 1,
+            CursoId = 1
         };
     }
 

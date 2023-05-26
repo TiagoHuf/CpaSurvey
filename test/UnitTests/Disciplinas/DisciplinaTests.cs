@@ -9,11 +9,14 @@ public partial class DisciplinaTests : TestBase
     [Test]
     public void ConstrutorDeveCriarDisciplinaComSucesso()
     {
-        var model = DisciplinaFactory.GetDisciplinaNovoModel();
+        var nomeDisciplina = "Disciplina Teste";
+        var model = DisciplinaFactory.GetDisciplinaNovoModel(nomeDisciplina);
 
         var disciplina = new Disciplina(model);
 
         disciplina.Should().NotBeNull();
         disciplina.Nome.Should().Be(model.Nome);
+        disciplina.ProfessorId.Should().Be(model.ProfessorId);
+        disciplina.CursoId.Should().Be(model.CursoId);
     }
 }
