@@ -1,11 +1,10 @@
-﻿
-using Biopark.CpaSurvey.Domain.Entities.Professores;
+﻿using Biopark.CpaSurvey.Domain.Entities.Professores;
 using FluentAssertions;
 using NUnit.Framework;
 
 namespace Biopark.CpaSurvey.UnitTests.Professores;
 
-public class ProfessorTests: TestBase
+public partial class ProfessorTests: TestBase
 {
     [Test]
     public void ConstrutorDeveCriarProfessorComSucesso()
