@@ -1,4 +1,7 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
+﻿using Biopark.CpaSurvey.Domain.Entities;
+using Biopark.CpaSurvey.Domain.Entities.Alunos;
+using Biopark.CpaSurvey.Domain.Entities.Disciplinas;
+using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using FluentAssertions;
 using NUnit.Framework;
 
@@ -54,4 +57,27 @@ public partial class AlunoTests
 
         _aluno.IsAtivo.Should().BeFalse();
     }
+
+    [Test]
+    public void DeveAdicionarDisciplina(Disciplina disciplina) 
+    {
+        var novaDisciplina = new AlunoDisciplina
+        {
+            Aluno = this,
+            Disciplina = disciplina
+        };
+
+        _aluno.AdicionarDisciplina(novaDisciplina);
+
+        _aluno.Disciplinas.Should().Be(novaDisciplina);
+    }
+
+    [Test]
+    public void DeveAdicionarTurma(Turma turma)
+    {
+        _aluno.AdicionarTurma(turma);
+
+        _aluno.Turmas.Should().Be(turma);
+    }
+
 }
