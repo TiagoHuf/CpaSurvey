@@ -5,7 +5,7 @@ namespace Biopark.CpaSurvey.UnitTests.Disciplinas;
 
 public class DisciplinaFactory
 {
-    public static DisciplinaModel GetDisciplinaNovoModel(string nome)
+    public static DisciplinaModel GetDisciplinaNovaModel(string nome)
     {
         return new DisciplinaModel
         {
@@ -17,6 +17,6 @@ public class DisciplinaFactory
 
     public static Disciplina GetDisciplinaNova(string nome)
     {
-        return new Disciplina(GetDisciplinaNovoModel(nome));
+        return new Disciplina(GetDisciplinaNovaModel(nome));
     }
 }

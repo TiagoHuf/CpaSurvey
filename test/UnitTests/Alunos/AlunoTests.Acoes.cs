@@ -66,9 +66,11 @@ public partial class AlunoTests
     {
         Disciplina disciplina = DisciplinaFactory.GetDisciplinaNova("Nova Disciplina");
 
+        var count = _aluno.Disciplinas.Count + 1;
+
         _aluno.AdicionarDisciplina(disciplina);
 
-        _aluno.Disciplinas.First().Should().Be(disciplina);
+        _aluno.Disciplinas.Should().HaveCount(count);
     }
 
     [Test]
