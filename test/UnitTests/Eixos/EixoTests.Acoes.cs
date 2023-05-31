@@ -1,5 +1,4 @@
-﻿
-using Biopark.CpaSurvey.Domain.Entities.Eixos;
+﻿using Biopark.CpaSurvey.Domain.Entities.Eixos;
 using FluentAssertions;
 using NUnit.Framework;
 

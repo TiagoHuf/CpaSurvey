@@ -1,6 +1,11 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
+using Biopark.CpaSurvey.Domain.Entities.Disciplinas;
+using Biopark.CpaSurvey.Domain.Entities.Turmas;
+using Biopark.CpaSurvey.UnitTests.Disciplinas;
+using Biopark.CpaSurvey.UnitTests.Turmas;
 using FluentAssertions;
 using NUnit.Framework;
+using System.Linq;
 
 namespace Biopark.CpaSurvey.UnitTests.Alunos;
 
@@ -54,4 +59,27 @@ public partial class AlunoTests
 
         _aluno.IsAtivo.Should().BeFalse();
     }
+
+    [Test]
+    public void DeveAdicionarDisciplina() 
+    {
+        Disciplina disciplina = DisciplinaFactory.GetDisciplinaNova("Nova Disciplina");
+
+        var count = _aluno.Disciplinas.Count + 1;
+
+        _aluno.AdicionarDisciplina(disciplina);
+
+        _aluno.Disciplinas.Should().HaveCount(count);
+    }
+
+    [Test]
+    public void DeveAdicionarTurma()
+    {
+        Turma turma = TurmaFactory.GetTurmaNova("Nova Turma");
+
+        _aluno.AdicionarTurma(turma);
+
+        _aluno.Turmas.First().Should().Be(turma);
+    }
+
 }
