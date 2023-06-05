@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
+using System.Globalization;
 using System.Reflection;
 
 namespace Biopark.CpaSurvey.Infra.CrossCutting.IoC;
@@ -12,5 +13,7 @@ public static class FluentValidationDependency
         ValidatorOptions.Global.CascadeMode = CascadeMode.StopOnFirstFailure;
 #pragma warning restore CS0618 // O tipo ou membro é obsoleto
         services.AddValidatorsFromAssembly(assembly);
+
+        ValidatorOptions.Global.LanguageManager.Culture = new CultureInfo("pt-BR");
     }
 }
