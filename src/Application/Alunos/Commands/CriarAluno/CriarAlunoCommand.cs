@@ -10,6 +10,10 @@ public class CriarAlunoCommand : IRequest<Aluno>
     public string Nome { get; set; }
 
     public string Ra { get; set; }
+
+    public string Email { get; set; }
+
+    public long CursoId { get; set; }
 }
 
 public class CriarAlunoCommandHandler : IRequestHandler<CriarAlunoCommand, Aluno>
@@ -42,6 +46,8 @@ public class CriarAlunoCommandHandler : IRequestHandler<CriarAlunoCommand, Aluno
         {
             Nome = request.Nome,
             Ra = request.Ra,
+            Email = request.Email,
+            CursoId = request.CursoId,
         };
 
         return model;

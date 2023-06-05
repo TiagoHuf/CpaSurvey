@@ -3,7 +3,8 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.Eixoas.Queries.GetEixos;
+namespace Biopark.CpaSurvey.Application.Eixos.Queries.GetEixos;
+
 public class GetEixosQuery : IRequest<List<Eixo>>
 {
 }

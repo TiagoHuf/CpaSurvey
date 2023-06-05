@@ -1,4 +1,4 @@
-﻿using Biopark.CpaSurvey.Application.Eixoas.Queries.GetEixos;
+﻿using Biopark.CpaSurvey.Application.Eixos.Queries.GetEixos;
 using Biopark.CpaSurvey.Application.Eixos.Commands.CorrigirDescricao;
 using Biopark.CpaSurvey.Application.Eixos.Commands.CorrigirNome;
 using Biopark.CpaSurvey.Application.Eixos.Commands.CriarEixo;

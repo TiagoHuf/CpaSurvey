@@ -1,5 +1,7 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Eixos;
+﻿using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
+using Biopark.CpaSurvey.Domain.Entities.Eixos;
 using Biopark.CpaSurvey.Domain.Entities.Respostas;
+using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Perguntas;
 
@@ -29,4 +31,7 @@ public partial class Pergunta : BaseEntity<long>, IAggregateRoot
 
     public IReadOnlyCollection<Resposta> Respostas => _respostas.AsReadOnly();
     private readonly List<Resposta> _respostas = new();
+
+    public IReadOnlyCollection<Avaliacao> Avaliacoes => _avaliacoes.AsReadOnly();
+    private readonly List<Avaliacao> _avaliacoes = new();
 }

@@ -1,8 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Models.Cursos;
-using Biopark.CpaSurvey.Domain.Entities.Turmas;
-using Biopark.CpaSurvey.Domain.Entities.Cursos;
-
-namespace Biopark.CpaSurvey.Domain.Models.Avaliacoes;
+﻿namespace Biopark.CpaSurvey.Domain.Models.Avaliacoes;
 
 public class AvaliacaoModel
 {
@@ -12,7 +8,5 @@ public class AvaliacaoModel
 
     public DateTime DataFim { get; set; }
 
-    public List<Curso> Cursos { get; set; }
-
-    public List<Turma> Turmas { get; set; }
+    public long DisciplinaId { get; set; }
 }

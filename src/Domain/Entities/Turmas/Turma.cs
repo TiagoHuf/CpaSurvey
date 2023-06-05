@@ -1,4 +1,7 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
+﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
+using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
+using Biopark.CpaSurvey.Domain.Entities.Cursos;
+using Biopark.CpaSurvey.Domain.Entities.Disciplinas;
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Turmas;
 
@@ -12,7 +15,9 @@ public partial class Turma : BaseEntity<long>, IAggregateRoot
         CursoId = model.CursoId;
     }
 
-    private Turma() { 
+    private Turma() 
+    {
+        // Necessário para o EntityFramework.
     }
 
     public string Nome { get; private set; }
@@ -20,4 +25,10 @@ public partial class Turma : BaseEntity<long>, IAggregateRoot
     public long CursoId { get; private set; }
 
     public Curso Curso { get; private set; }
+
+    public IReadOnlyCollection<Disciplina> Disciplinas => _disciplinas.AsReadOnly();
+    private readonly List<Disciplina> _disciplinas = new();
+
+    public IReadOnlyCollection<Aluno> Alunos => _alunos.AsReadOnly();
+    private readonly List<Aluno> _alunos = new();
 }

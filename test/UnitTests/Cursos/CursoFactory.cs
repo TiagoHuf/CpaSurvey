@@ -5,16 +5,11 @@ namespace Biopark.CpaSurvey.UnitTests.Cursos;
 
 public class CursoFactory
 {
-    public static CursoModel GetCursoNovoModel(string nome)
+    public static CursoModel GetCursoNovoModel()
     {
         return new CursoModel
         {
-            Nome = nome,
+            Nome = "Curso teste"
         };
-    }
-
-    public static Curso GetCursoNovo(string nome)
-    {
-        return new Curso(GetCursoNovoModel(nome));
     }
 }

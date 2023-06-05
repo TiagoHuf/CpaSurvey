@@ -19,6 +19,121 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                 .HasAnnotation("ProductVersion", "7.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("AlunoTurma", b =>
+                {
+                    b.Property<long>("AlunosId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("TurmasId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("AlunosId", "TurmasId");
+
+                    b.HasIndex("TurmasId");
+
+                    b.ToTable("AlunoTurma");
+                });
+
+            modelBuilder.Entity("AvaliacaoPergunta", b =>
+                {
+                    b.Property<long>("AvaliacoesId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("PerguntasId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("AvaliacoesId", "PerguntasId");
+
+                    b.HasIndex("PerguntasId");
+
+                    b.ToTable("AvaliacaoPergunta");
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.AlunoDisciplina", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("AlunoId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("DisciplinaId")
+                        .HasColumnType("bigint");
+
+                    b.Property<bool>("IsRespondido")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AlunoId");
+
+                    b.HasIndex("DisciplinaId");
+
+                    b.ToTable("AlunoDisciplina", (string)null);
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Alunos.Aluno", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("CursoId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("IsAtivo")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Ra")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("varchar(8)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CursoId");
+
+                    b.ToTable("Aluno", (string)null);
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Avaliacoes.Avaliacao", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DataFim")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("DataInicio")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<long>("DisciplinaId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("Nome");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DisciplinaId");
+
+                    b.ToTable("Avaliacao", (string)null);
+                });
+
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Cursos.Curso", b =>
                 {
                     b.Property<long>("Id")
@@ -42,13 +157,28 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
+                    b.Property<long>("CursoId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)")
                         .HasColumnName("Nome");
 
+                    b.Property<long>("ProfessorId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("TurmaId")
+                        .HasColumnType("bigint");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("CursoId");
+
+                    b.HasIndex("ProfessorId");
+
+                    b.HasIndex("TurmaId");
 
                     b.ToTable("Disciplina", (string)null);
                 });
@@ -101,6 +231,23 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.ToTable("Pergunta", (string)null);
                 });
 
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Professores.Professor", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("Nome");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Professor", (string)null);
+                });
+
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Respostas.Resposta", b =>
                 {
                     b.Property<long>("Id")
@@ -111,8 +258,8 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<string>("Descricao")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)")
                         .HasColumnName("Descricao");
 
                     b.Property<long>("PerguntaId")
@@ -130,23 +277,6 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.ToTable("Resposta", (string)null);
                 });
 
-            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.TiposArea.TipoArea", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)")
-                        .HasColumnName("Nome");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Tipo", (string)null);
-                });
-
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Turmas.Turma", b =>
                 {
                     b.Property<long>("Id")
@@ -158,8 +288,8 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)")
                         .HasColumnName("nome");
 
                     b.HasKey("Id");
@@ -169,28 +299,100 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.ToTable("Turma", (string)null);
                 });
 
-            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Usuarios.Aluno", b =>
+            modelBuilder.Entity("AlunoTurma", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Alunos.Aluno", null)
+                        .WithMany()
+                        .HasForeignKey("AlunosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<bool>("IsAtivo")
-                        .HasColumnType("tinyint(1)");
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Turmas.Turma", null)
+                        .WithMany()
+                        .HasForeignKey("TurmasId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
 
-                    b.Property<string>("Nome")
+            modelBuilder.Entity("AvaliacaoPergunta", b =>
+                {
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Avaliacoes.Avaliacao", null)
+                        .WithMany()
+                        .HasForeignKey("AvaliacoesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Perguntas.Pergunta", null)
+                        .WithMany()
+                        .HasForeignKey("PerguntasId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.AlunoDisciplina", b =>
+                {
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Alunos.Aluno", "Aluno")
+                        .WithMany("Disciplinas")
+                        .HasForeignKey("AlunoId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                        .HasConstraintName("FK_AlunoDisciplina_Aluno_AlunoId");
 
-                    b.Property<string>("Ra")
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Disciplinas.Disciplina", "Disciplina")
+                        .WithMany("Alunos")
+                        .HasForeignKey("DisciplinaId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
+                        .HasConstraintName("FK_AlunoDisciplina_Disciplina_DisciplinaId");
 
-                    b.HasKey("Id");
+                    b.Navigation("Aluno");
 
-                    b.ToTable("Aluno", (string)null);
+                    b.Navigation("Disciplina");
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Alunos.Aluno", b =>
+                {
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Cursos.Curso", "Curso")
+                        .WithMany("Alunos")
+                        .HasForeignKey("CursoId")
+                        .IsRequired()
+                        .HasConstraintName("FK_Curso_Aluno_CursoId");
+
+                    b.Navigation("Curso");
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Avaliacoes.Avaliacao", b =>
+                {
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Disciplinas.Disciplina", "Disciplina")
+                        .WithMany("Avaliacoes")
+                        .HasForeignKey("DisciplinaId")
+                        .IsRequired()
+                        .HasConstraintName("FK_Disciplina_Avaliacao_DisciplinaId");
+
+                    b.Navigation("Disciplina");
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Disciplinas.Disciplina", b =>
+                {
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Cursos.Curso", "Curso")
+                        .WithMany("Disciplinas")
+                        .HasForeignKey("CursoId")
+                        .IsRequired()
+                        .HasConstraintName("FK_Curso_Disciplina_DisciplinaId");
+
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Professores.Professor", "Professor")
+                        .WithMany("Disciplinas")
+                        .HasForeignKey("ProfessorId")
+                        .IsRequired()
+                        .HasConstraintName("FK_Professor_Disciplina_ProfessorId");
+
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Turmas.Turma", null)
+                        .WithMany("Disciplinas")
+                        .HasForeignKey("TurmaId");
+
+                    b.Navigation("Curso");
+
+                    b.Navigation("Professor");
                 });
 
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Perguntas.Pergunta", b =>
@@ -198,7 +400,6 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.HasOne("Biopark.CpaSurvey.Domain.Entities.Eixos.Eixo", "Eixo")
                         .WithMany("Perguntas")
                         .HasForeignKey("EixoId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Eixo_Pergunta_EixoId");
 
@@ -207,17 +408,15 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
 
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Respostas.Resposta", b =>
                 {
-                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Usuarios.Aluno", "Aluno")
+                    b.HasOne("Biopark.CpaSurvey.Domain.Entities.Alunos.Aluno", "Aluno")
                         .WithMany("Respostas")
                         .HasForeignKey("AlunoId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Aluno_Resposta_AlunoId");
 
                     b.HasOne("Biopark.CpaSurvey.Domain.Entities.Perguntas.Pergunta", "Pergunta")
                         .WithMany("Respostas")
                         .HasForeignKey("PerguntaId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Pergunta_Resposta_PerguntaId");
 
@@ -231,16 +430,33 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.HasOne("Biopark.CpaSurvey.Domain.Entities.Cursos.Curso", "Curso")
                         .WithMany("Turmas")
                         .HasForeignKey("CursoId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("FK_Turma_Curso_CursoId");
+                        .HasConstraintName("FK_Curso_Turma_CursoId");
 
                     b.Navigation("Curso");
                 });
 
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Alunos.Aluno", b =>
+                {
+                    b.Navigation("Disciplinas");
+
+                    b.Navigation("Respostas");
+                });
+
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Cursos.Curso", b =>
                 {
+                    b.Navigation("Alunos");
+
+                    b.Navigation("Disciplinas");
+
                     b.Navigation("Turmas");
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Disciplinas.Disciplina", b =>
+                {
+                    b.Navigation("Alunos");
+
+                    b.Navigation("Avaliacoes");
                 });
 
             modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Eixos.Eixo", b =>
@@ -253,9 +469,14 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.Navigation("Respostas");
                 });
 
-            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Usuarios.Aluno", b =>
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Professores.Professor", b =>
                 {
-                    b.Navigation("Respostas");
+                    b.Navigation("Disciplinas");
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Turmas.Turma", b =>
+                {
+                    b.Navigation("Disciplinas");
                 });
 #pragma warning restore 612, 618
         }
