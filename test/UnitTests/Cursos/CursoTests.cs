@@ -7,7 +7,7 @@ namespace Biopark.CpaSurvey.UnitTests.Cursos;
 public class CursoTests : TestBase
 {
     [Test]
-    public void ConstrutorDeveCriarCursoaComSucesso()
+    public void ConstrutorDeveCriarCursoComSucesso()
     {
         var model = CursoFactory.GetCursoNovoModel();
 
