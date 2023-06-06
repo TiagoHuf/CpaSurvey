@@ -7,7 +7,7 @@ namespace Biopark.CpaSurvey.UnitTests.Alunos;
 public partial class AlunoTests : TestBase
 {
     [Test]
-    public void ConstrutorDeveCriarPerguntaComSucesso()
+    public void ConstrutorDeveCriarAlunoComSucesso()
     {
         var model = AlunoFactory.GetAlunoNovoModel();
 
