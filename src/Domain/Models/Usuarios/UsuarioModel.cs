@@ -1,4 +1,4 @@
-﻿using System.Security.Principal;
+﻿using Biopark.CpaSurvey.Domain.Entities.Usuarios;
 
 namespace Biopark.CpaSurvey.Domain.Models.Usuarios;
 
