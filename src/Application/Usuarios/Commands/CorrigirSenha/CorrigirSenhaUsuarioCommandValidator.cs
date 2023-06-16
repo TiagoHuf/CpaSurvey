@@ -1,5 +1,4 @@
 ﻿using Biopark.CpaSurvey.Application.Common.Validators;
-using Biopark.CpaSurvey.Application.Usuarios.Commands.CorrigirLogin;
 using Biopark.CpaSurvey.Domain.Entities.Usuarios;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;
