@@ -1,6 +1,4 @@
 ﻿using Biopark.CpaSurvey.Application.Common.Validators;
-using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirDescricao;
-using Biopark.CpaSurvey.Domain.Entities.Perguntas;
 using Biopark.CpaSurvey.Domain.Entities.Usuarios;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;

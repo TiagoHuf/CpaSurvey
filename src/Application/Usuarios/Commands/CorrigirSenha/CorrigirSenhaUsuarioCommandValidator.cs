@@ -12,7 +12,7 @@ public class CorrigirSenhaUsuarioCommandValidator : ValidatorBase<CorrigirSenhaU
         RuleFor(p => p.Senha)
             .NotEmpty()
             .MinimumLength(2)
-            .MaximumLength(200);
+            .MaximumLength(30);
 
         RuleFor(p => p.UsarioId)
             .MustExists<CorrigirSenhaUsuarioCommand, Usuario>(unitOfWork);
