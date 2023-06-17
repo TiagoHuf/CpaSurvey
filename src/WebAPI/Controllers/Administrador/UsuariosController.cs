@@ -4,6 +4,14 @@ using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirEixo;
 using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirTipoResposta;
 using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPergunta;
 using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPerguntas;
+using Biopark.CpaSurvey.Application.Usuarios.Commands.CorrigirLogin;
+using Biopark.CpaSurvey.Application.Usuarios.Commands.CorrigirRole;
+using Biopark.CpaSurvey.Application.Usuarios.Commands.CorrigirSenha;
+using Biopark.CpaSurvey.Application.Usuarios.Commands.CriarUsuario;
+using Biopark.CpaSurvey.Application.Usuarios.Commands.RemoverUsuario;
+using Biopark.CpaSurvey.Application.Usuarios.Queries.GetUsuario;
+using Biopark.CpaSurvey.Application.Usuarios.Queries.GetUsuarios;
+using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -17,70 +25,71 @@ public class UsuariosController : ApiController
     {
         var result = await Mediator.Send(command);
         return Created(
-            "perguntas/",
-            new Response(result, "Pergunta cadastrada com sucesso.")
+            "usuarios/",
+            new Response(result, "Usario cadastrado com sucesso.")
         );
     }
 
     [HttpGet]
-    [SwaggerOperation("Retorna todas as perguntas cadastradas.")]
-    public async Task<IActionResult> GetPerguntasAsync([FromQuery] GetPerguntasQuery query)
+    [SwaggerOperation("Retorna todas os usuarios cadastrados.")]
+    public async Task<IActionResult> GetPerguntasAsync([FromQuery] GetUsuariosQuery query)
     {
         var result = await Mediator.Send(query);
 
         return Ok(result);
     }
 
-    [HttpGet("{perguntaId:long}")]
-    [SwaggerOperation("Retorna uma pergunta através do identificador provido.")]
-    public async Task<IActionResult> GetAsync([FromRoute] GetPerguntaQuery query)
+    [HttpGet("{usuarioId:long}")]
+    [SwaggerOperation("Retorna um usuario através do identificador provido.")]
+    public async Task<IActionResult> GetAsync([FromRoute] GetUsuarioQuery query)
     {
         var result = await Mediator.Send(query);
 
         return Ok(result);
     }
 
-    [HttpPut("{perguntaId:long}/corrigir-descricao")]
-    [SwaggerOperation("Corrige a descrição de uma pergunta através do identificador provido.")]
-    public async Task<IActionResult> PutCorrigirDescricaoPerguntaAsync(
-        [FromRoute] long perguntaId, [FromBody] CorrigirDescricaoPerguntaCommand command)
+    [HttpPut("{usuarioId:long}/corrigir-login")]
+    [SwaggerOperation("Corrige o login de um usuario através do identificador provido.")]
+    public async Task<IActionResult> PutCorrigirLoginUsuarioAsync(
+        [FromRoute] long usuarioId, [FromBody] CorrigirLoginUsuarioCommand command)
     {
-        if (perguntaId != command.PerguntaId) return BadRequest();
+        if (usuarioId != command.UsarioId) return BadRequest();
 
         var result = await Mediator.Send(command);
 
-        return Ok(new Response(result, "Descrição da pergunta corrigido com sucesso."));
+        return Ok(new Response(result, "Login do usuario corrigido com sucesso."));
     }
 
-    [HttpPut("{perguntaId:long}/corrigir-tipo-resposta")]
-    [SwaggerOperation("Corrige o tipo de resposta de uma pergunta através do identificador provido.")]
-    public async Task<IActionResult> PutCorrigirTipoRespostaPerguntaAsync(
-        [FromRoute] long perguntaId, [FromBody] CorrigirTipoRespostaPerguntaCommand command)
+    [HttpPut("{usuarioId:long}/corrigir-senha")]
+    [SwaggerOperation("Corrige a senha de um usuario através do identificador provido.")]
+    public async Task<IActionResult> PutCorrigirSenhaUsuarioAsync(
+        [FromRoute] long usuarioId, [FromBody] CorrigirSenhaUsuarioCommand command)
     {
-        if (perguntaId != command.PerguntaId) return BadRequest();
+        if (usuarioId != command.UsarioId) return BadRequest();
 
         var result = await Mediator.Send(command);
 
-        return Ok(new Response(result, "Tipo de resposta da pergunta corrigido com sucesso."));
+        return Ok(new Response(result, "Senha do usuario corrigido com sucesso."));
     }
 
-    [HttpPut("{perguntaId:long}/corrigir-eixo")]
-    [SwaggerOperation("Corrige o eixo de uma pergunta através dos identificadores providos.")]
-    public async Task<IActionResult> PutCorrigirEixoPerguntaAsync(
-        [FromRoute] long perguntaId, [FromBody] CorrigirEixoPerguntaCommand command)
+    [HttpPut("{usuarioId:long}/corrigir-role")]
+    [SwaggerOperation("Corrige a role de um usuario através dos identificadores providos.")]
+    public async Task<IActionResult> PutCorrigirRoleUsuarioAsync(
+        [FromRoute] long usuarioId, [FromBody] CorrigirRoleUsuarioCommand command)
     {
-        if (perguntaId != command.PerguntaId) return BadRequest();
+        if (usuarioId != command.UsarioId) return BadRequest();
 
         var result = await Mediator.Send(command);
 
-        return Ok(new Response(result, "Eixo da pergunta corrigido com sucesso."));
+        return Ok(new Response(result, "Role do usuario corrigido com sucesso."));
     }
 
-    [HttpDelete("{perguntaId:long}")]
-    [SwaggerOperation("Remove uma pergunta através do identificador provido.")]
-    public async Task<IActionResult> DeletePerguntaAsync([FromRoute] RemoverPerguntaCommand query)
+    [HttpDelete("{usuarioId:long}")]
+    [SwaggerOperation("Remove um usuario através do identificador provido.")]
+    public async Task<IActionResult> DeleteUsuarioAsync([FromRoute] RemoverUsuarioCommand query)
     {
         var result = await Mediator.Send(query);
 
-        return Ok(new Response(result, "Pergunta removida com sucesso."));
-    }
+        return Ok(new Response(result, "Usuario removido com sucesso."));
+    } 
+}
