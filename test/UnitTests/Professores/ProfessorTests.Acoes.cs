@@ -1,5 +1,4 @@
-﻿
-using Biopark.CpaSurvey.Domain.Entities.Professores;
+﻿using Biopark.CpaSurvey.Domain.Entities.Professores;
 using FluentAssertions;
 using NUnit.Framework;
 

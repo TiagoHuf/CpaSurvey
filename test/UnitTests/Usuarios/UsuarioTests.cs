@@ -1,6 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Perguntas;
-using Biopark.CpaSurvey.Domain.Entities.Usuarios;
-using Biopark.CpaSurvey.UnitTests.Perguntas;
+﻿using Biopark.CpaSurvey.Domain.Entities.Usuarios;
 using FluentAssertions;
 using NUnit.Framework;
 

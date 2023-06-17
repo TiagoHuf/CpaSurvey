@@ -1,6 +1,4 @@
 ﻿using Biopark.CpaSurvey.Application.Common.Validators;
-using Biopark.CpaSurvey.Application.Eixos.Commands.CriarPergunta;
-using Biopark.CpaSurvey.Domain.Entities.Eixos;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using FluentValidation;
 

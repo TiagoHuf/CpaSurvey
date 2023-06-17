@@ -1,10 +1,4 @@
-﻿using Biopark.CpaSurvey.Application.Eixos.Commands.CriarPergunta;
-using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirDescricao;
-using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirEixo;
-using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirTipoResposta;
-using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPergunta;
-using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPerguntas;
-using Biopark.CpaSurvey.Application.Usuarios.Commands.CorrigirLogin;
+﻿using Biopark.CpaSurvey.Application.Usuarios.Commands.CorrigirLogin;
 using Biopark.CpaSurvey.Application.Usuarios.Commands.CorrigirRole;
 using Biopark.CpaSurvey.Application.Usuarios.Commands.CorrigirSenha;
 using Biopark.CpaSurvey.Application.Usuarios.Commands.CriarUsuario;

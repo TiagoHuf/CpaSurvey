@@ -1,11 +1,5 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Disciplinas;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
 
 namespace Biopark.CpaSurvey.Infra.Data.Configurations;
