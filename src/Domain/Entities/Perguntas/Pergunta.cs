@@ -1,7 +1,6 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
 using Biopark.CpaSurvey.Domain.Entities.Eixos;
 using Biopark.CpaSurvey.Domain.Entities.Respostas;
-using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Perguntas;
 
