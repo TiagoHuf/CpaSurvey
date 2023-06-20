@@ -52,5 +52,4 @@ public class SalvarResposaCommandHandler : IRequestHandler<SalvarRespostaCommand
 
         return model;
     }
-}  
-
+}

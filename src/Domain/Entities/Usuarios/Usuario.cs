@@ -8,7 +8,7 @@ public partial class Usuario : BaseEntity<long>, IAggregateRoot
     public Usuario(UsuairoModel model)
     {
         Login = model.Login;
-        Senha = model.Senha;
+        SenhaHash = model.Senha;
         Role = model.Role;
     }
 
@@ -19,7 +19,7 @@ public partial class Usuario : BaseEntity<long>, IAggregateRoot
 
     public string Login { get; private set; }
 
-    public string Senha { get; private set; }
+    public string SenhaHash { get; private set; }
 
     public Role Role { get; private set; }
 }

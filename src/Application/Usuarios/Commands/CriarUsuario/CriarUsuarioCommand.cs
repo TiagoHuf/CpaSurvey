@@ -2,6 +2,7 @@
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Usuarios;
 using MediatR;
+using SecureIdentity.Password;
 
 namespace Biopark.CpaSurvey.Application.Usuarios.Commands.CriarUsuario;
 
@@ -43,7 +44,7 @@ public class CriarUsuarioCommandHandler : IRequestHandler<CriarUsuarioCommand, U
         var model = new UsuairoModel
         {
             Login = request.Login,
-            Senha = request.Senha,
+            Senha = PasswordHasher.Hash(request.Senha),
             Role = request.Role,
         };
 
