@@ -15,7 +15,7 @@ public partial class UsuarioTests
 
         usuario.Should().NotBeNull();
         usuario.Login.Should().Be(model.Login);
-        usuario.Senha.Should().Be(model.Senha);
+        usuario.SenhaHash.Should().Be(model.Senha);
         usuario.Role.Should().Be(model.Role);
     }
 }
