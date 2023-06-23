@@ -1,5 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
-using Biopark.CpaSurvey.Domain.Models.Cursos;
+﻿using Biopark.CpaSurvey.Domain.Models.Cursos;
 
 namespace Biopark.CpaSurvey.UnitTests.Cursos;
 

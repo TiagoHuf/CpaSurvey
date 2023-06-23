@@ -2,7 +2,9 @@
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+
 namespace Biopark.CpaSurvey.Application.Cursos.Queries.GetCursos;
+
 public class GetCursosQuery : IRequest<List<Curso>>
 {
 }
