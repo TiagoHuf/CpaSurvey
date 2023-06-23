@@ -32,6 +32,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biopark.CpaSurvey.Infra.Auth", "Biopark.CpaSurvey.Infra.Auth\Biopark.CpaSurvey.Infra.Auth.csproj", "{1C879ABC-A8C0-4CAD-89B5-6455CF4953A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biopark.CpaSurvey.DomainService", "Biopark.CpaSurvey.DomainService\Biopark.CpaSurvey.DomainService.csproj", "{2FCE378C-4166-4FB3-BF28-ADA6FB0BD089}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +66,14 @@ Global
 		{1C7606EB-F479-4D83-A7D0-041FF8215945}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C7606EB-F479-4D83-A7D0-041FF8215945}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C7606EB-F479-4D83-A7D0-041FF8215945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C879ABC-A8C0-4CAD-89B5-6455CF4953A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C879ABC-A8C0-4CAD-89B5-6455CF4953A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C879ABC-A8C0-4CAD-89B5-6455CF4953A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C879ABC-A8C0-4CAD-89B5-6455CF4953A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCE378C-4166-4FB3-BF28-ADA6FB0BD089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCE378C-4166-4FB3-BF28-ADA6FB0BD089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCE378C-4166-4FB3-BF28-ADA6FB0BD089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCE378C-4166-4FB3-BF28-ADA6FB0BD089}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +89,8 @@ Global
 		{EAA65105-499C-44D7-85B5-D150E8A525DE} = {C8EF14FA-9184-40FE-B5C1-DD6581A6C792}
 		{3FABAB6B-E8BB-4D6D-A75E-9677EDD6430C} = {C8EF14FA-9184-40FE-B5C1-DD6581A6C792}
 		{1C7606EB-F479-4D83-A7D0-041FF8215945} = {EAA65105-499C-44D7-85B5-D150E8A525DE}
+		{1C879ABC-A8C0-4CAD-89B5-6455CF4953A7} = {EAA65105-499C-44D7-85B5-D150E8A525DE}
+		{2FCE378C-4166-4FB3-BF28-ADA6FB0BD089} = {7992A853-D646-46FE-8692-4D846BB734B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A05C33D-AF13-4D97-B6A5-4A77A76F683F}

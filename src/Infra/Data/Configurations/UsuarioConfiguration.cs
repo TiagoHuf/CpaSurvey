@@ -18,10 +18,10 @@ public class UsuarioConfiguration : IEntityTypeConfiguration<Usuario>
             .IsRequired()
             .HasMaxLength(200);
 
-        builder.Property(p => p.Senha)
+        builder.Property(p => p.SenhaHash)
             .HasColumnName("Senha")
             .IsRequired()
-            .HasMaxLength(30);
+            .HasMaxLength(200);
 
         builder.Property(p => p.Role)
             .IsRequired()

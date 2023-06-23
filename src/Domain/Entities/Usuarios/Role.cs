@@ -1,19 +1,22 @@
 ﻿namespace Biopark.CpaSurvey.Domain.Entities.Usuarios;
 
+/// <summary>
+/// Tipos de permissão por usuário.
+/// </summary>
 public enum Role
 {
     /// <summary>
-    /// Escala de Likert.
+    /// Usuário com permissão total.
     /// </summary>
     Admin,
 
     /// <summary>
-    /// Escala de Likert.
+    /// Usuário com permissão para gerenciar avaliações.
     /// </summary>
     Professor,
 
     /// <summary>
-    /// Escala de Likert.
+    /// Usuário com permissão para votar.
     /// </summary>
     Aluno
 }

@@ -8,6 +8,7 @@ using Biopark.CpaSurvey.Application.Alunos.Commands.Inativar;
 using Biopark.CpaSurvey.Application.Alunos.Commands.RemoverAluno;
 using Biopark.CpaSurvey.Application.Alunos.Queries.GetAluno;
 using Biopark.CpaSurvey.Application.Alunos.Queries.GetAlunos;
+using Biopark.CpaSurvey.Application.Auth;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;

@@ -9,7 +9,7 @@ public partial class Usuario
 
     public void CorrigirSenha(string senha)
     {
-        Senha = senha;
+        SenhaHash = senha;
     }
 
     public void CorrigirRole(Role role)
