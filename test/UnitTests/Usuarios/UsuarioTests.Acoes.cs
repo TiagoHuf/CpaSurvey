@@ -32,7 +32,7 @@ public partial class UsuarioTests
 
         _usuario.CorrigirSenha(NovaSenha);
 
-        _usuario.Senha.Should().Be(NovaSenha);
+        _usuario.SenhaHash.Should().Be(NovaSenha);
     }
 
     [Test]
