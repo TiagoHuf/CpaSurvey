@@ -9,8 +9,6 @@ public class CriarDisciplinaCommand : IRequest<Disciplina>
 {
     public string Nome { get; set; }
 
-    public string Descricao { get; set; }
-
     public long ProfessorId { get; set; }
 
     public long CursoId { get; set; }

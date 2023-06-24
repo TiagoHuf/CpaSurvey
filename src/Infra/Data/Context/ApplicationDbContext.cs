@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore.Design;
 using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
 using Biopark.CpaSurvey.Domain.Entities;
 using Biopark.CpaSurvey.Domain.Entities.Professores;
+using Biopark.CpaSurvey.Domain.Entities.Usuarios;
 
 namespace Biopark.CpaSurvey.Infra.Data.Context;
 
@@ -32,6 +33,7 @@ public class ApplicationDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
+        modelBuilder.Entity<Usuario>(new UsuarioConfiguration().Configure);
         modelBuilder.Entity<Aluno>(new AlunoConfiguration().Configure);
         modelBuilder.Entity<AlunoDisciplina>(new AlunoDisciplinaConfiguration().Configure);
         modelBuilder.Entity<Avaliacao>(new AvaliacaoConfiguration().Configure);

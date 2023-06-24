@@ -7,9 +7,8 @@ public partial class Avaliacao
         Nome = nome;
     }
 
-    public void CorrigirDataAvaliacao(DateTime inicio, DateTime fim)
+    public void CorrigirDataAvaliacao(DateTime fim)
     {
-        DataInicio = inicio;
         DataFim = fim;
     }
 }

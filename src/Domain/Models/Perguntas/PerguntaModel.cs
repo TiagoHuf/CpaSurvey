@@ -1,5 +1,4 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Eixos;
-using Biopark.CpaSurvey.Domain.Entities.Perguntas;
+﻿using Biopark.CpaSurvey.Domain.Entities.Perguntas;
 
 namespace Biopark.CpaSurvey.Domain.Models.Perguntas;
 public class PerguntaModel

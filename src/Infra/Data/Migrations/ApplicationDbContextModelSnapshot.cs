@@ -16,7 +16,7 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.3")
+                .HasAnnotation("ProductVersion", "7.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("AlunoTurma", b =>
@@ -297,6 +297,32 @@ namespace Biopark.CpaSurvey.Infra.Data.Migrations
                     b.HasIndex("CursoId");
 
                     b.ToTable("Turma", (string)null);
+                });
+
+            modelBuilder.Entity("Biopark.CpaSurvey.Domain.Entities.Usuarios.Usuario", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("Login");
+
+                    b.Property<long>("Role")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("SenhaHash")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("Senha");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuario", (string)null);
                 });
 
             modelBuilder.Entity("AlunoTurma", b =>

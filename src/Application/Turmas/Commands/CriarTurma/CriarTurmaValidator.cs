@@ -11,7 +11,7 @@ public class CriarTurmaValidator : ValidatorBase<CriarTurmaCommand>
     {
         RuleFor(p => p.Nome)
             .NotEmpty()
-            .MinimumLength(5)
+            .MinimumLength(2)
             .MaximumLength(50);
 
         RuleFor(p => p.CursoId)

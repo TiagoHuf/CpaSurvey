@@ -15,11 +15,6 @@ public class CriarDisciplinaCommandValidator : ValidatorBase<CriarDisciplinaComm
             .MinimumLength(2)
             .MaximumLength(50);
 
-        RuleFor(p => p.Descricao)
-            .NotEmpty()
-            .MinimumLength(2)
-            .MaximumLength(200);
-
         RuleFor(p => p.ProfessorId)
             .MustExists<CriarDisciplinaCommand, Professor>(unitOfWork);
 

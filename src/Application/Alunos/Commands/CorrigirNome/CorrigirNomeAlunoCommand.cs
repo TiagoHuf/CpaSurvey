@@ -1,7 +1,6 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace Biopark.CpaSurvey.Application.Alunos.Commands.CorrigirNome;
 

@@ -7,7 +7,7 @@ namespace Biopark.CpaSurvey.UnitTests.Avaliacoes;
 public class AvaliacaoTests : TestBase
 {
     [Test]
-    public void ConstrutorDeveCriarTurmaComSucesso()
+    public void ConstrutorDeveCriarAvaliaçãoComSucesso()
     {
         var model = AvaliacaoFactory.GetAvaliacaoNovaModel();
 

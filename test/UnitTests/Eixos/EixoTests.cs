@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace Biopark.CpaSurvey.UnitTests.Eixos;
 
-public class EixoTests : TestBase
+public partial class EixoTests : TestBase
 {
     [Test]
     public void ConstrutorDeveCriarEixoComSucesso()

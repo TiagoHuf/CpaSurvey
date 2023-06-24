@@ -1,6 +1,5 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Disciplinas;
 using Biopark.CpaSurvey.Domain.Entities.Perguntas;
-using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Avaliacoes;
 

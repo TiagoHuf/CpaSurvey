@@ -1,5 +1,4 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Cursos;
-using Biopark.CpaSurvey.Domain.Entities.Disciplinas;
 using Biopark.CpaSurvey.Domain.Entities.Respostas;
 using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces;
