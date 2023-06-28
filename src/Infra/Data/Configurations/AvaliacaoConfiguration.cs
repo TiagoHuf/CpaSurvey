@@ -31,5 +31,8 @@ public class AvaliacaoConfiguration : IEntityTypeConfiguration<Avaliacao>
 
         builder.HasMany(a => a.Perguntas)
             .WithMany(p => p.Avaliacoes);
+
+        builder.HasMany(a => a.Turmas)
+            .WithMany(p => p.Avaliacoes);
     }
 }

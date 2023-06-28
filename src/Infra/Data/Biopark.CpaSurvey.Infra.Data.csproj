@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\Biopark.CpaSurvey.Domain.csproj" />
+    <ProjectReference Include="..\..\Domain\Domain\Biopark.CpaSurvey.Domain.csproj" />
   </ItemGroup>
 
 </Project>

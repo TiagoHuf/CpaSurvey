@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Domain\Domain\Biopark.CpaSurvey.Domain.csproj" />
     <ProjectReference Include="..\..\Data\Biopark.CpaSurvey.Infra.Data.csproj" />
   </ItemGroup>
 
