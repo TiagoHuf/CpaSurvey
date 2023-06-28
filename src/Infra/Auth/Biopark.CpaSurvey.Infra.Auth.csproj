@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Biopark.CpaSurvey.DomainService\Biopark.CpaSurvey.DomainService.csproj" />
-    <ProjectReference Include="..\src\Domain\Biopark.CpaSurvey.Domain.csproj" />
+    <ProjectReference Include="..\..\Domain\DomainService\Biopark.CpaSurvey.DomainService.csproj" />
+    <ProjectReference Include="..\..\Domain\Domain\Biopark.CpaSurvey.Domain.csproj" />
   </ItemGroup>
 
 </Project>

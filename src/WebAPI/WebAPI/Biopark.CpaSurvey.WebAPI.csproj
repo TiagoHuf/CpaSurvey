@@ -28,11 +28,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Biopark.CpaSurvey.Infra.Auth\Biopark.CpaSurvey.Infra.Auth.csproj" />
-    <ProjectReference Include="..\Application\Biopark.CpaSurvey.Application.csproj" />
-    <ProjectReference Include="..\Domain\Biopark.CpaSurvey.Domain.csproj" />
-    <ProjectReference Include="..\Infra\CrossCutting\CrossCutting\Biopark.CpaSurvey.Infra.CrossCutting.csproj" />
-    <ProjectReference Include="..\Infra\Data\Biopark.CpaSurvey.Infra.Data.csproj" />
+    <ProjectReference Include="..\..\Application\Application\Biopark.CpaSurvey.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\DomainService\Biopark.CpaSurvey.DomainService.csproj" />
+    <ProjectReference Include="..\..\Infra\Auth\Biopark.CpaSurvey.Infra.Auth.csproj" />
+    <ProjectReference Include="..\..\Infra\CrossCutting\CrossCutting\Biopark.CpaSurvey.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\..\Infra\Data\Biopark.CpaSurvey.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>
