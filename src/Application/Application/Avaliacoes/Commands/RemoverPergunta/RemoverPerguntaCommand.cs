@@ -1,12 +1,15 @@
-﻿using Biopark.CpaSurvey.Domain.Entities.Perguntas;
+﻿using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
+using Biopark.CpaSurvey.Domain.Entities.Perguntas;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biopark.CpaSurvey.Application.Perguntas.Commands.RemoverPergunta;
+namespace Biopark.CpaSurvey.Application.Avaliacoes.Commands.RemoverPergunta;
 
 public class RemoverPerguntaCommand : IRequest
 {
+    public long AvaliacaoId { get; set; }
+
     public long PerguntaId { get; set; }
 }
 
@@ -21,13 +24,19 @@ public class RemoverPerguntaCommandHandler : IRequestHandler<RemoverPerguntaComm
 
     public async Task<Unit> Handle(RemoverPerguntaCommand request, CancellationToken cancellationToken)
     {
-        var repository = _unitOfWork.GetRepository<Pergunta>();
+        var repositoryAvaliacao = _unitOfWork.GetRepository<Avaliacao>();
 
-        var pergunta = await repository
+        var avaliacao = await repositoryAvaliacao
+            .FindBy(c => c.Id == request.AvaliacaoId)
+            .FirstAsync(cancellationToken);
+
+        var repositoryPergunta = _unitOfWork.GetRepository<Pergunta>();
+
+        var pergunta = await repositoryPergunta
             .FindBy(c => c.Id == request.PerguntaId)
             .FirstAsync(cancellationToken);
 
-        repository.Delete(pergunta);
+        avaliacao.RemoverPergunta(pergunta);
 
         await _unitOfWork.CommitAsync();
 

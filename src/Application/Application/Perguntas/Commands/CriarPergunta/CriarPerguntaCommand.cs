@@ -3,7 +3,7 @@ using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.Domain.Models.Perguntas;
 using MediatR;
 
-namespace Biopark.CpaSurvey.Application.Eixos.Commands.CriarPergunta;
+namespace Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
 
 public class CriarPerguntaCommand : IRequest<Pergunta>
 {
@@ -17,11 +17,11 @@ public class CriarPerguntaCommand : IRequest<Pergunta>
 public class CriarPerguntaCommandHandler : IRequestHandler<CriarPerguntaCommand, Pergunta>
 {
     private readonly IUnitOfWork _unitOfWork;
-    
+
     public CriarPerguntaCommandHandler(IUnitOfWork unitOfWork)
     {
         _unitOfWork = unitOfWork;
-    }   
+    }
 
     public async Task<Pergunta> Handle(CriarPerguntaCommand request, CancellationToken cancellationToken)
     {
@@ -35,7 +35,7 @@ public class CriarPerguntaCommandHandler : IRequestHandler<CriarPerguntaCommand,
 
         await _unitOfWork.CommitAsync();
 
-        return perguntaInserir;   
+        return perguntaInserir;
     }
 
     public PerguntaModel CriaModelo(CriarPerguntaCommand request)
