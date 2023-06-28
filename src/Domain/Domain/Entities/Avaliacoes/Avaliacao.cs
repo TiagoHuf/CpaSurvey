@@ -1,5 +1,6 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Disciplinas;
 using Biopark.CpaSurvey.Domain.Entities.Perguntas;
+using Biopark.CpaSurvey.Domain.Entities.Turmas;
 using Biopark.CpaSurvey.Domain.Interfaces;
 using Biopark.CpaSurvey.Domain.Models.Avaliacoes;
 
@@ -31,4 +32,7 @@ public partial class Avaliacao : BaseEntity<long>, IAggregateRoot
 
     public IReadOnlyCollection<Pergunta> Perguntas => _perguntas.AsReadOnly();
     private readonly List<Pergunta> _perguntas = new();
+
+    public IReadOnlyCollection<Turma> Turmas => _turmas.AsReadOnly();
+    private readonly List<Turma> _turmas = new();
 }

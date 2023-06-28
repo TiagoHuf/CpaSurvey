@@ -1,4 +1,5 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
+using Biopark.CpaSurvey.Domain.Entities.Avaliacoes;
 using Biopark.CpaSurvey.Domain.Entities.Cursos;
 using Biopark.CpaSurvey.Domain.Entities.Disciplinas;
 using Biopark.CpaSurvey.Domain.Interfaces;
@@ -30,4 +31,7 @@ public partial class Turma : BaseEntity<long>, IAggregateRoot
 
     public IReadOnlyCollection<Aluno> Alunos => _alunos.AsReadOnly();
     private readonly List<Aluno> _alunos = new();
+
+    public IReadOnlyCollection<Avaliacao> Avaliacoes => _avaliacoes.AsReadOnly();
+    private readonly List<Avaliacao> _avaliacoes = new();
 }

@@ -1,5 +1,4 @@
-﻿using Biopark.CpaSurvey.Application.Eixos.Commands.CriarPergunta;
-using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPergunta;
+﻿using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPergunta;
 using Biopark.CpaSurvey.Application.Perguntas.Queries.GetPerguntas;
 using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirDescricao;
 using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirEixo;
@@ -7,6 +6,8 @@ using Biopark.CpaSurvey.Application.Perguntas.Commands.CorrigirTipoResposta;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
+using Biopark.CpaSurvey.Application.Perguntas.Commands.CriarPergunta;
+using Biopark.CpaSurvey.Application.Perguntas.Commands.RemoverPergunta;
 
 namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
 
