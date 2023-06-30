@@ -1,9 +1,10 @@
-﻿using Biopark.CpaSurvey.Application.Eixos.Commands.CriarPergunta;
-using Biopark.CpaSurvey.Application.Respostas.Queries.GetRespostas;
+﻿using Biopark.CpaSurvey.Application.Respostas.Queries.GetRespostas;
 using Biopark.CpaSurvey.Application.Respostas.Queries.GetResposta;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
+using System.Security.Claims;
+using Biopark.CpaSurvey.Application.Respostas.Commands.SalvarResposta;
 
 namespace Biopark.CpaSurvey.WebAPI.Controllers.Administrador;
 
@@ -11,7 +12,8 @@ public class RespostasController : ApiController
 {
     [HttpPost]
     [SwaggerOperation("Cadastra uma resposta.")]
-    public async Task<IActionResult> PostRespostaAsync([FromBody] SalvarRespostaCommand command)
+    public async Task<IActionResult> PostRespostaAsync(
+        [FromBody] SalvarRespostaCommand command)
     {
         var result = await Mediator.Send(command);
         return Created(

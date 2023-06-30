@@ -99,6 +99,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(opt =>
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<ITokenService, TokenService>();
 builder.Services.AddTransient<IAutenticacaoService, AutenticacaoService>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddSingleton<IUser, AspNetUser>();
 
 builder.Services.AddControllersWithViews(
     config =>
