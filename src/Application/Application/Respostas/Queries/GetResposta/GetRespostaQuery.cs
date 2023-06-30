@@ -1,5 +1,4 @@
 ﻿using Biopark.CpaSurvey.Domain.Entities.Alunos;
-using Biopark.CpaSurvey.Domain.Entities.Respostas;
 using Biopark.CpaSurvey.Domain.Interfaces.Infrastructure;
 using Biopark.CpaSurvey.DomainService.Interfaces;
 using MediatR;
@@ -16,11 +15,13 @@ public class GetRespostaQueryHandler : IRequestHandler<GetRespostaQuery, string>
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly ITokenService _tokenService;
+    private readonly IEmailService _emailService;
 
-    public GetRespostaQueryHandler(IUnitOfWork unitOfWork, ITokenService tokenService)
+    public GetRespostaQueryHandler(IUnitOfWork unitOfWork, ITokenService tokenService, IEmailService emailService)
     {
         _unitOfWork = unitOfWork;
         _tokenService = tokenService;
+        _emailService = emailService;
     }
 
     public async Task<string> Handle(GetRespostaQuery request, CancellationToken cancellationToken)
@@ -33,6 +34,14 @@ public class GetRespostaQueryHandler : IRequestHandler<GetRespostaQuery, string>
 
         var token =  _tokenService.GenerateResponseToken(aluno, DateTime.Now.AddDays(30));
 
-        return token;
+        var sucesso = _emailService.Send(
+            aluno.Nome,
+            aluno.Email,
+            "Avaliação CPA",
+            "Voce possui avaliações pendentes. Para responder acessse o link abaixo: <br> " +
+            "https://cpasurvey.azurewebsites.net/" + token
+            );
+
+        return sucesso.ToString();
     }
 }
