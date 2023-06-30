@@ -52,7 +52,7 @@ public class ApplicationDbContext : DbContext
         {
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 31));
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseMySql("Server=us-cdbr-east-06.cleardb.net;Database=heroku_16cc917e02fee03;User Id=bc300c9d2cbb35;Password=2596311e;", serverVersion);
+            optionsBuilder.UseMySql("Server=us-cdbr-east-06.cleardb.net;Database=heroku_16cc917e02fee03;User Id=bc300c9d2cbb35;Password=2596311e;Convert Zero Datetime=True", serverVersion);
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }
