@@ -28,6 +28,7 @@ public class RemoverPerguntaCommandHandler : IRequestHandler<RemoverPerguntaComm
 
         var avaliacao = await repositoryAvaliacao
             .FindBy(c => c.Id == request.AvaliacaoId)
+            .Include(c => c.Turmas)
             .FirstAsync(cancellationToken);
 
         var repositoryPergunta = _unitOfWork.GetRepository<Pergunta>();

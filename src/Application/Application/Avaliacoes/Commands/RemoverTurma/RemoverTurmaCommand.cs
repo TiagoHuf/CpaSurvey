@@ -28,6 +28,7 @@ public class RemoverTurmaCommandHandler : IRequestHandler<RemoverTurmaCommand>
 
         var avaliacao = await repositoryAvaliacao
             .FindBy(c => c.Id == request.AvaliacaoId)
+            .Include(c => c.Turmas)
             .FirstAsync(cancellationToken);
 
         var repositoryTurma = _unitOfWork.GetRepository<Turma>();
