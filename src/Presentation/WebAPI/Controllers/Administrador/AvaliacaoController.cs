@@ -1,8 +1,12 @@
-﻿using Biopark.CpaSurvey.Application.Avaliacoes.Commands.AdicionarPergunta;
+﻿using Biopark.CpaSurvey.Application.Alunos.Queries.GetAluno;
+using Biopark.CpaSurvey.Application.Alunos.Queries.GetAlunos;
+using Biopark.CpaSurvey.Application.Avaliacoes.Commands.AdicionarPergunta;
 using Biopark.CpaSurvey.Application.Avaliacoes.Commands.AdicionarTurma;
 using Biopark.CpaSurvey.Application.Avaliacoes.Commands.CriarAvalicao;
 using Biopark.CpaSurvey.Application.Avaliacoes.Commands.RemoverPergunta;
 using Biopark.CpaSurvey.Application.Avaliacoes.Commands.RemoverTurma;
+using Biopark.CpaSurvey.Application.Avaliacoes.Queries.GetAvaliacao;
+using Biopark.CpaSurvey.Application.Avaliacoes.Queries.GetAvaliacoes;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -20,6 +24,24 @@ public class AvaliacaoController : ApiController
             "avaliacoes/",
             new Response(result, "Avaliação criada com sucesso.")
         );
+    }
+
+    [HttpGet]
+    [SwaggerOperation("Retorna todas as avaliações cadastradas.")]
+    public async Task<IActionResult> GetAvaliacoesAsync([FromQuery] GetAvaliacoesQuery query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(result);
+    }
+
+    [HttpGet("{avaliacaoId:long}")]
+    [SwaggerOperation("Retorna uma avaliação através do identificador provido.")]
+    public async Task<IActionResult> GetAvaliacaoAsync([FromRoute] GetAvaliacaoQuery query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(result);
     }
 
     [HttpPut("{avaliacaoId:long}/adicionar-pergunta")]
