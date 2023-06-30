@@ -1,12 +1,12 @@
-﻿using Biopark.CpaSurvey.Application.Alunos.Queries.GetAluno;
-using Biopark.CpaSurvey.Application.Alunos.Queries.GetAlunos;
-using Biopark.CpaSurvey.Application.Avaliacoes.Commands.AdicionarPergunta;
+﻿using Biopark.CpaSurvey.Application.Avaliacoes.Commands.AdicionarPergunta;
 using Biopark.CpaSurvey.Application.Avaliacoes.Commands.AdicionarTurma;
 using Biopark.CpaSurvey.Application.Avaliacoes.Commands.CriarAvalicao;
 using Biopark.CpaSurvey.Application.Avaliacoes.Commands.RemoverPergunta;
 using Biopark.CpaSurvey.Application.Avaliacoes.Commands.RemoverTurma;
 using Biopark.CpaSurvey.Application.Avaliacoes.Queries.GetAvaliacao;
 using Biopark.CpaSurvey.Application.Avaliacoes.Queries.GetAvaliacoes;
+using Biopark.CpaSurvey.Application.Avaliacoes.Queries.GetPerguntasAvaliacao;
+using Biopark.CpaSurvey.Application.Avaliacoes.Queries.GetTurmasAvaliacao;
 using Biopark.CpaSurvey.Infra.CrossCutting.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -38,6 +38,24 @@ public class AvaliacaoController : ApiController
     [HttpGet("{avaliacaoId:long}")]
     [SwaggerOperation("Retorna uma avaliação através do identificador provido.")]
     public async Task<IActionResult> GetAvaliacaoAsync([FromRoute] GetAvaliacaoQuery query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(result);
+    }
+
+    [HttpGet("{avaliacaoId:long}/perguntas")]
+    [SwaggerOperation("Retorna uma lista de perguntas evidenciando sua relação com a avaliação através do identificador provido.")]
+    public async Task<IActionResult> GetPerguntasAvaliacaoAsync([FromRoute] GetPerguntasAvaliacaoQuery query)
+    {
+        var result = await Mediator.Send(query);
+
+        return Ok(result);
+    }
+
+    [HttpGet("{avaliacaoId:long}/turmas")]
+    [SwaggerOperation("Retorna uma lista de turmas evidenciando sua relação com a avaliação através do identificador provido.")]
+    public async Task<IActionResult> GetTurmasAvaliacaoAsync([FromRoute] GetTurmasAvaliacaoQuery query)
     {
         var result = await Mediator.Send(query);
 
